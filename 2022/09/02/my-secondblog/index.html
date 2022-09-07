@@ -24,8 +24,19 @@
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/02/my-secondblog/2.8.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/02/my-secondblog/2.9.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/02/my-secondblog/2.10.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/02/my-secondblog/2.14.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/02/my-secondblog/2.15.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/02/my-secondblog/2.16.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/02/my-secondblog/2.24.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/02/my-secondblog/2.17.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/02/my-secondblog/2.18.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/02/my-secondblog/2.19.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/02/my-secondblog/2.20.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/02/my-secondblog/2.21.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/02/my-secondblog/2.22.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/02/my-secondblog/2.23.jpg">
 <meta property="article:published_time" content="2022-09-02T03:17:05.000Z">
-<meta property="article:modified_time" content="2022-09-03T12:16:55.975Z">
+<meta property="article:modified_time" content="2022-09-07T05:00:24.369Z">
 <meta property="article:author" content="钟艺">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://zhongyi9044.github.io/2022/09/02/my-secondblog/2.1.jpg">
@@ -110,11 +121,37 @@
 <h4 id="工作过程"><a href="#工作过程" class="headerlink" title="工作过程"></a>工作过程</h4><p><img src="/2022/09/02/my-secondblog/2.7.jpg" alt="示例" title="示例"><br><img src="/2022/09/02/my-secondblog/2.8.jpg" alt="示例" title="示例"></p>
 <h3 id="1-2-3计算机系统的层次结构"><a href="#1-2-3计算机系统的层次结构" class="headerlink" title="1.2.3计算机系统的层次结构"></a>1.2.3计算机系统的层次结构</h3><p>虚拟机器M4(高级计算机语言如c语言的机器)-&gt;虚拟机器M3(汇编语言的机器)-&gt;虚拟机器M2(操作系统机器)-&gt;传统机器M1(机器语言的机器)-&gt;微程序机器(微指令系统)<br><img src="/2022/09/02/my-secondblog/2.9.jpg" alt="示例" title="示例"></p>
 <p>编译程序：将高级语言编写的程序一次性全部转换为计算机语言程序，然后执行计算机语言程序。(英语的翻译题目)<br>解释程序：将程序一条语句翻译成语句以后立即执行，然后再翻译下一条语句。(同声传译)<br><img src="/2022/09/02/my-secondblog/2.10.jpg" alt="示例" title="示例"></p>
+<h3 id="CPU性能指标"><a href="#CPU性能指标" class="headerlink" title="CPU性能指标"></a>CPU性能指标</h3><ol>
+<li>CPI：执行一条指令所需要的时钟周期数</li>
+<li>CPU执行时间=CPI*时钟周期=CPI/主频(频率，单位HZ)</li>
+<li>IPS(每秒执行多少指令)=主频/CPI</li>
+<li>FLOPS：每秒执行浮点运算次数</li>
+</ol>
+<h3 id="系统整体性能指标"><a href="#系统整体性能指标" class="headerlink" title="系统整体性能指标"></a>系统整体性能指标</h3><p><img src="/2022/09/02/my-secondblog/2.14.jpg" alt="示例" title="示例"></p>
+<h3 id="奇偶校验码"><a href="#奇偶校验码" class="headerlink" title="奇偶校验码"></a>奇偶校验码</h3><h4 id="如何写出一段编码的奇偶校验码"><a href="#如何写出一段编码的奇偶校验码" class="headerlink" title="如何写出一段编码的奇偶校验码"></a>如何写出一段编码的奇偶校验码</h4><ol>
+<li>奇：在一段编码中确定1的个数，如果为偶数，就在编码开头添加1，反之加0</li>
+<li>偶：在一段编码中确定1的个数，如果为偶数，就在编码开头添加0，反之加1</li>
+</ol>
+<h4 id="硬件进行偶校验"><a href="#硬件进行偶校验" class="headerlink" title="硬件进行偶校验"></a>硬件进行偶校验</h4><ol>
+<li>对一段编码的每一个0和1数据进行异或运算</li>
+<li>如果结果为1，则数据发送错误，为0则正确</li>
+</ol>
+<p><img src="/2022/09/02/my-secondblog/2.15.jpg" alt="示例" title="示例"><br><img src="/2022/09/02/my-secondblog/2.16.jpg" alt="示例" title="示例"></p>
+<h3 id="海明校验码"><a href="#海明校验码" class="headerlink" title="海明校验码"></a>海明校验码</h3><p>直接上图背步骤</p>
+<p><img src="/2022/09/02/my-secondblog/2.24.jpg" alt="示例" title="示例"><br><img src="/2022/09/02/my-secondblog/2.17.jpg" alt="示例" title="示例"><br><img src="/2022/09/02/my-secondblog/2.18.jpg" alt="示例" title="示例"></p>
+<h3 id="无符号数"><a href="#无符号数" class="headerlink" title="无符号数"></a>无符号数</h3><p>所有位数都是数值位，没有符号位，相当于绝对值<br><img src="/2022/09/02/my-secondblog/2.19.jpg" alt="示例" title="示例"></p>
+<h3 id="有符号数"><a href="#有符号数" class="headerlink" title="有符号数"></a>有符号数</h3><p>第一位是符号位，负数为1，非负为0<br><img src="/2022/09/02/my-secondblog/2.20.jpg" alt="示例" title="示例"></p>
+<h3 id="反码，补码，移码"><a href="#反码，补码，移码" class="headerlink" title="反码，补码，移码"></a>反码，补码，移码</h3><ol>
+<li>反码=原码除了符号位全部按位取反即1=0，0=1</li>
+<li>补码=反码+1</li>
+<li>移码=补码的符号位按位取反</li>
+</ol>
+<p>注意：正数的原码，反码，补码相同<br><img src="/2022/09/02/my-secondblog/2.21.jpg" alt="示例" title="示例"><br><img src="/2022/09/02/my-secondblog/2.22.jpg" alt="示例" title="示例"><br><img src="/2022/09/02/my-secondblog/2.23.jpg" alt="示例" title="示例"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="cl7r5jj7f0001985r6mz01u26" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="cl7r5k05i0001005rfufr524o" class="article-share-link">Share</a>
       
       
     </footer>
