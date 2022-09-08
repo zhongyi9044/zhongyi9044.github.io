@@ -160,7 +160,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/03/my-thirdblog/" data-id="cl7sp3hv80002tw5rcibg3twm" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/03/my-thirdblog/" data-id="cl7sp4m7n0002j45rgzft29yd" class="article-share-link">Share</a>
       
       
     </footer>
@@ -229,11 +229,51 @@
 <li>移码=补码的符号位按位取反</li>
 </ol>
 <p>注意：正数的原码，反码，补码相同<br><img src="/2022/09/02/my-secondblog/2.21.jpg" alt="示例" title="示例"><br><img src="/2022/09/02/my-secondblog/2.22.jpg" alt="示例" title="示例"><br><img src="/2022/09/02/my-secondblog/2.23.jpg" alt="示例" title="示例"></p>
+<h3 id="算术移位"><a href="#算术移位" class="headerlink" title="算术移位"></a>算术移位</h3><p>算术移位是将二进制算数进行左移和右移的操作，看成十进制就是乘十和除十的操作，二进制也一样，左移就是相当于乘2，右移就相当于除2</p>
+<p>原码的算数移位需要注意：符号位不变，左移需要在末尾补零，前端的舍弃。右移在前端补零，末尾舍弃。</p>
+<p>反码的算术移位需要注意：如果是负数，那么反码的左右移需要补的就是1</p>
+<p>补码的算术移位需要注意：如果是负数，那我们可以发现，从右边第一个1到最右边和原码相同，左边和反码相同，因此在算术移位时候，左移补0，右移补1</p>
+<p><img src="/2022/09/02/my-secondblog/2.27.jpg" alt="示例" title="示例"><br><img src="/2022/09/02/my-secondblog/2.26.jpg" alt="示例" title="示例"><br><img src="/2022/09/02/my-secondblog/2.25.jpg" alt="示例" title="示例"></p>
+<p>逻辑移位：可以理解为无符号数的算术移位</p>
+<h3 id="加减运算"><a href="#加减运算" class="headerlink" title="加减运算"></a>加减运算</h3><p>原码的加减法对于计算机可能会出错，因此计算机一般都是用补码进行加减运算。<br>但是计算机在运算的时候，可能会出现溢出<br>溢出分为两种溢出</p>
+<ol>
+<li>上溢–正数+正数=负数</li>
+<li>下溢–负数+负数=正数<br><img src="/2022/09/02/my-secondblog/2.30.jpg" alt="示例" title="示例"></li>
+</ol>
+<p>判断溢出：</p>
+<ol>
+<li>(加数的符号&amp;&amp;第二个加数的符号&amp;&amp;！结果的符号 )|| (！加数的符号&amp;&amp;！第二个加数的符号&amp;&amp;结果的符号)–如果结果为0则没有溢出，结果为1则溢出</li>
+<li>根据符号位的进位和最高数值位的进位进行异或运算，结果位0则没有溢出，反之溢出</li>
+<li>采用双符号位，如果结果的两个符号位的异或运算结果为0则没有溢出，反之也是溢出<br><img src="/2022/09/02/my-secondblog/2.29.jpg" alt="示例" title="示例"><br><img src="/2022/09/02/my-secondblog/2.31.jpg" alt="示例" title="示例"><br><img src="/2022/09/02/my-secondblog/2.32.jpg" alt="示例" title="示例"></li>
+</ol>
+<h3 id="符号拓展"><a href="#符号拓展" class="headerlink" title="符号拓展"></a>符号拓展</h3><p>c语言有一种功能是强制类型转换，这时候就需要用到符号拓展</p>
+<p>拓展方式：</p>
+<ol>
+<li>正数的原码反码补码拓展方式都是直接在前端加0，而小数是在末尾加0</li>
+<li>负数的反码则是在符号位之前，最高数值位之后加1，小数则是在末尾加1</li>
+<li>复数的补码根据前面补码与原码和反码的规律，我们可以知道整数是在符号之前，最高数值位之后加1，小数则是在末尾加0<br><img src="/2022/09/02/my-secondblog/2.33.jpg" alt="示例" title="示例"></li>
+</ol>
+<h3 id="浮点数"><a href="#浮点数" class="headerlink" title="浮点数"></a>浮点数</h3><p>浮点数的表示格式：</p>
+<ol>
+<li>浮点数由阶码和尾数构成</li>
+<li>阶码一般由补码或移码构成的定点整数，尾数一般由补码或原码构成的定点小数</li>
+<li>浮点数在理解上可以写成：2^阶码次方+尾数。而在这门课程中，我们一般写成：阶码；尾数</li>
+<li>需要注意的是，阶码用逗号分开符号位和数值位，阶码和尾数用分号隔开</li>
+<li>阶码的意义是表示尾数的小数点应该向前或者向后移动几位<br><img src="/2022/09/02/my-secondblog/2.34.jpg" alt="示例" title="示例"><br><img src="/2022/09/02/my-secondblog/2.35.jpg" alt="示例" title="示例"><br><img src="/2022/09/02/my-secondblog/2.36.jpg" alt="示例" title="示例"></li>
+</ol>
+<p>浮点数尾数的规格化</p>
+<ol>
+<li>左规–如果浮点数尾数最高位值数是无效数，那么就要进行左规</li>
+<li>右规–如果浮点数尾数运算出现溢出(双符号位判断方式)，那么进行右规</li>
+</ol>
+<p>左规的方式：<br>尾数算数位左移一位，阶码减1，直到尾数的最高位数值为有效值</p>
+<p>右规的方式：<br>尾数算数位右移一位，阶码加1</p>
+<p><img src="/2022/09/02/my-secondblog/2.37.jpg" alt="示例" title="示例"><br><img src="/2022/09/02/my-secondblog/2.38.jpg" alt="示例" title="示例"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="cl7sp3hv70001tw5raz439m2o" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="cl7sp4m7l0001j45r52g1ceql" class="article-share-link">Share</a>
       
       
     </footer>
@@ -355,7 +395,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="cl7sp3hv00000tw5rdkgddxfm" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="cl7sp4m7g0000j45rhpu4fh2d" class="article-share-link">Share</a>
       
       
     </footer>
