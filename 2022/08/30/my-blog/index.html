@@ -35,8 +35,30 @@
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/19.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/20.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/21.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/23.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/24.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/25.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/26.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/27.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/30.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/31.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/28.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/29.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/42.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/43.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/44.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/45.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/33.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/32.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/35.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/34.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/36.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/37.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/39.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/38.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/40.jpg">
 <meta property="article:published_time" content="2022-08-30T01:27:36.000Z">
-<meta property="article:modified_time" content="2022-09-09T08:53:56.307Z">
+<meta property="article:modified_time" content="2022-09-10T07:03:04.109Z">
 <meta property="article:author" content="钟艺">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://zhongyi9044.github.io/2022/08/30/my-blog/1.jpg">
@@ -196,11 +218,63 @@
 <h3 id="码元传输速率和信息传输速率"><a href="#码元传输速率和信息传输速率" class="headerlink" title="码元传输速率和信息传输速率"></a>码元传输速率和信息传输速率</h3><p>单位是波特(Baud)，表示1s可以传输的码元</p>
 <p>单位是比特，表示1s可以传输的数据量</p>
 <p><img src="/2022/08/30/my-blog/21.jpg" alt="示例" title="示例"></p>
+<h3 id="奈氏准则"><a href="#奈氏准则" class="headerlink" title="奈氏准则"></a>奈氏准则</h3><p>公式：理想低通信信道的极限传输速率=2W*log2(V)，单位是b/s;其中2W表示极限码元传输速率，W表示带宽，V是码元的种类<br><img src="/2022/08/30/my-blog/23.jpg" alt="示例" title="示例"></p>
+<h3 id="香农定理"><a href="#香农定理" class="headerlink" title="香农定理"></a>香农定理</h3><p>公式：信道的极限传输速率=Wlog2(1+S/N)，单位是b/s;其中W是带宽，S(信道所传信号的平均功率)/N(高斯噪声的平均功率)是信噪比，信噪比又有另一种形式：信噪比(dB)=10*lg10(S/N)</p>
+<p><img src="/2022/08/30/my-blog/24.jpg" alt="示例" title="示例"><br><img src="/2022/08/30/my-blog/25.jpg" alt="示例" title="示例"></p>
+<h3 id="基带信号和宽带信号"><a href="#基带信号和宽带信号" class="headerlink" title="基带信号和宽带信号"></a>基带信号和宽带信号</h3><p>基带信号：将数字信号变成1和0两种电压，再送到数字信道(基带传输)</p>
+<p>宽带信号：将基带信号进行调制以后，送到模拟信道(宽带传输)</p>
+<p><img src="/2022/08/30/my-blog/26.jpg" alt="示例" title="示例"></p>
+<h3 id="编码与调制"><a href="#编码与调制" class="headerlink" title="编码与调制"></a>编码与调制</h3><p>数字数据-&gt;数字发送器-&gt;数字信号<br>数字数据-&gt;调制器-&gt;模拟信号<br>模拟数据-&gt;PCM编码器-&gt;数字信号<br>模拟数据-&gt;放大器调制器-&gt;模拟信号</p>
+<p>变成数字信号就是编制<br>变成模拟信号就是调制</p>
+<p><img src="/2022/08/30/my-blog/27.jpg" alt="示例" title="示例"></p>
+<h3 id="数字数据编码为数字信号"><a href="#数字数据编码为数字信号" class="headerlink" title="数字数据编码为数字信号"></a>数字数据编码为数字信号</h3><ol>
+<li>非归零编码</li>
+<li>曼彻斯特编码 <img src="/2022/08/30/my-blog/30.jpg" alt="示例" title="示例"></li>
+<li>差分曼彻斯特编码 <img src="/2022/08/30/my-blog/31.jpg" alt="示例" title="示例"></li>
+<li>归零编码 <img src="/2022/08/30/my-blog/28.jpg" alt="示例" title="示例"></li>
+<li>反向不归零编码 <img src="/2022/08/30/my-blog/29.jpg" alt="示例" title="示例"></li>
+<li>4B/5B编码 <img src="/2022/08/30/my-blog/42.jpg" alt="示例" title="示例"></li>
+</ol>
+<h3 id="模拟数据编码为数字信号"><a href="#模拟数据编码为数字信号" class="headerlink" title="模拟数据编码为数字信号"></a>模拟数据编码为数字信号</h3><p>利用PCM经过抽样，量化，编码三个过程<br><img src="/2022/08/30/my-blog/43.jpg" alt="示例" title="示例"></p>
+<h3 id="数字数据调制为模拟信号"><a href="#数字数据调制为模拟信号" class="headerlink" title="数字数据调制为模拟信号"></a>数字数据调制为模拟信号</h3><p>利用调制器调幅，调模，调频三个过程<br><img src="/2022/08/30/my-blog/44.jpg" alt="示例" title="示例"></p>
+<h3 id="模拟数据调制为模拟信号"><a href="#模拟数据调制为模拟信号" class="headerlink" title="模拟数据调制为模拟信号"></a>模拟数据调制为模拟信号</h3><p>利用放大器调制器，还有频分复用技术<br><img src="/2022/08/30/my-blog/45.jpg" alt="示例" title="示例"></p>
+<h3 id="传输介质和分类"><a href="#传输介质和分类" class="headerlink" title="传输介质和分类"></a>传输介质和分类</h3><ol>
+<li>导向型传输介质-&gt;电磁波被导向沿着固体媒介传播</li>
+<li>非导向型传输介质-&gt;自由空间，介质可以是空气，海水等</li>
+</ol>
+<p><img src="/2022/08/30/my-blog/33.jpg" alt="示例" title="示例"></p>
+<h3 id="导向型传输介质"><a href="#导向型传输介质" class="headerlink" title="导向型传输介质"></a>导向型传输介质</h3><ol>
+<li>双绞线 <img src="/2022/08/30/my-blog/32.jpg" alt="示例" title="示例"></li>
+<li>同轴电缆 <img src="/2022/08/30/my-blog/35.jpg" alt="示例" title="示例"></li>
+<li>光纤 <img src="/2022/08/30/my-blog/34.jpg" alt="示例" title="示例"></li>
+</ol>
+<p>光纤的特点：</p>
+<ol>
+<li>损耗小，经济实惠</li>
+<li>抗干扰强</li>
+<li>体积小，质量轻<br><img src="/2022/08/30/my-blog/36.jpg" alt="示例" title="示例"></li>
+</ol>
+<p>光纤的分类：</p>
+<ol>
+<li>多模光纤：有多种传输模式的光纤，失真大，适合短距离</li>
+<li>单模光纤：横向传输光信号，损耗小，适合长距离<br><img src="/2022/08/30/my-blog/37.jpg" alt="示例" title="示例"></li>
+</ol>
+<h3 id="非导向型传输介质"><a href="#非导向型传输介质" class="headerlink" title="非导向型传输介质"></a>非导向型传输介质</h3><ol>
+<li>无线电波(手机常用)</li>
+<li>微波(卫星)</li>
+<li>红外线，激光<br><img src="/2022/08/30/my-blog/39.jpg" alt="示例" title="示例"></li>
+</ol>
+<h3 id="中继器"><a href="#中继器" class="headerlink" title="中继器"></a>中继器</h3><p>功能：对信号进行再生和还原，对衰减信号放大，以增加信号传输距离，延长网络长度</p>
+<p>5.4.3规则：最多五个网段，最多四个中继器或集线器设备，最多三个计算机(工作站)</p>
+<p><img src="/2022/08/30/my-blog/38.jpg" alt="示例" title="示例"></p>
+<h3 id="集线器"><a href="#集线器" class="headerlink" title="集线器"></a>集线器</h3><p>功能：和中继器一样</p>
+<p>特殊：集线器有多个端口，每个在集线器上工作的主机都会平分宽带</p>
+<p><img src="/2022/08/30/my-blog/40.jpg" alt="示例" title="示例"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="cl7u90lxp0000yc5r2elx6dk8" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="cl7vk994r0000pk5rbe2r2acy" class="article-share-link">Share</a>
       
       
     </footer>
