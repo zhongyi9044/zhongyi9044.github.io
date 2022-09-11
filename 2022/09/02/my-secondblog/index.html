@@ -7,12 +7,12 @@
   
   <title>计算机组成原理 | 肥艺的blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言这是我学习计算机网络的博客，学习资源是bilibili的bv1be411d7ii号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 第一章 计算机系统概述计算机系统1.硬件： 1.1.大规模，超大规模集成电路等2.软件： 2.1.系统软件：操作系统，数据库管理系统，网络软件，语言处理系统等等 2.2.应用软件：微信，支付宝等 计算机硬件的组成冯诺依曼计算机组成：输入设备">
+  <meta name="description" content="前言这是我学习计算机网络的博客，学习资源是bilibili的bv1be411d7ii号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录第一章 计算机系统概述第二章 数据的表示和计算[第三章][第四章][第五章][第六章] 第一章-计算机系统概述计算机系统计算机硬件的组成各个硬件的组成原理计算机系统的层次结构 计算机系统1.硬件： 1.1.大规模，超大规模集成电路等2.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="计算机组成原理">
 <meta property="og:url" content="https://zhongyi9044.github.io/2022/09/02/my-secondblog/index.html">
 <meta property="og:site_name" content="肥艺的blog">
-<meta property="og:description" content="前言这是我学习计算机网络的博客，学习资源是bilibili的bv1be411d7ii号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 第一章 计算机系统概述计算机系统1.硬件： 1.1.大规模，超大规模集成电路等2.软件： 2.1.系统软件：操作系统，数据库管理系统，网络软件，语言处理系统等等 2.2.应用软件：微信，支付宝等 计算机硬件的组成冯诺依曼计算机组成：输入设备">
+<meta property="og:description" content="前言这是我学习计算机网络的博客，学习资源是bilibili的bv1be411d7ii号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录第一章 计算机系统概述第二章 数据的表示和计算[第三章][第四章][第五章][第六章] 第一章-计算机系统概述计算机系统计算机硬件的组成各个硬件的组成原理计算机系统的层次结构 计算机系统1.硬件： 1.1.大规模，超大规模集成电路等2.">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/02/my-secondblog/2.1.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/02/my-secondblog/2.2.jpg">
@@ -59,7 +59,7 @@
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/02/my-secondblog/2.50.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/02/my-secondblog/2.48.jpg">
 <meta property="article:published_time" content="2022-09-02T03:17:05.000Z">
-<meta property="article:modified_time" content="2022-09-11T05:47:23.210Z">
+<meta property="article:modified_time" content="2022-09-11T06:34:55.204Z">
 <meta property="article:author" content="钟艺">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://zhongyi9044.github.io/2022/09/02/my-secondblog/2.1.jpg">
@@ -134,7 +134,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这是我学习计算机网络的博客，学习资源是bilibili的bv1be411d7ii号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处</p>
-<h2 id="第一章-计算机系统概述"><a href="#第一章-计算机系统概述" class="headerlink" title="第一章 计算机系统概述"></a>第一章 计算机系统概述</h2><h3 id="计算机系统"><a href="#计算机系统" class="headerlink" title="计算机系统"></a>计算机系统</h3><p>1.硬件：<br> 1.1.大规模，超大规模集成电路等<br>2.软件：<br> 2.1.系统软件：操作系统，数据库管理系统，网络软件，语言处理系统等等<br> 2.2.应用软件：微信，支付宝等</p>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p><a href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0">第一章 计算机系统概述</a><br><a href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E8%BF%90%E7%AE%97">第二章 数据的表示和计算</a><br>[第三章]<br>[第四章]<br>[第五章]<br>[第六章]</p>
+<h2 id="第一章-计算机系统概述"><a href="#第一章-计算机系统概述" class="headerlink" title="第一章-计算机系统概述"></a>第一章-计算机系统概述</h2><p><a href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F">计算机系统</a><br><a href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6%E7%9A%84%E7%BB%84%E6%88%90">计算机硬件的组成</a><br><a href="#%E5%90%84%E4%B8%AA%E7%A1%AC%E4%BB%B6%E7%9A%84%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86">各个硬件的组成原理</a><br><a href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84">计算机系统的层次结构</a></p>
+<h3 id="计算机系统"><a href="#计算机系统" class="headerlink" title="计算机系统"></a>计算机系统</h3><p>1.硬件：<br> 1.1.大规模，超大规模集成电路等<br>2.软件：<br> 2.1.系统软件：操作系统，数据库管理系统，网络软件，语言处理系统等等<br> 2.2.应用软件：微信，支付宝等</p>
 <h3 id="计算机硬件的组成"><a href="#计算机硬件的组成" class="headerlink" title="计算机硬件的组成"></a>计算机硬件的组成</h3><h4 id="冯诺依曼计算机"><a href="#冯诺依曼计算机" class="headerlink" title="冯诺依曼计算机"></a>冯诺依曼计算机</h4><p>组成：输入设备(把人语变成机器语)，输出设备(机器语变成人语)，存储器(存储数据和程序)，控制器(指挥各个部件，使程序运营)，运算器(算术运算，逻辑运算)<br>–比喻：输入设备=采购部门 输出设备=销售部门 存储器=仓库 控制器=老板 运算器=生产加工部门<br><img src="/2022/09/02/my-secondblog/2.1.jpg" alt="示例" title="示例"></p>
 <h4 id="冯诺依曼计算机的特点"><a href="#冯诺依曼计算机的特点" class="headerlink" title="冯诺依曼计算机的特点"></a>冯诺依曼计算机的特点</h4><p>1.由五大部分组成<br>2.指令和数据可以按照地址寻访，并且以同等地位存于存储器<br>3.指令和数据用二进制表示<br>4.指令由操作码和地址码组成<br>5.存储程序<br>6.以运算器为中心</p>
 <h4 id="现代计算机的结构-以存储器为中心"><a href="#现代计算机的结构-以存储器为中心" class="headerlink" title="现代计算机的结构(以存储器为中心)"></a>现代计算机的结构(以存储器为中心)</h4><p>1.主机(主机(主储存器+CPU(运算器+控制器)))==(主储存器(不包含辅存，即平时手机说的128GB，只包含主存，即手机说的8GB)+运算器+控制器)<br>2.外设(输入设备和输出设备和辅存)<br><img src="/2022/09/02/my-secondblog/2.2.jpg" alt="示例" title="示例"></p>
@@ -144,7 +146,8 @@
 <h4 id="工作过程"><a href="#工作过程" class="headerlink" title="工作过程"></a>工作过程</h4><p><img src="/2022/09/02/my-secondblog/2.7.jpg" alt="示例" title="示例"><br><img src="/2022/09/02/my-secondblog/2.8.jpg" alt="示例" title="示例"></p>
 <h3 id="计算机系统的层次结构"><a href="#计算机系统的层次结构" class="headerlink" title="计算机系统的层次结构"></a>计算机系统的层次结构</h3><p>虚拟机器M4(高级计算机语言如c语言的机器)-&gt;虚拟机器M3(汇编语言的机器)-&gt;虚拟机器M2(操作系统机器)-&gt;传统机器M1(机器语言的机器)-&gt;微程序机器(微指令系统)<br><img src="/2022/09/02/my-secondblog/2.9.jpg" alt="示例" title="示例"></p>
 <p>编译程序：将高级语言编写的程序一次性全部转换为计算机语言程序，然后执行计算机语言程序。(英语的翻译题目)<br>解释程序：将程序一条语句翻译成语句以后立即执行，然后再翻译下一条语句。(同声传译)<br><img src="/2022/09/02/my-secondblog/2.10.jpg" alt="示例" title="示例"></p>
-<h2 id="第二章-数据的表示和运算"><a href="#第二章-数据的表示和运算" class="headerlink" title="第二章 数据的表示和运算"></a>第二章 数据的表示和运算</h2><h3 id="CPU性能指标"><a href="#CPU性能指标" class="headerlink" title="CPU性能指标"></a>CPU性能指标</h3><ol>
+<h2 id="第二章-数据的表示和运算"><a href="#第二章-数据的表示和运算" class="headerlink" title="第二章-数据的表示和运算"></a>第二章-数据的表示和运算</h2><p><a href="#cpu%E7%9A%84%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87">CPU性能指标</a><br><a href="#%E7%B3%BB%E7%BB%9F%E6%95%B4%E4%BD%93%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87">系统整体性能指标</a><br><a href="#%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C%E7%A0%81">奇偶校验码</a><br><a href="#%E6%B5%B7%E6%98%8E%E6%A0%A1%E9%AA%8C%E7%A0%81">海明校验码</a><br><a href="#%E6%97%A0%E7%AC%A6%E5%8F%B7%E6%95%B0">无符号数</a><br><a href="#%E6%9C%89%E7%AC%A6%E5%8F%B7%E6%95%B0">有符号数</a><br><a href="#%E5%8F%8D%E7%A0%81-%E8%A1%A5%E7%A0%81-%E7%A7%BB%E7%A0%81">反码-补码-移码</a><br><a href="#%E7%AE%97%E6%9C%AF%E7%A7%BB%E4%BD%8D">算术移位</a><br><a href="#%E5%8A%A0%E5%87%8F%E8%BF%90%E7%AE%97">加减运算</a><br><a href="#%E6%B5%AE%E7%82%B9%E6%95%B0">浮点数</a></p>
+<h3 id="cpu的性能指标"><a href="#cpu的性能指标" class="headerlink" title="cpu的性能指标"></a>cpu的性能指标</h3><ol>
 <li>CPI：执行一条指令所需要的时钟周期数</li>
 <li>CPU执行时间=CPI*时钟周期=CPI/主频(频率，单位HZ)</li>
 <li>IPS(每秒执行多少指令)=主频/CPI</li>
@@ -164,7 +167,7 @@
 <p><img src="/2022/09/02/my-secondblog/2.24.jpg" alt="示例" title="示例"><br><img src="/2022/09/02/my-secondblog/2.17.jpg" alt="示例" title="示例"><br><img src="/2022/09/02/my-secondblog/2.18.jpg" alt="示例" title="示例"></p>
 <h3 id="无符号数"><a href="#无符号数" class="headerlink" title="无符号数"></a>无符号数</h3><p>所有位数都是数值位，没有符号位，相当于绝对值<br><img src="/2022/09/02/my-secondblog/2.19.jpg" alt="示例" title="示例"></p>
 <h3 id="有符号数"><a href="#有符号数" class="headerlink" title="有符号数"></a>有符号数</h3><p>第一位是符号位，负数为1，非负为0<br><img src="/2022/09/02/my-secondblog/2.20.jpg" alt="示例" title="示例"></p>
-<h3 id="反码，补码，移码"><a href="#反码，补码，移码" class="headerlink" title="反码，补码，移码"></a>反码，补码，移码</h3><ol>
+<h3 id="反码-补码-移码"><a href="#反码-补码-移码" class="headerlink" title="反码-补码-移码"></a>反码-补码-移码</h3><ol>
 <li>反码=原码除了符号位全部按位取反即1=0，0=1</li>
 <li>补码=反码+1</li>
 <li>移码=补码的符号位按位取反</li>
@@ -187,7 +190,7 @@
 <li>根据符号位的进位和最高数值位的进位进行异或运算，结果位0则没有溢出，反之溢出</li>
 <li>采用双符号位，如果结果的两个符号位的异或运算结果为0则没有溢出，反之也是溢出<br><img src="/2022/09/02/my-secondblog/2.29.jpg" alt="示例" title="示例"><br><img src="/2022/09/02/my-secondblog/2.31.jpg" alt="示例" title="示例"><br><img src="/2022/09/02/my-secondblog/2.32.jpg" alt="示例" title="示例"></li>
 </ol>
-<h3 id="符号拓展"><a href="#符号拓展" class="headerlink" title="符号拓展"></a>符号拓展</h3><p>c语言有一种功能是强制类型转换，这时候就需要用到符号拓展</p>
+<h4 id="符号拓展"><a href="#符号拓展" class="headerlink" title="符号拓展"></a>符号拓展</h4><p>c语言有一种功能是强制类型转换，这时候就需要用到符号拓展</p>
 <p>拓展方式：</p>
 <ol>
 <li>正数的原码反码补码拓展方式都是直接在前端加0，而小数是在末尾加0</li>
@@ -210,10 +213,10 @@
 <p>左规的方式：<br>尾数算数位左移一位，阶码减1，直到尾数的最高位数值为有效值</p>
 <p>右规的方式：<br>尾数算数位右移一位，阶码加1</p>
 <p><img src="/2022/09/02/my-secondblog/2.37.jpg" alt="示例" title="示例"><br><img src="/2022/09/02/my-secondblog/2.38.jpg" alt="示例" title="示例"></p>
-<h3 id="IEEE-754标准"><a href="#IEEE-754标准" class="headerlink" title="IEEE 754标准"></a>IEEE 754标准</h3><p>浮点数结构：<br>数符+阶码(移码)+1.尾数(原码)</p>
+<h4 id="IEEE-754标准"><a href="#IEEE-754标准" class="headerlink" title="IEEE 754标准"></a>IEEE 754标准</h4><p>浮点数结构：<br>数符+阶码(移码)+1.尾数(原码)</p>
 <p>阶码真值=移码-偏置值(采用127)<br><img src="/2022/09/02/my-secondblog/2.41.jpg" alt="示例" title="示例"></p>
 <p>例题：<img src="/2022/09/02/my-secondblog/2.42.jpg" alt="示例" title="示例"> <img src="/2022/09/02/my-secondblog/2.43.jpg" alt="示例" title="示例"></p>
-<h3 id="浮点数的加减运算"><a href="#浮点数的加减运算" class="headerlink" title="浮点数的加减运算"></a>浮点数的加减运算</h3><ol>
+<h4 id="浮点数的加减运算"><a href="#浮点数的加减运算" class="headerlink" title="浮点数的加减运算"></a>浮点数的加减运算</h4><ol>
 <li>对阶</li>
 <li>尾数加减</li>
 <li>规格化(拯救尾数加减的溢出)</li>
@@ -230,7 +233,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="cl7wwzooe0003045r3ejb3hbi" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="cl7wyovro0003o85rbas17nhz" class="article-share-link">Share</a>
       
       
     </footer>
