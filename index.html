@@ -87,7 +87,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处</p>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p><a href="#css%E7%AE%80%E4%BB%8B">CSS简介</a><br><a href="#css%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83">CSS语法规范</a><br><a href="#%E9%80%89%E6%8B%A9%E5%99%A8">选择器</a><br><a href="#%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E5%99%A8">基础选择器</a></p>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p><a href="#css%E7%AE%80%E4%BB%8B">CSS简介</a><br><a href="#css%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83">CSS语法规范</a><br><a href="#%E9%80%89%E6%8B%A9%E5%99%A8">选择器</a><br><a href="#%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E5%99%A8">基础选择器</a><br><a href="#%E5%AD%97%E4%BD%93%E5%B1%9E%E6%80%A7">字体属性</a><br><a href="#%E6%96%87%E6%9C%AC%E5%B1%9E%E6%80%A7">文本属性</a></p>
 <h2 id="css简介"><a href="#css简介" class="headerlink" title="css简介"></a>css简介</h2><p>因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记语言，主要用于设置文本内容的字体大小，图片宽高，以及版面布局的外观显示样式等等等等。</p>
 <h2 id="css语法规范"><a href="#css语法规范" class="headerlink" title="css语法规范"></a>css语法规范</h2><p>构成：选择器+{属性：值；+属性：值：…..}<br>CSS需要写在head内的style(自己创建)中<br>例子：<br><code>&lt;style&gt;</code><br>  <code>p &#123;</code><br>    <code>color: red;</code><br>    <code>font-size: 12px;</code><br>  <code>&#125;</code><br><code>&lt;/style&gt;</code></p>
 <p>示例：<img src="/2022/09/11/my-fourthblog/1.jpg" alt="示例" title="示例"></p>
@@ -111,11 +111,60 @@
 <h3 id="通配符选择器"><a href="#通配符选择器" class="headerlink" title="通配符选择器"></a>通配符选择器</h3><p>通配符选择器是把所有的标签的内容都变成对应的属性，一般特殊情况下才使用</p>
 <p><code>* &#123;</code><br>   <code>属性1: 属性值1;</code><br>   <code>属性2: 属性值2;</code><br><code>&#125;</code></p>
 <p>示例：<img src="/2022/09/11/my-fourthblog/4.jpg" alt="示例" title="示例"></p>
+<h2 id="字体属性"><a href="#字体属性" class="headerlink" title="字体属性"></a>字体属性</h2><p><a href="#font-family%E5%AD%97%E4%BD%93%E7%B3%BB%E5%88%97">font-family字体系列</a><br><a href="#font-sizw%E5%AD%97%E5%8F%B7%E5%A4%A7%E5%B0%8F">font-sizw字号大小</a><br><a href="#font-weight%E5%AD%97%E4%BD%93%E7%B2%97%E7%BB%86">font-weight字体粗细</a><br><a href="#font-style%E5%AD%97%E4%BD%93%E6%A0%B7%E5%BC%8F">font-style字体样式</a><br><a href="#font%E5%A4%8D%E5%90%88%E5%B1%9E%E6%80%A7%E5%86%99%E6%B3%95">font复合属性写法</a></p>
+<h3 id="font-family字体系列"><a href="#font-family字体系列" class="headerlink" title="font-family字体系列"></a>font-family字体系列</h3><p>字体系列：宋体，黑体，微软雅黑等等</p>
+<p>格式：<br><code>font-family:&#39;Microsoft YeHei&#39;</code>;</p>
+<p>示例：<img src="/2022/09/11/my-fourthblog/5.jpg" alt="示例" title="示例"></p>
+<h3 id="font-sizw字号大小"><a href="#font-sizw字号大小" class="headerlink" title="font-sizw字号大小"></a>font-sizw字号大小</h3><p>系统默认大小是16px</p>
+<p>格式：<br><code>font-size:20px;</code></p>
+<p>示例：<img src="/2022/09/11/my-fourthblog/6.jpg" alt="示例" title="示例"></p>
+<h3 id="font-weight字体粗细"><a href="#font-weight字体粗细" class="headerlink" title="font-weight字体粗细"></a>font-weight字体粗细</h3><p>bold=700大小  normal=400大小</p>
+<p>格式：<br><code>font-weight:7000;</code></p>
+<p>示例：<img src="/2022/09/11/my-fourthblog/7.jpg" alt="示例" title="示例"></p>
+<h3 id="font-style字体样式"><a href="#font-style字体样式" class="headerlink" title="font-style字体样式"></a>font-style字体样式</h3><p>常用：<br>示例：<img src="/2022/09/11/my-fourthblog/8.jpg" alt="示例" title="示例"></p>
+<p>示例：<img src="/2022/09/11/my-fourthblog/9.jpg" alt="示例" title="示例"></p>
+<h3 id="font复合属性写法"><a href="#font复合属性写法" class="headerlink" title="font复合属性写法"></a>font复合属性写法</h3><p>两种复合格式</p>
+<ol>
+<li><code>font-xxx +回车 +font-xxxxx</code></li>
+<li><code>font: style +weight +size/height +family</code></li>
+</ol>
+<p>注意：第二种格式必须按照这个顺序，如果没有需要设置的可以省略不写，但是size和family必须写</p>
+<p>示例：<img src="/2022/09/11/my-fourthblog/10.jpg" alt="示例" title="示例"></p>
+<h2 id="文本属性"><a href="#文本属性" class="headerlink" title="文本属性"></a>文本属性</h2><p><a href="#%E6%96%87%E6%9C%AC%E9%A2%9C%E8%89%B2color">文本颜色color</a><br><a href="#%E6%96%87%E6%9C%AC%E5%AF%B9%E9%BD%90text-align">文本对齐text-align</a><br><a href="#%E6%96%87%E6%9C%AC%E4%BF%AE%E9%A5%B0text-decoration">文本修饰text-decoration</a><br><a href="#%E6%96%87%E6%9C%AC%E7%BC%A9%E8%BF%9Btext-indext">文本缩进text-indext</a><br><a href="#%E8%A1%8C%E9%97%B4%E8%B7%9Dline-height">行间距line-height</a></p>
+<h3 id="文本颜色color"><a href="#文本颜色color" class="headerlink" title="文本颜色color"></a>文本颜色color</h3><p>color有三种写法：</p>
+<ol>
+<li>预定义颜色值</li>
+<li>十六进制</li>
+<li>RGB代码<br>示例：<img src="/2022/09/11/my-fourthblog/11.jpg" alt="示例" title="示例"></li>
+</ol>
+<p>示例：<img src="/2022/09/11/my-fourthblog/12.jpg" alt="示例" title="示例"></p>
+<h3 id="文本对齐text-align"><a href="#文本对齐text-align" class="headerlink" title="文本对齐text-align"></a>文本对齐text-align</h3><p>用于设置元素内文本对齐方式</p>
+<ol>
+<li>left</li>
+<li>right</li>
+<li>center</li>
+</ol>
+<p>格式：<br><code>text-align enter</code>;</p>
+<p>示例：<img src="/2022/09/11/my-fourthblog/13.jpg" alt="示例" title="示例"></p>
+<h3 id="文本修饰text-decoration"><a href="#文本修饰text-decoration" class="headerlink" title="文本修饰text-decoration"></a>文本修饰text-decoration</h3><ol>
+<li>下划线</li>
+<li>删除线</li>
+<li>上划线<br>示例：<img src="/2022/09/11/my-fourthblog/14.jpg" alt="示例" title="示例"></li>
+</ol>
+<p>格式：<br><code>text-decoration：underline</code>;</p>
+<p>示例：<img src="/2022/09/11/my-fourthblog/15.jpg" alt="示例" title="示例"></p>
+<h3 id="文本缩进text-indext"><a href="#文本缩进text-indext" class="headerlink" title="文本缩进text-indext"></a>文本缩进text-indext</h3><p>设置文本第一行的缩进，俗称的段落开始空两格。</p>
+<p>格式：<br><code>text-indent：2em</code>;或者<code>text-indent：20px</code></p>
+<p>区别：使用em加系数代表缩进当前元素文字的系数的距离，20px就是自己定距离</p>
+<p>示例：<img src="/2022/09/11/my-fourthblog/16.jpg" alt="示例" title="示例"></p>
+<h3 id="行间距line-height"><a href="#行间距line-height" class="headerlink" title="行间距line-height"></a>行间距line-height</h3><p>用于设置行间的距离，文字和文字中间每一行的距离</p>
+<p>格式：<br><code>line-height：20px</code>;</p>
+<p>示例：<img src="/2022/09/11/my-fourthblog/17.jpg" alt="示例" title="示例"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cl82nwv1o0000fc5r51366ic2" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cl841899z0001tg5rerif43dt" class="article-share-link">Share</a>
       
       
     </footer>
@@ -236,7 +285,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/03/my-thirdblog/" data-id="cl82nwv1u0002fc5r4t6w1e5u" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/03/my-thirdblog/" data-id="cl84189a20003tg5r63beher8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -430,7 +479,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="cl82nwv1v0003fc5r94us5ufh" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="cl84189a10002tg5rb7qqdyt5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -648,7 +697,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="cl82nwv1t0001fc5r79iifivg" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="cl841899q0000tg5r3oyj6ee8" class="article-share-link">Share</a>
       
       
     </footer>
