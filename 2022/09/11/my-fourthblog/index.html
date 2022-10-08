@@ -7,12 +7,12 @@
   
   <title>Web前端--CSS | 肥艺的blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记语言，主要用于设置文本内容的字体大小，图片宽高，以及版面布局的外观显示样">
+  <meta name="description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性复合选择器元素显示模式 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记语言，主要用于设置文本内容的字体大小，图片宽高，以">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Web前端--CSS">
 <meta property="og:url" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/index.html">
 <meta property="og:site_name" content="肥艺的blog">
-<meta property="og:description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记语言，主要用于设置文本内容的字体大小，图片宽高，以及版面布局的外观显示样">
+<meta property="og:description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性复合选择器元素显示模式 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记语言，主要用于设置文本内容的字体大小，图片宽高，以">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/1.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/2.jpg">
@@ -31,8 +31,18 @@
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/15.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/16.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/17.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/18.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/19.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/20.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/21.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/22.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/23.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/24.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/25.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/26.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/27.jpg">
 <meta property="article:published_time" content="2022-09-11T05:46:40.000Z">
-<meta property="article:modified_time" content="2022-09-16T05:20:22.601Z">
+<meta property="article:modified_time" content="2022-10-08T06:10:56.220Z">
 <meta property="article:author" content="钟艺">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/1.jpg">
@@ -107,7 +117,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处</p>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p><a href="#css%E7%AE%80%E4%BB%8B">CSS简介</a><br><a href="#css%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83">CSS语法规范</a><br><a href="#%E9%80%89%E6%8B%A9%E5%99%A8">选择器</a><br><a href="#%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E5%99%A8">基础选择器</a><br><a href="#%E5%AD%97%E4%BD%93%E5%B1%9E%E6%80%A7">字体属性</a><br><a href="#%E6%96%87%E6%9C%AC%E5%B1%9E%E6%80%A7">文本属性</a></p>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p><a href="#css%E7%AE%80%E4%BB%8B">CSS简介</a><br><a href="#css%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83">CSS语法规范</a><br><a href="#%E9%80%89%E6%8B%A9%E5%99%A8">选择器</a><br><a href="#%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E5%99%A8">基础选择器</a><br><a href="#%E5%AD%97%E4%BD%93%E5%B1%9E%E6%80%A7">字体属性</a><br><a href="#%E6%96%87%E6%9C%AC%E5%B1%9E%E6%80%A7">文本属性</a><br><a href="#%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8">复合选择器</a><br><a href="#%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F">元素显示模式</a></p>
 <h2 id="css简介"><a href="#css简介" class="headerlink" title="css简介"></a>css简介</h2><p>因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记语言，主要用于设置文本内容的字体大小，图片宽高，以及版面布局的外观显示样式等等等等。</p>
 <h2 id="css语法规范"><a href="#css语法规范" class="headerlink" title="css语法规范"></a>css语法规范</h2><p>构成：选择器+{属性：值；+属性：值：…..}<br>CSS需要写在head内的style(自己创建)中<br>例子：<br><code>&lt;style&gt;</code><br>  <code>p &#123;</code><br>    <code>color: red;</code><br>    <code>font-size: 12px;</code><br>  <code>&#125;</code><br><code>&lt;/style&gt;</code></p>
 <p>示例：<img src="/2022/09/11/my-fourthblog/1.jpg" alt="示例" title="示例"></p>
@@ -180,11 +190,66 @@
 <h3 id="行间距line-height"><a href="#行间距line-height" class="headerlink" title="行间距line-height"></a>行间距line-height</h3><p>用于设置行间的距离，文字和文字中间每一行的距离</p>
 <p>格式：<br><code>line-height：20px</code>;</p>
 <p>示例：<img src="/2022/09/11/my-fourthblog/17.jpg" alt="示例" title="示例"></p>
+<h2 id="复合选择器"><a href="#复合选择器" class="headerlink" title="复合选择器"></a>复合选择器</h2><p><a href="#%E5%90%8E%E4%BB%A3%E9%80%89%E6%8B%A9%E5%99%A8">后代选择器</a><br><a href="#%E5%AD%90%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8">子类选择器</a><br><a href="#%E5%B9%B6%E9%9B%86%E9%80%89%E6%8B%A9%E5%99%A8">并集选择器</a><br><a href="#%E9%93%BE%E6%8E%A5%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8">链接伪类选择器</a><br><a href="#focus%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8">focus伪类选择器</a></p>
+<h3 id="后代选择器"><a href="#后代选择器" class="headerlink" title="后代选择器"></a>后代选择器</h3><p>后代选择器又称包含选择器(可以包括孙子等)</p>
+<p>格式：<br><code>元素1+空格+元素2&#123;样式声明&#125;</code></p>
+<p>例如：<br><code>ul li&#123;样式声明&#125;--选择ul里面所有li标签元素</code><br><code>.n li&#123;样式声明&#125;--选择.n类里面所有的li标签元素</code></p>
+<p>示例：<img src="/2022/09/11/my-fourthblog/18.jpg" alt="示例" title="示例"></p>
+<h3 id="子类选择器"><a href="#子类选择器" class="headerlink" title="子类选择器"></a>子类选择器</h3><p>子类选择器只能选择作为某元素最近的第一级元素</p>
+<p>格式：<br><code>元素1&gt;元素2&#123;样式声明&#125;</code></p>
+<p>例如：<br><code>ul&gt;li&#123;样式声明&#125;--选择ul里面最近的一级的li标签元素</code></p>
+<p>示例：<img src="/2022/09/11/my-fourthblog/19.jpg" alt="示例" title="示例"></p>
+<h3 id="并集选择器"><a href="#并集选择器" class="headerlink" title="并集选择器"></a>并集选择器</h3><p>并集选择器可以选择多组标签同时定义样式</p>
+<p>格式：<br><code>元素1，元素2.。。。&#123;样式声明&#125;</code></p>
+<p>例如：<br><code>ul，div&#123;样式声明&#125;--选择ul和div元素</code></p>
+<p>示例：<img src="/2022/09/11/my-fourthblog/20.jpg" alt="示例" title="示例"></p>
+<h3 id="链接伪类选择器"><a href="#链接伪类选择器" class="headerlink" title="链接伪类选择器"></a>链接伪类选择器</h3><ol>
+<li>a：link(选择未被访问的链接)</li>
+<li>a:visited(选择已经被访问的链接)</li>
+<li>a:hover(选择鼠标指针位于的链接)</li>
+<li>a:active(选择活动链接-鼠标按下但没有松开的链接)</li>
+</ol>
+<p>例如：<br><code>a:hover&#123;样式声明&#125;</code></p>
+<p>示例：<img src="/2022/09/11/my-fourthblog/21.jpg" alt="示例" title="示例"><br>示例：<img src="/2022/09/11/my-fourthblog/22.jpg" alt="示例" title="示例"><br>示例：<img src="/2022/09/11/my-fourthblog/23.jpg" alt="示例" title="示例"><br>示例：<img src="/2022/09/11/my-fourthblog/24.jpg" alt="示例" title="示例"></p>
+<h3 id="focus伪类选择器"><a href="#focus伪类选择器" class="headerlink" title="focus伪类选择器"></a>focus伪类选择器</h3><p>focus伪类选择器用于获取焦点(鼠标)的单元表元素(一般input类的单元表才能获取)</p>
+<p>例如：<br><code>input：focus&#123;background-color：red&#125;</code></p>
+<p>示例：<img src="/2022/09/11/my-fourthblog/25.jpg" alt="示例" title="示例"><br>示例：<img src="/2022/09/11/my-fourthblog/26.jpg" alt="示例" title="示例"></p>
+<h2 id="元素显示模式"><a href="#元素显示模式" class="headerlink" title="元素显示模式"></a>元素显示模式</h2><p><a href="#%E5%9D%97%E5%85%83%E7%B4%A0">块元素</a><br><a href="#%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0">行内元素</a><br><a href="#%E8%A1%8C%E5%86%85%E5%9D%97%E5%85%83%E7%B4%A0">行内块元素</a><br><a href="#%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F%E8%BD%AC%E6%8D%A2">显示模式转换</a></p>
+<h2 id="块元素"><a href="#块元素" class="headerlink" title="块元素"></a>块元素</h2><p>常见块元素：标题标签，段落标签，div，ul，ol，li等</p>
+<p>块元素特点</p>
+<ol>
+<li>独占一行</li>
+<li>可以控制边距宽高</li>
+<li>宽度默认100%</li>
+<li>里面可以放行内元素或块元素</li>
+</ol>
+<p>注意：文字类元素不能放块级标签，比如段落标签和标题标签</p>
+<h2 id="行内元素"><a href="#行内元素" class="headerlink" title="行内元素"></a>行内元素</h2><p>常见行内元素：超链接，span，b，em，i，del，s，ins，u，span等</p>
+<p>块元素特点</p>
+<ol>
+<li>一行可以显示多个</li>
+<li>不可以控制边距宽高</li>
+<li>宽度默认是内容的宽度</li>
+<li>里面只可以放文本或者行内元素</li>
+</ol>
+<h2 id="行内块元素"><a href="#行内块元素" class="headerlink" title="行内块元素"></a>行内块元素</h2><p>常见行内块元素：img，input，td等</p>
+<p>块元素特点</p>
+<ol>
+<li>一行可以显示多个</li>
+<li>可以控制边距宽高</li>
+<li>宽度默认是内容的宽度</li>
+</ol>
+<h2 id="显示模式转换"><a href="#显示模式转换" class="headerlink" title="显示模式转换"></a>显示模式转换</h2><ol>
+<li>转换为块元素：dispaly：block</li>
+<li>转换为行内元素：display：inline</li>
+<li>转换为行内块元素：display：inlink-block</li>
+</ol>
+<p>示例：<img src="/2022/09/11/my-fourthblog/27.jpg" alt="示例" title="示例"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cl8i7u2p80001605rcplm6dg3" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cl8ziq1p00000xg5rbtrzgqwh" class="article-share-link">Share</a>
       
       
     </footer>
