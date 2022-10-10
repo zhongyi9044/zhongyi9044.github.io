@@ -7,12 +7,12 @@
   
   <title>Web前端--CSS | 肥艺的blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性复合选择器元素显示模式背景CSS的三大特性 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记语言，主要用于设置文本内容的字">
+  <meta name="description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性复合选择器元素显示模式背景CSS的三大特性盒子模型 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记语言，主要用于设置文本">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Web前端--CSS">
 <meta property="og:url" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/index.html">
 <meta property="og:site_name" content="肥艺的blog">
-<meta property="og:description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性复合选择器元素显示模式背景CSS的三大特性 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记语言，主要用于设置文本内容的字">
+<meta property="og:description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性复合选择器元素显示模式背景CSS的三大特性盒子模型 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记语言，主要用于设置文本">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/1.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/2.jpg">
@@ -54,8 +54,11 @@
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/39.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/40.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/41.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/42.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/43.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/44.jpg">
 <meta property="article:published_time" content="2022-09-11T05:46:40.000Z">
-<meta property="article:modified_time" content="2022-10-09T05:20:38.747Z">
+<meta property="article:modified_time" content="2022-10-10T12:39:29.276Z">
 <meta property="article:author" content="钟艺">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/1.jpg">
@@ -130,7 +133,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处</p>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p><a href="#css%E7%AE%80%E4%BB%8B">CSS简介</a><br><a href="#css%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83">CSS语法规范</a><br><a href="#%E9%80%89%E6%8B%A9%E5%99%A8">选择器</a><br><a href="#%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E5%99%A8">基础选择器</a><br><a href="#%E5%AD%97%E4%BD%93%E5%B1%9E%E6%80%A7">字体属性</a><br><a href="#%E6%96%87%E6%9C%AC%E5%B1%9E%E6%80%A7">文本属性</a><br><a href="#%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8">复合选择器</a><br><a href="#%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F">元素显示模式</a><br><a href="#%E8%83%8C%E6%99%AF">背景</a><br><a href="#css%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7">CSS的三大特性</a></p>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p><a href="#css%E7%AE%80%E4%BB%8B">CSS简介</a><br><a href="#css%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83">CSS语法规范</a><br><a href="#%E9%80%89%E6%8B%A9%E5%99%A8">选择器</a><br><a href="#%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E5%99%A8">基础选择器</a><br><a href="#%E5%AD%97%E4%BD%93%E5%B1%9E%E6%80%A7">字体属性</a><br><a href="#%E6%96%87%E6%9C%AC%E5%B1%9E%E6%80%A7">文本属性</a><br><a href="#%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8">复合选择器</a><br><a href="#%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F">元素显示模式</a><br><a href="#%E8%83%8C%E6%99%AF">背景</a><br><a href="#css%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7">CSS的三大特性</a><br><a href="#%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B">盒子模型</a></p>
 <h2 id="css简介"><a href="#css简介" class="headerlink" title="css简介"></a>css简介</h2><p>因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记语言，主要用于设置文本内容的字体大小，图片宽高，以及版面布局的外观显示样式等等等等。</p>
 <h2 id="css语法规范"><a href="#css语法规范" class="headerlink" title="css语法规范"></a>css语法规范</h2><p>构成：选择器+{属性：值；+属性：值：…..}<br>CSS需要写在head内的style(自己创建)中<br>例子：<br><code>&lt;style&gt;</code><br>  <code>p &#123;</code><br>    <code>color: red;</code><br>    <code>font-size: 12px;</code><br>  <code>&#125;</code><br><code>&lt;/style&gt;</code></p>
 <p>示例：<img src="/2022/09/11/my-fourthblog/1.jpg" alt="示例" title="示例"></p>
@@ -298,11 +301,72 @@
 <p>他们的权值依次是：0.0.0.0，0.0.0.1，0.0.1.0，0.1.0.0，1.0.0.0，无穷</p>
 <p>注意：css的权值相加不存在进位，且继承的样式无论原来权值多高，继承以后都是0.0.0.0</p>
 <p>比如：<br><code>body&#123;color:green!important&#125;</code><br><code>.n1 .n2 .n3 (省略100个) &#123;color：red&#125;</code><br><code>.n1 .n2 .n3 (省略100个) &#123;color：black!important&#125;</code><br>100个.n的类权值相加以后就是0.0.100.0,并且最终样式是black</p>
+<h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><p><a href="#%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%E7%BB%84%E6%88%90">盒子模型组成</a><br><a href="#%E8%BE%B9%E6%A1%86">边框</a><br><a href="#%E5%86%85%E8%BE%B9%E8%B7%9D">内边距</a><br><a href="#%E5%A4%96%E8%BE%B9%E8%B7%9D">外边距</a><br><a href="#%E5%A4%96%E8%BE%B9%E8%B7%9D%E5%90%88%E5%B9%B6">外边距合并</a><br><a href="#%E6%B8%85%E9%99%A4%E5%86%85%E5%A4%96%E8%BE%B9%E8%B7%9D">清除内外边距</a></p>
+<h3 id="盒子模型组成"><a href="#盒子模型组成" class="headerlink" title="盒子模型组成"></a>盒子模型组成</h3><p>网页组成的本质可以看成一个个盒子的组成。</p>
+<p>盒子模型由四部分组成：</p>
+<ol>
+<li>border边距</li>
+<li>content内容</li>
+<li>padding内边距</li>
+<li>margin外边距</li>
+</ol>
+<h3 id="边框"><a href="#边框" class="headerlink" title="边框"></a>边框</h3><ol>
+<li>border-width(边框粗细)</li>
+<li>border-style(边框形式-常用：none无，dotted虚点，dashed虚线，solid实线)</li>
+<li>border-color(边框颜色)</li>
+</ol>
+<p>示例：<img src="/2022/09/11/my-fourthblog/42.jpg" alt="示例" title="示例"></p>
+<p>边框复合写法：没有顺序，空格隔开</p>
+<p>注意：</p>
+<ol>
+<li>边框是会重叠的，所以两个边框和在一起可能会变粗，因此我们可以使用<code>border-collapse：collapse</code>使两个边框合并，粗细不变</li>
+<li>边框会影响盒子，表格的大小</li>
+</ol>
+<h3 id="内边距"><a href="#内边距" class="headerlink" title="内边距"></a>内边距</h3><p>padding用于设置盒子的内边距，即边框与内容之间的距离</p>
+<ol>
+<li>padding-left(左内边距)</li>
+<li>padding-right(右内边距)</li>
+<li>padding-top(上内边距)</li>
+<li>padding-bottom(下内边距)</li>
+</ol>
+<p>示例：<img src="/2022/09/11/my-fourthblog/43.jpg" alt="示例" title="示例"></p>
+<p>内边距的复合写法：</p>
+<ol>
+<li>padding：写一个(5px)–代表上下左右都是5px</li>
+<li>padding：写两个(5px和10px)–代表上下5px，左右10px</li>
+<li>padding：写三个(5px和10px和20px)–代表上5px，左右10px，下20px</li>
+<li>padding：写四个(5px和10px和20px和30px)–代表上5px，右10px，左20px，下30px</li>
+</ol>
+<p>注意：</p>
+<ol>
+<li>padding也会影响盒子的大小</li>
+<li>如果盒子内的盒子设置了宽，那么设置padding可能会撑开盒子，没有设置的话就不会撑开</li>
+</ol>
+<h3 id="外边距"><a href="#外边距" class="headerlink" title="外边距"></a>外边距</h3><p>margin用于设置盒子的外边距，即盒子与盒子之间的距离</p>
+<ol>
+<li>margin-left(左外边距)</li>
+<li>margin-right(右外边距)</li>
+<li>margin-top(上外边距)</li>
+<li>margin-bottom(下外边距)</li>
+</ol>
+<p>示例：<img src="/2022/09/11/my-fourthblog/44.jpg" alt="示例" title="示例"></p>
+<p>外边距典型应用：盒子水平居中。<br>写法：</p>
+<ol>
+<li>盒子必须有设置宽度</li>
+<li>盒子左右外边距设置成auto：margin：100 auto</li>
+</ol>
+<h3 id="外边距合并"><a href="#外边距合并" class="headerlink" title="外边距合并"></a>外边距合并</h3><ol>
+<li>相邻块元素垂直外边距合并</li>
+<li>嵌套块元素垂直外边距塌陷</li>
+</ol>
+<p>相邻外边距合并：上下两个相邻外边距相遇时，下边和上边距会选取其中最大的边距作为他们之间的边距</p>
+<p>嵌套外边距合并：父元素有外边距，儿子元素也有外边距，此时父元素会塌陷向大的外边距。解决方法：父元素添加 overflow：hidden</p>
+<h3 id="清除内外边距"><a href="#清除内外边距" class="headerlink" title="清除内外边距"></a>清除内外边距</h3><p>网页元素代码有些会自带不同的盒子元素，在最开始的时候最好清除一下内外边距。解决方法：<code>*&#123;padding:0;margin:0;&#125;</code></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cl90wd8q50001oo5rdahef15o" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cl92rhdr50001ok5rfi34f8mi" class="article-share-link">Share</a>
       
       
     </footer>
