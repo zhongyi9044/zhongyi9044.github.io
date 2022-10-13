@@ -57,8 +57,16 @@
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/42.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/43.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/44.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/45.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/46.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/47.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/51.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/48.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/49.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/50.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/52.jpg">
 <meta property="article:published_time" content="2022-09-11T05:46:40.000Z">
-<meta property="article:modified_time" content="2022-10-10T12:39:29.276Z">
+<meta property="article:modified_time" content="2022-10-13T04:18:18.994Z">
 <meta property="article:author" content="钟艺">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/1.jpg">
@@ -301,7 +309,7 @@
 <p>他们的权值依次是：0.0.0.0，0.0.0.1，0.0.1.0，0.1.0.0，1.0.0.0，无穷</p>
 <p>注意：css的权值相加不存在进位，且继承的样式无论原来权值多高，继承以后都是0.0.0.0</p>
 <p>比如：<br><code>body&#123;color:green!important&#125;</code><br><code>.n1 .n2 .n3 (省略100个) &#123;color：red&#125;</code><br><code>.n1 .n2 .n3 (省略100个) &#123;color：black!important&#125;</code><br>100个.n的类权值相加以后就是0.0.100.0,并且最终样式是black</p>
-<h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><p><a href="#%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%E7%BB%84%E6%88%90">盒子模型组成</a><br><a href="#%E8%BE%B9%E6%A1%86">边框</a><br><a href="#%E5%86%85%E8%BE%B9%E8%B7%9D">内边距</a><br><a href="#%E5%A4%96%E8%BE%B9%E8%B7%9D">外边距</a><br><a href="#%E5%A4%96%E8%BE%B9%E8%B7%9D%E5%90%88%E5%B9%B6">外边距合并</a><br><a href="#%E6%B8%85%E9%99%A4%E5%86%85%E5%A4%96%E8%BE%B9%E8%B7%9D">清除内外边距</a></p>
+<h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><p><a href="#%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%E7%BB%84%E6%88%90">盒子模型组成</a><br><a href="#%E8%BE%B9%E6%A1%86">边框</a><br><a href="#%E5%86%85%E8%BE%B9%E8%B7%9D">内边距</a><br><a href="#%E5%A4%96%E8%BE%B9%E8%B7%9D">外边距</a><br><a href="#%E5%A4%96%E8%BE%B9%E8%B7%9D%E5%90%88%E5%B9%B6">外边距合并</a><br><a href="#%E6%B8%85%E9%99%A4%E5%86%85%E5%A4%96%E8%BE%B9%E8%B7%9D">清除内外边距</a><br><a href="#%E5%9C%86%E8%A7%92%E8%BE%B9%E6%A1%86">圆角边框</a><br><a href="#%E7%9B%92%E5%AD%90%E9%98%B4%E5%BD%B1">盒子阴影</a><br><a href="#%E6%96%87%E5%AD%97%E9%98%B4%E5%BD%B1">文字阴影</a><br><a href="#%E6%B5%AE%E5%8A%A8">浮动</a><br><a href="#%E5%AE%9A%E4%BD%8D">定位</a></p>
 <h3 id="盒子模型组成"><a href="#盒子模型组成" class="headerlink" title="盒子模型组成"></a>盒子模型组成</h3><p>网页组成的本质可以看成一个个盒子的组成。</p>
 <p>盒子模型由四部分组成：</p>
 <ol>
@@ -362,11 +370,56 @@
 <p>相邻外边距合并：上下两个相邻外边距相遇时，下边和上边距会选取其中最大的边距作为他们之间的边距</p>
 <p>嵌套外边距合并：父元素有外边距，儿子元素也有外边距，此时父元素会塌陷向大的外边距。解决方法：父元素添加 overflow：hidden</p>
 <h3 id="清除内外边距"><a href="#清除内外边距" class="headerlink" title="清除内外边距"></a>清除内外边距</h3><p>网页元素代码有些会自带不同的盒子元素，在最开始的时候最好清除一下内外边距。解决方法：<code>*&#123;padding:0;margin:0;&#125;</code></p>
-
+<h3 id="圆角边框"><a href="#圆角边框" class="headerlink" title="圆角边框"></a>圆角边框</h3><p>圆角边框可以将盒子从矩形的边角变成圆弧，甚至可以变成把正方形变成圆形</p>
+<p>格式：<code>border-radius：length;</code><br>原理：创造一个一个length半径的圆在盒子的四角边，盒子边框作为圆的切线的时候，盒子的边就变成了圆。</p>
+<p>注意：length一般可以写成百分比比如<code>50%</code>,即边的50%。写成像素则就是根据像素大小制作圆。</p>
+<p>示例：<img src="/2022/09/11/my-fourthblog/45.jpg" alt="示例" title="示例"></p>
+<p>圆角边框的简写写法(水平和垂直方向顺序不可更换)：</p>
+<ol>
+<li>border-top-left-radius左上</li>
+<li>border-top-right-radius右上</li>
+<li>border-bottom-left-radius左下</li>
+<li>border-bottom-right-radius右下</li>
+</ol>
+<h3 id="盒子阴影"><a href="#盒子阴影" class="headerlink" title="盒子阴影"></a>盒子阴影</h3><p>格式：<code>box-shadow：h-shadow v-shadow blur spread color inset</code></p>
+<ol>
+<li>h-shadow水平阴影的位置，必写</li>
+<li>v-shadow垂直阴影的位置，必写</li>
+<li>blur虚实</li>
+<li>spread阴影的大小</li>
+<li>color颜色，可透明</li>
+<li>inset将外部阴影改成内部阴影，如果不改那么这项不需要写，默认外部阴影</li>
+</ol>
+<p>示例：<img src="/2022/09/11/my-fourthblog/46.jpg" alt="示例" title="示例"></p>
+<h3 id="文字阴影"><a href="#文字阴影" class="headerlink" title="文字阴影"></a>文字阴影</h3><p>格式：<code>text-shadow：h-shadow v-shadow blur color</code></p>
+<ol>
+<li>h-shadow水平阴影的位置，必写</li>
+<li>v-shadow垂直阴影的位置，必写</li>
+<li>blur虚实</li>
+<li>color颜色，可透明</li>
+</ol>
+<p>示例：<img src="/2022/09/11/my-fourthblog/47.jpg" alt="示例" title="示例"></p>
+<h3 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h3><p>网页设计遵循三个流的结合：标准流，浮动流，定位流</p>
+<p>float属性创建浮动框，将其移动到一边，直到左边缘或者右边缘触及包含块，或者另一个浮动块的边缘</p>
+<p>为什么叫浮动：我们将电脑屏幕作为x，y轴，将我们正对电脑的方向叫z轴，浮动其实是将元素快沿着z轴浮动。</p>
+<ol>
+<li>none不浮动-示例：<img src="/2022/09/11/my-fourthblog/51.jpg" alt="示例" title="示例"></li>
+<li>left左浮动-示例：<img src="/2022/09/11/my-fourthblog/48.jpg" alt="示例" title="示例"></li>
+<li>right右浮动-示例：<img src="/2022/09/11/my-fourthblog/49.jpg" alt="示例" title="示例"></li>
+<li>左右浮动-示例：<img src="/2022/09/11/my-fourthblog/50.jpg" alt="示例" title="示例"></li>
+</ol>
+<p>浮动特性：</p>
+<ol>
+<li>脱标：脱离标准流的控制，移动到指定位置。</li>
+<li>浮动的盒子不再保留原先的位置(标准流的元素快可以钻到浮动流元素块的底下，但是浮动流不能钻入标准流的底下)-<img src="/2022/09/11/my-fourthblog/52.jpg" alt="示例" title="示例"></li>
+<li>具有行内块元素的特性(一行可以显示多个,可以控制边距宽高宽度,默认是内容的宽度)</li>
+</ol>
+<p>清除浮动：</p>
+<h3 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h3>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cl93tzy9z0001ow5r6sqg2ka2" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cl96jwj9t0001e45r89vdcmem" class="article-share-link">Share</a>
       
       
     </footer>
