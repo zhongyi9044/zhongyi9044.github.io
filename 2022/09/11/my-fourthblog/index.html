@@ -65,8 +65,10 @@
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/49.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/50.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/52.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/53.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/54.jpg">
 <meta property="article:published_time" content="2022-09-11T05:46:40.000Z">
-<meta property="article:modified_time" content="2022-10-13T04:18:18.994Z">
+<meta property="article:modified_time" content="2022-10-13T04:50:58.205Z">
 <meta property="article:author" content="钟艺">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/1.jpg">
@@ -415,11 +417,41 @@
 <li>具有行内块元素的特性(一行可以显示多个,可以控制边距宽高宽度,默认是内容的宽度)</li>
 </ol>
 <p>清除浮动：</p>
-<h3 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h3>
+<p>为什么要清楚浮动？：因为父盒子可能太小，导致内容不够装，我们希望我们有多少孩子，父亲那就有多高(孩子撑开父亲)。但是父亲盒子不给高度会导致父亲盒子的高度为0，并不会因为孩子撑开。为了解决这个问题，我们需要清除浮动。</p>
+<p>清除浮动的本质：父级元素会根据浮动的子盒子自动检测高度，父级有了高度，就不会影响其他标准流。</p>
+<ol>
+<li>额外标签法，闭合浮动<code>clear：属性值(left/right/both)-一般使用both</code></li>
+<li>父级添加overflow属性<code>overflow:hidden</code></li>
+<li>父级添加after伪元素<code>.clearfix:after&#123; content:&quot;&quot;;display:block; height:0; clear: both;visibility: hidden;  .clearfix&#123;*zoom:1;</code></li>
+<li>父级添加双伪元素<code>.clearfix:before,.clearfix:after&#123; content:&quot;&quot;;display:table; .clearfix:after &#123;clear:both;&#125; .clearfix&#123;*zoom:1;&#125;</code></li>
+</ol>
+<h3 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h3><p>使用场景：</p>
+<ol>
+<li>某个元素可以自由地在盒子内移动，并且压住其他盒子</li>
+<li>滑动窗口的时候，盒子固定</li>
+</ol>
+<p>定位组成：定位模式+边偏移</p>
+<p>定位模式：</p>
+<ol>
+<li>static 静态定位</li>
+<li>relative 相对定位</li>
+<li>absolute 绝对定位</li>
+<li>fixed 固定定位</li>
+</ol>
+<p>边偏移：</p>
+<ol>
+<li>top 距离顶部</li>
+<li>bottom 距离底部</li>
+<li>left 距离左部</li>
+<li>right 距离右部</li>
+</ol>
+<p>static静态定位：默认的定位方式，无定位的意思。</p>
+<p>relative相对定位：元素移动的时候，是相对于他的位置来说的，并且相对定位移动的盒子保留原来的位置<br>格式：<code>position：relative；</code><br><img src="/2022/09/11/my-fourthblog/53.jpg" alt="示例" title="示例"><br><img src="/2022/09/11/my-fourthblog/54.jpg" alt="示例" title="示例"></p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cl96jwj9t0001e45r89vdcmem" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cl96nktsd00017w5rafb8fsq2" class="article-share-link">Share</a>
       
       
     </footer>
