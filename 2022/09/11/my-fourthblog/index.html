@@ -7,12 +7,12 @@
   
   <title>Web前端--CSS | 肥艺的blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性复合选择器元素显示模式背景CSS的三大特性盒子模型 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记语言，主要用于设置文本">
+  <meta name="description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性复合选择器元素显示模式背景CSS的三大特性盒子模型元素显示与隐藏 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记语言，主">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Web前端--CSS">
 <meta property="og:url" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/index.html">
 <meta property="og:site_name" content="肥艺的blog">
-<meta property="og:description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性复合选择器元素显示模式背景CSS的三大特性盒子模型 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记语言，主要用于设置文本">
+<meta property="og:description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性复合选择器元素显示模式背景CSS的三大特性盒子模型元素显示与隐藏 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记语言，主">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/1.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/2.jpg">
@@ -67,8 +67,11 @@
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/52.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/53.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/54.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/55.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/56.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/57.jpg">
 <meta property="article:published_time" content="2022-09-11T05:46:40.000Z">
-<meta property="article:modified_time" content="2022-10-13T04:50:58.205Z">
+<meta property="article:modified_time" content="2022-10-13T06:01:46.257Z">
 <meta property="article:author" content="钟艺">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/1.jpg">
@@ -143,7 +146,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处</p>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p><a href="#css%E7%AE%80%E4%BB%8B">CSS简介</a><br><a href="#css%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83">CSS语法规范</a><br><a href="#%E9%80%89%E6%8B%A9%E5%99%A8">选择器</a><br><a href="#%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E5%99%A8">基础选择器</a><br><a href="#%E5%AD%97%E4%BD%93%E5%B1%9E%E6%80%A7">字体属性</a><br><a href="#%E6%96%87%E6%9C%AC%E5%B1%9E%E6%80%A7">文本属性</a><br><a href="#%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8">复合选择器</a><br><a href="#%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F">元素显示模式</a><br><a href="#%E8%83%8C%E6%99%AF">背景</a><br><a href="#css%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7">CSS的三大特性</a><br><a href="#%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B">盒子模型</a></p>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p><a href="#css%E7%AE%80%E4%BB%8B">CSS简介</a><br><a href="#css%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83">CSS语法规范</a><br><a href="#%E9%80%89%E6%8B%A9%E5%99%A8">选择器</a><br><a href="#%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E5%99%A8">基础选择器</a><br><a href="#%E5%AD%97%E4%BD%93%E5%B1%9E%E6%80%A7">字体属性</a><br><a href="#%E6%96%87%E6%9C%AC%E5%B1%9E%E6%80%A7">文本属性</a><br><a href="#%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8">复合选择器</a><br><a href="#%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F">元素显示模式</a><br><a href="#%E8%83%8C%E6%99%AF">背景</a><br><a href="#css%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7">CSS的三大特性</a><br><a href="#%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B">盒子模型</a><br><a href="#%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E4%B8%8E%E9%9A%90%E8%97%8F">元素显示与隐藏</a></p>
 <h2 id="css简介"><a href="#css简介" class="headerlink" title="css简介"></a>css简介</h2><p>因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记语言，主要用于设置文本内容的字体大小，图片宽高，以及版面布局的外观显示样式等等等等。</p>
 <h2 id="css语法规范"><a href="#css语法规范" class="headerlink" title="css语法规范"></a>css语法规范</h2><p>构成：选择器+{属性：值；+属性：值：…..}<br>CSS需要写在head内的style(自己创建)中<br>例子：<br><code>&lt;style&gt;</code><br>  <code>p &#123;</code><br>    <code>color: red;</code><br>    <code>font-size: 12px;</code><br>  <code>&#125;</code><br><code>&lt;/style&gt;</code></p>
 <p>示例：<img src="/2022/09/11/my-fourthblog/1.jpg" alt="示例" title="示例"></p>
@@ -359,6 +362,7 @@
 <li>margin-top(上外边距)</li>
 <li>margin-bottom(下外边距)</li>
 </ol>
+<p>外边距复合写法和padding一致</p>
 <p>示例：<img src="/2022/09/11/my-fourthblog/44.jpg" alt="示例" title="示例"></p>
 <p>外边距典型应用：盒子水平居中。<br>写法：</p>
 <ol>
@@ -446,12 +450,27 @@
 <li>right 距离右部</li>
 </ol>
 <p>static静态定位：默认的定位方式，无定位的意思。</p>
-<p>relative相对定位：元素移动的时候，是相对于他的位置来说的，并且相对定位移动的盒子保留原来的位置<br>格式：<code>position：relative；</code><br><img src="/2022/09/11/my-fourthblog/53.jpg" alt="示例" title="示例"><br><img src="/2022/09/11/my-fourthblog/54.jpg" alt="示例" title="示例"></p>
+<p>relative相对定位：元素移动的时候，是相对于他的位置来说的，并且如果是标准流相对定位移动的盒子会保留原来的位置，即成为脱标(脱离标准流)<br>格式：<code>position：relative；</code><br><img src="/2022/09/11/my-fourthblog/53.jpg" alt="示例" title="示例"><br><img src="/2022/09/11/my-fourthblog/54.jpg" alt="示例" title="示例"></p>
+<p>absolute绝对定位：如果没有祖先元素，或者祖先元素没有定位，那么以浏览器为准定位。如果祖先元素有定位，则以最近的有定位的祖先元素为参考点。绝对定位不在占有远来的位置，即不脱标<br>格式：<code>position：absolute；</code><br><img src="/2022/09/11/my-fourthblog/55.jpg" alt="示例" title="示例"></p>
+<p>子绝父相：子元素用绝对定位，父元素用相对定位。父盒子占用位置，子盒子不占用位置随便跑。</p>
+<p>fixed固定定位：以浏览器可视窗口作为参照移动的元素，并且固定定位不占用原来的位置<br>格式：<code>position：fixed；</code><br>小技巧：使固定定位的元素贴着主板盒子。使用fixed和margin<img src="/2022/09/11/my-fourthblog/56.jpg" alt="示例" title="示例"></p>
+<p>定位的叠放顺序：<code>z-index：数字--控制盒子的前后顺序，数越大越靠上</code></p>
+<p>绝对定位盒子居中(绝对定位margin：0 auto方式失效)：首先left：50%，其次margin-left自身一半的宽度</p>
+<h2 id="元素显示与隐藏"><a href="#元素显示与隐藏" class="headerlink" title="元素显示与隐藏"></a>元素显示与隐藏</h2><ol>
+<li>display:none–隐藏对象(不再占有原来的位置)</li>
+<li>display:block–除了转换为块元素以外，还有显示元素的意思</li>
+<li>visibility：visible–元素可视</li>
+<li>visibility：hidden–元素隐藏(保留原来的位置)</li>
+<li>overflow：visible–对溢出的内容不隐藏也不添加滚动条</li>
+<li>overflow：hidden–对溢出的内容隐藏</li>
+<li>overflow：scroll–不管超出内容与否，都添加滚动条</li>
+<li>overflow：auto–超出显示滚动条，不超出不显示<br><img src="/2022/09/11/my-fourthblog/57.jpg" alt="示例" title="示例"></li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cl96nktsd00017w5rafb8fsq2" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cl96nlggi0000c85r8cw1bgy2" class="article-share-link">Share</a>
       
       
     </footer>
