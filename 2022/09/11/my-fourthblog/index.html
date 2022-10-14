@@ -7,12 +7,12 @@
   
   <title>Web前端--CSS | 肥艺的blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性复合选择器元素显示模式背景CSS的三大特性盒子模型元素显示与隐藏 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记语言，主">
+  <meta name="description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性复合选择器元素显示模式背景CSS的三大特性盒子模型元素显示与隐藏高级设置 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Web前端--CSS">
 <meta property="og:url" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/index.html">
 <meta property="og:site_name" content="肥艺的blog">
-<meta property="og:description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性复合选择器元素显示模式背景CSS的三大特性盒子模型元素显示与隐藏 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记语言，主">
+<meta property="og:description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性复合选择器元素显示模式背景CSS的三大特性盒子模型元素显示与隐藏高级设置 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/1.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/2.jpg">
@@ -70,8 +70,10 @@
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/55.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/56.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/57.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/58.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/59.jpg">
 <meta property="article:published_time" content="2022-09-11T05:46:40.000Z">
-<meta property="article:modified_time" content="2022-10-13T06:01:46.257Z">
+<meta property="article:modified_time" content="2022-10-14T13:55:06.212Z">
 <meta property="article:author" content="钟艺">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/1.jpg">
@@ -146,7 +148,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处</p>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p><a href="#css%E7%AE%80%E4%BB%8B">CSS简介</a><br><a href="#css%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83">CSS语法规范</a><br><a href="#%E9%80%89%E6%8B%A9%E5%99%A8">选择器</a><br><a href="#%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E5%99%A8">基础选择器</a><br><a href="#%E5%AD%97%E4%BD%93%E5%B1%9E%E6%80%A7">字体属性</a><br><a href="#%E6%96%87%E6%9C%AC%E5%B1%9E%E6%80%A7">文本属性</a><br><a href="#%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8">复合选择器</a><br><a href="#%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F">元素显示模式</a><br><a href="#%E8%83%8C%E6%99%AF">背景</a><br><a href="#css%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7">CSS的三大特性</a><br><a href="#%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B">盒子模型</a><br><a href="#%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E4%B8%8E%E9%9A%90%E8%97%8F">元素显示与隐藏</a></p>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p><a href="#css%E7%AE%80%E4%BB%8B">CSS简介</a><br><a href="#css%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83">CSS语法规范</a><br><a href="#%E9%80%89%E6%8B%A9%E5%99%A8">选择器</a><br><a href="#%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E5%99%A8">基础选择器</a><br><a href="#%E5%AD%97%E4%BD%93%E5%B1%9E%E6%80%A7">字体属性</a><br><a href="#%E6%96%87%E6%9C%AC%E5%B1%9E%E6%80%A7">文本属性</a><br><a href="#%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8">复合选择器</a><br><a href="#%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F">元素显示模式</a><br><a href="#%E8%83%8C%E6%99%AF">背景</a><br><a href="#css%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7">CSS的三大特性</a><br><a href="#%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B">盒子模型</a><br><a href="#%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E4%B8%8E%E9%9A%90%E8%97%8F">元素显示与隐藏</a><br><a href="#%E9%AB%98%E7%BA%A7%E8%AE%BE%E7%BD%AE">高级设置</a></p>
 <h2 id="css简介"><a href="#css简介" class="headerlink" title="css简介"></a>css简介</h2><p>因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记语言，主要用于设置文本内容的字体大小，图片宽高，以及版面布局的外观显示样式等等等等。</p>
 <h2 id="css语法规范"><a href="#css语法规范" class="headerlink" title="css语法规范"></a>css语法规范</h2><p>构成：选择器+{属性：值；+属性：值：…..}<br>CSS需要写在head内的style(自己创建)中<br>例子：<br><code>&lt;style&gt;</code><br>  <code>p &#123;</code><br>    <code>color: red;</code><br>    <code>font-size: 12px;</code><br>  <code>&#125;</code><br><code>&lt;/style&gt;</code></p>
 <p>示例：<img src="/2022/09/11/my-fourthblog/1.jpg" alt="示例" title="示例"></p>
@@ -466,11 +468,52 @@
 <li>overflow：scroll–不管超出内容与否，都添加滚动条</li>
 <li>overflow：auto–超出显示滚动条，不超出不显示<br><img src="/2022/09/11/my-fourthblog/57.jpg" alt="示例" title="示例"></li>
 </ol>
+<h2 id="高级设置"><a href="#高级设置" class="headerlink" title="高级设置"></a>高级设置</h2><p><a href="#%E7%B2%BE%E7%81%B5%E5%9B%BE">精灵图</a><br><a href="#%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87">字体图标</a><br><a href="#css%E4%B8%89%E8%A7%92">CSS三角</a><br><a href="#css%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2%E6%A0%B7%E5%BC%8F">CSS用户界面样式</a><br><a href="#vertical-align%E5%BA%94%E7%94%A8">vertical-align应用</a><br><a href="#%E6%BA%A2%E5%87%BA%E7%9A%84%E6%96%87%E5%AD%97%E7%9C%81%E7%95%A5%E5%8F%B7%E6%98%BE%E7%A4%BA">溢出的文字省略号显示</a><br><a href="#%E5%B8%B8%E8%A7%81%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7">常见布局技巧</a></p>
+<h3 id="精灵图"><a href="#精灵图" class="headerlink" title="精灵图"></a>精灵图</h3><p>教程观看前言视频的p251~254</p>
+<h3 id="字体图标"><a href="#字体图标" class="headerlink" title="字体图标"></a>字体图标</h3><p>教程观看前言视频的p255~258</p>
+<h3 id="css三角"><a href="#css三角" class="headerlink" title="css三角"></a>css三角</h3><p>当盒子元素不给予高度和宽度，将他的上下左右添加上不同颜色的边框border时候，就会显示出四个三角形形成的正方形。所以我们只需要选择三个方向透明，就能得到一个三角形。<br><img src="/2022/09/11/my-fourthblog/58.jpg" alt="示例" title="示例"></p>
+<h3 id="css用户界面样式"><a href="#css用户界面样式" class="headerlink" title="css用户界面样式"></a>css用户界面样式</h3><p>鼠标样式(鼠标移动到对象的时候采用何种光标形状)</p>
+<ol>
+<li>cursor：defaul 小白箭头形状，默认</li>
+<li>cursor：pointer 小手模样</li>
+<li>cursor：move 移动样式，十字架装有四个箭头的形状</li>
+<li>cursor：text 文本样式，小I形状</li>
+<li>cursor：not-allowed 禁止样式，禁止标志</li>
+</ol>
+<p>轮廓线</p>
+<ol>
+<li>input{outline：none} 给表单添加此样式，可以去掉轮廓蓝色边框</li>
+<li>textarea{resize：none} 给文本域添加，使得文本域右下角不可拖拽</li>
+</ol>
+<h3 id="vertical-align应用"><a href="#vertical-align应用" class="headerlink" title="vertical-align应用"></a>vertical-align应用</h3><p>实现行内块和文字的垂直居中对齐(常用于行内或者行内块元素)</p>
+<ol>
+<li>vertical-align：baseline 默认，元素位置在父元素的基础线上</li>
+<li>vertical-align：top 把元素的顶端与行中最高元素对齐</li>
+<li>vertical-align：middle 把元素在父元素中间</li>
+<li>vertical-align：bottom 把元素的底端与行中最低元素对齐</li>
+</ol>
+<p>由于行内块元素会和文字基线对齐，所以总会在底部留白。<br>解决方法：图片或者文字添加：vertical-align：middle/top/bottom</p>
+<h3 id="溢出的文字省略号显示"><a href="#溢出的文字省略号显示" class="headerlink" title="溢出的文字省略号显示"></a>溢出的文字省略号显示</h3><p>单行文本溢出显示省略号(三个都得使用)</p>
+<ol>
+<li>white-space：nowrap(强制一行内显示文本)</li>
+<li>overflow:hidden(超出部分隐藏)</li>
+<li>text-overflow:ellipsis(用省略号代替超出部分)</li>
+</ol>
+<p><img src="/2022/09/11/my-fourthblog/59.jpg" alt="示例" title="示例"></p>
+<p>单行文本溢出显示省略号(五个都得使用，有些浏览器不支持)</p>
+<ol>
+<li>overflow:hidden</li>
+<li>text-overflow:ellipsis</li>
+<li>display：-webkit-box 弹性伸缩盒子模型显示</li>
+<li>-webkit-line-clamp：数量 限制一个块元素现实的文本行数</li>
+<li>-webkit-box-orient：vertical 设置或者检索伸缩盒子对象的子元素排列方式</li>
+</ol>
+<h3 id="常见布局技巧"><a href="#常见布局技巧" class="headerlink" title="常见布局技巧"></a>常见布局技巧</h3><p>教程观看前言视频的p267~272</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cl96nlggi0000c85r8cw1bgy2" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cl98jy4qi0001ik5rf0fm4w77" class="article-share-link">Share</a>
       
       
     </footer>
