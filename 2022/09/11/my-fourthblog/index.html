@@ -7,12 +7,12 @@
   
   <title>Web前端--CSS | 肥艺的blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性复合选择器元素显示模式背景CSS的三大特性盒子模型元素显示与隐藏高级设置 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记">
+  <meta name="description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性复合选择器元素显示模式背景CSS的三大特性盒子模型元素显示与隐藏高级设置CSS新增 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Web前端--CSS">
 <meta property="og:url" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/index.html">
 <meta property="og:site_name" content="肥艺的blog">
-<meta property="og:description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性复合选择器元素显示模式背景CSS的三大特性盒子模型元素显示与隐藏高级设置 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记">
+<meta property="og:description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性复合选择器元素显示模式背景CSS的三大特性盒子模型元素显示与隐藏高级设置CSS新增 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/1.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/2.jpg">
@@ -72,8 +72,11 @@
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/57.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/58.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/59.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/60.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/61.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/62.jpg">
 <meta property="article:published_time" content="2022-09-11T05:46:40.000Z">
-<meta property="article:modified_time" content="2022-10-14T13:55:06.212Z">
+<meta property="article:modified_time" content="2022-10-17T13:00:20.841Z">
 <meta property="article:author" content="钟艺">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/1.jpg">
@@ -148,7 +151,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处</p>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p><a href="#css%E7%AE%80%E4%BB%8B">CSS简介</a><br><a href="#css%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83">CSS语法规范</a><br><a href="#%E9%80%89%E6%8B%A9%E5%99%A8">选择器</a><br><a href="#%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E5%99%A8">基础选择器</a><br><a href="#%E5%AD%97%E4%BD%93%E5%B1%9E%E6%80%A7">字体属性</a><br><a href="#%E6%96%87%E6%9C%AC%E5%B1%9E%E6%80%A7">文本属性</a><br><a href="#%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8">复合选择器</a><br><a href="#%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F">元素显示模式</a><br><a href="#%E8%83%8C%E6%99%AF">背景</a><br><a href="#css%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7">CSS的三大特性</a><br><a href="#%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B">盒子模型</a><br><a href="#%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E4%B8%8E%E9%9A%90%E8%97%8F">元素显示与隐藏</a><br><a href="#%E9%AB%98%E7%BA%A7%E8%AE%BE%E7%BD%AE">高级设置</a></p>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p><a href="#css%E7%AE%80%E4%BB%8B">CSS简介</a><br><a href="#css%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83">CSS语法规范</a><br><a href="#%E9%80%89%E6%8B%A9%E5%99%A8">选择器</a><br><a href="#%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E5%99%A8">基础选择器</a><br><a href="#%E5%AD%97%E4%BD%93%E5%B1%9E%E6%80%A7">字体属性</a><br><a href="#%E6%96%87%E6%9C%AC%E5%B1%9E%E6%80%A7">文本属性</a><br><a href="#%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8">复合选择器</a><br><a href="#%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F">元素显示模式</a><br><a href="#%E8%83%8C%E6%99%AF">背景</a><br><a href="#css%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7">CSS的三大特性</a><br><a href="#%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B">盒子模型</a><br><a href="#%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E4%B8%8E%E9%9A%90%E8%97%8F">元素显示与隐藏</a><br><a href="#%E9%AB%98%E7%BA%A7%E8%AE%BE%E7%BD%AE">高级设置</a><br><a href="#css%E6%96%B0%E5%A2%9E">CSS新增</a></p>
 <h2 id="css简介"><a href="#css简介" class="headerlink" title="css简介"></a>css简介</h2><p>因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记语言，主要用于设置文本内容的字体大小，图片宽高，以及版面布局的外观显示样式等等等等。</p>
 <h2 id="css语法规范"><a href="#css语法规范" class="headerlink" title="css语法规范"></a>css语法规范</h2><p>构成：选择器+{属性：值；+属性：值：…..}<br>CSS需要写在head内的style(自己创建)中<br>例子：<br><code>&lt;style&gt;</code><br>  <code>p &#123;</code><br>    <code>color: red;</code><br>    <code>font-size: 12px;</code><br>  <code>&#125;</code><br><code>&lt;/style&gt;</code></p>
 <p>示例：<img src="/2022/09/11/my-fourthblog/1.jpg" alt="示例" title="示例"></p>
@@ -509,11 +512,57 @@
 <li>-webkit-box-orient：vertical 设置或者检索伸缩盒子对象的子元素排列方式</li>
 </ol>
 <h3 id="常见布局技巧"><a href="#常见布局技巧" class="headerlink" title="常见布局技巧"></a>常见布局技巧</h3><p>教程观看前言视频的p267~272</p>
+<h2 id="CSS新增"><a href="#CSS新增" class="headerlink" title="CSS新增"></a>CSS新增</h2><p><a href="#%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8">属性选择器</a><br><a href="#%E7%BB%93%E6%9E%84%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8">结构伪类选择器</a><br><a href="#%E4%BC%AA%E5%85%83%E7%B4%A0%E9%80%89%E6%8B%A9%E5%99%A8">伪元素选择器</a><br><a href="#border-box">border-box</a><br><a href="#%E5%9B%BE%E7%89%87%E6%A8%A1%E7%B3%8A%E5%A4%84%E7%90%86">图片模糊处理</a><br><a href="#calc">calc</a><br><a href="#%E8%BF%87%E6%B8%A1">过渡</a></p>
+<h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><ol>
+<li>E[att]-选择有att属性的E元素</li>
+<li>E[att=”val”]-选择att属性值等于val的E元素</li>
+<li>E[att^=”val”]-选择有att属性，并且以val开头的E元素</li>
+<li>E[att$=”val”]-选择有att属性，并且以val结尾的E元素</li>
+<li>E[att*=”val”]-选择有att属性，并且属性值有val的E元素<br><img src="/2022/09/11/my-fourthblog/60.jpg" alt="示例" title="示例"></li>
+</ol>
+<h3 id="结构伪类选择器"><a href="#结构伪类选择器" class="headerlink" title="结构伪类选择器"></a>结构伪类选择器</h3><ol>
+<li>E1 E2:first-child匹配父元素E2的第一个子元素E</li>
+<li>E1 E2:last-child匹配父元素E2的最后一个子元素E</li>
+<li>E1 E2:nth-child(n)匹配父元素E2的第n个子元素E,n从1开始计算</li>
+</ol>
+<p><img src="/2022/09/11/my-fourthblog/61.jpg" alt="示例" title="示例"></p>
+<ol>
+<li>E:first-of-type指定类型E的第一个</li>
+<li>E:last-of-type指定类型E的最后一个</li>
+<li>E:nth-of-type(n)指定类型E的第n个</li>
+</ol>
+<p><img src="/2022/09/11/my-fourthblog/62.jpg" alt="示例" title="示例"></p>
+<p>注意：两种结构伪类选择器的不同：无of型，给所有父元素的子元素从1开始标号，先找到特定序号再匹配元素是否是E2.有of型，先找到E，再匹配序号</p>
+<h3 id="伪元素选择器"><a href="#伪元素选择器" class="headerlink" title="伪元素选择器"></a>伪元素选择器</h3><ol>
+<li>::before在元素前方插入内容，必须要有内容，但内容可以为空</li>
+<li>::after在元素后方插入内容，必须要有内容，但内容可以为空</li>
+</ol>
+<p>常用于：</p>
+<ol>
+<li>鼠标聚焦于图片，图片覆盖透明层</li>
+<li>清除浮动</li>
+</ol>
+<h3 id="border-box"><a href="#border-box" class="headerlink" title="border-box"></a>border-box</h3><p>我们可以通过box-sizing指定盒子模型。有两个值：content-box，border-box。两个值有不同的计算盒子大小的方式</p>
+<ol>
+<li>content-box：盒子长或宽=width/height+padding+border</li>
+<li>boredr-box：盒子长或宽=width/height</li>
+</ol>
+<h3 id="图片模糊处理"><a href="#图片模糊处理" class="headerlink" title="图片模糊处理"></a>图片模糊处理</h3><p>filter：blur(Spx);Spx越大，越模糊</p>
+<h3 id="calc"><a href="#calc" class="headerlink" title="calc"></a>calc</h3><p>calc用于计算长度值</p>
+<p>可以利用于高度：height：calc(100px - 80px)<br>可以利用于宽度：width：calc(100px - 80px)</p>
+<p>注意：还可以使用加减乘除，并且注意空格的存在</p>
+<h3 id="过渡"><a href="#过渡" class="headerlink" title="过渡"></a>过渡</h3><p>translation：过度的属性(必写) 花费时间(必写) 运动曲线(可不写) 何时开始(可不写)</p>
+<ol>
+<li>属性：想要变化的css值，宽度高度背景颜色等等，如果都想变化那就写all</li>
+<li>必须写单位，单位是s</li>
+<li>默认是ease</li>
+<li>必须写单位，可以设置延迟出发时间，可以省略默认0</li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cl9b0640n0001ag5rbnbdg4yt" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cl9csb9vg0001fk5r9ot51gqt" class="article-share-link">Share</a>
       
       
     </footer>
