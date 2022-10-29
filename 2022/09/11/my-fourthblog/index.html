@@ -7,12 +7,12 @@
   
   <title>Web前端--CSS | 肥艺的blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性复合选择器元素显示模式背景CSS的三大特性盒子模型元素显示与隐藏高级设置CSS新增2D转换 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师">
+  <meta name="description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性复合选择器元素显示模式背景CSS的三大特性盒子模型元素显示与隐藏高级设置CSS新增2D转换CSS3动画 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Web前端--CSS">
 <meta property="og:url" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/index.html">
 <meta property="og:site_name" content="肥艺的blog">
-<meta property="og:description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性复合选择器元素显示模式背景CSS的三大特性盒子模型元素显示与隐藏高级设置CSS新增2D转换 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师">
+<meta property="og:description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录CSS简介CSS语法规范选择器基础选择器字体属性文本属性复合选择器元素显示模式背景CSS的三大特性盒子模型元素显示与隐藏高级设置CSS新增2D转换CSS3动画 css简介因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/1.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/2.jpg">
@@ -76,7 +76,7 @@
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/61.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/62.jpg">
 <meta property="article:published_time" content="2022-09-11T05:46:40.000Z">
-<meta property="article:modified_time" content="2022-10-28T12:34:22.552Z">
+<meta property="article:modified_time" content="2022-10-29T06:46:30.997Z">
 <meta property="article:author" content="钟艺">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/1.jpg">
@@ -151,7 +151,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这是我学习Web前端HTML的博客，学习资源是bilibili的bv14j4114768号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处</p>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p><a href="#css%E7%AE%80%E4%BB%8B">CSS简介</a><br><a href="#css%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83">CSS语法规范</a><br><a href="#%E9%80%89%E6%8B%A9%E5%99%A8">选择器</a><br><a href="#%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E5%99%A8">基础选择器</a><br><a href="#%E5%AD%97%E4%BD%93%E5%B1%9E%E6%80%A7">字体属性</a><br><a href="#%E6%96%87%E6%9C%AC%E5%B1%9E%E6%80%A7">文本属性</a><br><a href="#%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8">复合选择器</a><br><a href="#%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F">元素显示模式</a><br><a href="#%E8%83%8C%E6%99%AF">背景</a><br><a href="#CSS%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7">CSS的三大特性</a><br><a href="#%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B">盒子模型</a><br><a href="#%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E4%B8%8E%E9%9A%90%E8%97%8F">元素显示与隐藏</a><br><a href="#%E9%AB%98%E7%BA%A7%E8%AE%BE%E7%BD%AE">高级设置</a><br><a href="#CSS%E6%96%B0%E5%A2%9E">CSS新增</a><br><a href="#2D%E8%BD%AC%E6%8D%A2">2D转换</a></p>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p><a href="#css%E7%AE%80%E4%BB%8B">CSS简介</a><br><a href="#css%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83">CSS语法规范</a><br><a href="#%E9%80%89%E6%8B%A9%E5%99%A8">选择器</a><br><a href="#%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E5%99%A8">基础选择器</a><br><a href="#%E5%AD%97%E4%BD%93%E5%B1%9E%E6%80%A7">字体属性</a><br><a href="#%E6%96%87%E6%9C%AC%E5%B1%9E%E6%80%A7">文本属性</a><br><a href="#%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8">复合选择器</a><br><a href="#%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F">元素显示模式</a><br><a href="#%E8%83%8C%E6%99%AF">背景</a><br><a href="#CSS%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7">CSS的三大特性</a><br><a href="#%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B">盒子模型</a><br><a href="#%E5%85%83%E7%B4%A0%E6%98%BE%E7%A4%BA%E4%B8%8E%E9%9A%90%E8%97%8F">元素显示与隐藏</a><br><a href="#%E9%AB%98%E7%BA%A7%E8%AE%BE%E7%BD%AE">高级设置</a><br><a href="#CSS%E6%96%B0%E5%A2%9E">CSS新增</a><br><a href="#2D%E8%BD%AC%E6%8D%A2">2D转换</a><br><a href="#CSS3%E5%8A%A8%E7%94%BB">CSS3动画</a></p>
 <h2 id="css简介"><a href="#css简介" class="headerlink" title="css简介"></a>css简介</h2><p>因为HTML仅仅只在乎文本内容的含义，而不够精美，CSS就是一个美容师。CSS是一种标记语言，主要用于设置文本内容的字体大小，图片宽高，以及版面布局的外观显示样式等等等等。</p>
 <h2 id="css语法规范"><a href="#css语法规范" class="headerlink" title="css语法规范"></a>css语法规范</h2><p>构成：选择器+{属性：值；+属性：值：…..}<br>CSS需要写在head内的style(自己创建)中<br>例子：<br><code>&lt;style&gt;</code><br>  <code>p &#123;</code><br>    <code>color: red;</code><br>    <code>font-size: 12px;</code><br>  <code>&#125;</code><br><code>&lt;/style&gt;</code></p>
 <p>示例：<img src="/2022/09/11/my-fourthblog/1.jpg" alt="示例" title="示例"></p>
@@ -587,11 +587,41 @@
 </ol>
 <h3 id="2D转换综合写法以及顺序"><a href="#2D转换综合写法以及顺序" class="headerlink" title="2D转换综合写法以及顺序"></a>2D转换综合写法以及顺序</h3><p>格式：<code>transform:translate() rotate() scale()....</code></p>
 <p>注意：顺序会影响2D转换的效果，当有位移属性的时候，一定要把位移属性放在最前面</p>
+<h2 id="css3动画"><a href="#css3动画" class="headerlink" title="css3动画"></a>css3动画</h2><p><a href="#%E5%8A%A8%E7%94%BB%E7%9A%84%E4%BD%BF%E7%94%A8">动画的使用</a><br><a href="#%E5%8A%A8%E7%94%BB%E5%B8%B8%E8%A7%81%E5%B1%9E%E6%80%A7">动画常见属性</a><br><a href="#%E5%8A%A8%E7%94%BB%E7%AE%80%E5%86%99">动画简写</a><br><a href="#step%E6%AD%A5%E9%95%BF">step步长</a></p>
+<h3 id="动画的使用"><a href="#动画的使用" class="headerlink" title="动画的使用"></a>动画的使用</h3><ol>
+<li>定义动画<code>@keyframes+名字</code></li>
+<li>调用动画<code>animation-name:名字</code>+<code>animationduration:时间</code></li>
+<li>动画序列：一个动画可以看做一段时间从0%持续到100%的过程，因此我们在定义动画内部，可以设置某个时间点的样式，比如：<code>0%&#123;transform:traslate(100px)&#125; 50%&#123;transform:traslate(0,100px&#125;</code></li>
+</ol>
+<h3 id="动画常见属性"><a href="#动画常见属性" class="headerlink" title="动画常见属性"></a>动画常见属性</h3><ol>
+<li>@keyframes定义动画</li>
+<li>animation所有动画属性的简写，除了animation-play-state</li>
+<li>animation-name规定动画名称，必须的</li>
+<li>animation-duration规定动画完成一个周期花费的时间，默认是零，必须的</li>
+<li>animation-timing-fuction规定动画曲线，默认ease</li>
+<li>animation-delay规定动画何时开始，默认0</li>
+<li>animation-iteration-count规定动画播放次数，默认1，设置infinite可以变成无限播放</li>
+<li>animation-direction规定动画在下一周期逆向播放，默认是normal，alternate则是逆播放</li>
+<li>animation-play-state规定动画是否正在运行或者暂停，默认running，还有pause</li>
+<li>animation-fill-mode规定动画结束的状态，保持forwards，回到起始地点backwards</li>
+</ol>
+<h3 id="动画简写"><a href="#动画简写" class="headerlink" title="动画简写"></a>动画简写</h3><p><code>animation:动画名称 持续时间 动画曲线 何时开始播放次数 是否反方向 动画起始或者结束状态</code></p>
+<p>animation-play-state不包含在里面，一般配合hover使用</p>
+<h3 id="step步长"><a href="#step步长" class="headerlink" title="step步长"></a>step步长</h3><p>animation-timing-fuction属性值：</p>
+<ol>
+<li>默认ease</li>
+<li>linear匀速</li>
+<li>ease-in低速开始</li>
+<li>ease-out低速结束</li>
+<li>ease-in-out低速开始且低速结束</li>
+<li>step()制定了时间函数的间隔数量</li>
+</ol>
+<p>step如何理解呢：将一个过程分成n段。每次都是一瞬间到达下一段，而不是一个过程。比如：从左到右，8s内分8步，每s都会直接跳跃一步，而不是滑动过去的过程。这个属性值常常利用于展示一条长图，图里是每一帧的画面。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cl9sh872s0002fo5rh8cyg5gw" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cl9tk8nxq0002305rfl1tgbyg" class="article-share-link">Share</a>
       
       
     </footer>
