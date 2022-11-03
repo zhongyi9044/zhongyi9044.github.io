@@ -90,7 +90,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/10/15/Webproject1/" data-id="cl9xs5a9c0000w85re8y49xuz" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/10/15/Webproject1/" data-id="cla0z1okm00009g5r6g2ldds8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -604,7 +604,7 @@
 <p>rotate内如果是分开写就直接写角度，如果是简写那么xyz就是矢量值，比如1，1，0，45deg就是沿xy对角线进行翻转</p>
 <h3 id="3D呈现transform-style"><a href="#3D呈现transform-style" class="headerlink" title="3D呈现transform-style"></a>3D呈现transform-style</h3><p>控制字元素是否开启三维立体环境，默认是flat不开启，所以一定要在父元素内开启子元素三维立体环境</p>
 <p>格式：<code>transform-style:preserve-3d</code></p>
-<h2 id="移动端布局"><a href="#移动端布局" class="headerlink" title="移动端布局"></a>移动端布局</h2><p><a href="#%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80">流式布局</a><br><a href="#flex%E5%B8%83%E5%B1%80">flex布局</a><br><a href="#less%E4%B8%8Erem%E4%B8%8E%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2%E5%B8%83%E5%B1%80">less与rem与媒体查询布局</a><br><a href="#%E6%B7%B7%E5%90%88%E5%B8%83%E5%B1%80">混合布局</a><br><a href="#%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2">媒体查询</a><br><a href="#bootstarp">bootstarp</a></p>
+<h2 id="移动端布局"><a href="#移动端布局" class="headerlink" title="移动端布局"></a>移动端布局</h2><p><a href="#%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80">流式布局</a><br><a href="#flex%E5%B8%83%E5%B1%80">flex布局</a><br><a href="#less%E4%B8%8Erem%E4%B8%8E%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2%E5%B8%83%E5%B1%80">less与rem与媒体查询布局</a><br><a href="#%E6%B7%B7%E5%90%88%E5%B8%83%E5%B1%80">混合布局</a><br><a href="#%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2.">媒体查询</a><br><a href="#bootstarp">bootstarp</a></p>
 <h3 id="流式布局"><a href="#流式布局" class="headerlink" title="流式布局"></a>流式布局</h3><p>流式布局又称百分比布局，用百分比代替具体的像素值</p>
 <p>二倍图：因为移动端像素和pc端像素略有区别，一个图片在移动端像素会乘以n倍(二倍图就是两倍)，所以在使用图片的时候一般先缩小图片两倍</p>
 <p>JD移动端流式布局：<a href="https://zhongyi9044.github.io/LiuShiJD.github.io/">https://zhongyi9044.github.io/LiuShiJD.github.io/</a></p>
@@ -650,11 +650,45 @@
 <p>子元素布局</p>
 <h4 id="flex属性"><a href="#flex属性" class="headerlink" title="flex属性"></a>flex属性</h4><p>格式：<code>flex:number</code>–表示某个子元素占剩余多少份，具体占用的空间大小需要看一共被分为几分</p>
 <p>注意：flex和wrap可能会冲突，因此flex可以写%</p>
-<h3 id="less与rem与媒体查询布局"><a href="#less与rem与媒体查询布局" class="headerlink" title="less与rem与媒体查询布局"></a>less与rem与媒体查询布局</h3><h3 id="混合布局"><a href="#混合布局" class="headerlink" title="混合布局"></a>混合布局</h3><h3 id="媒体查询"><a href="#媒体查询" class="headerlink" title="媒体查询"></a>媒体查询</h3><h3 id="bootstarp"><a href="#bootstarp" class="headerlink" title="bootstarp"></a>bootstarp</h3>
+<h3 id="less与rem与媒体查询布局"><a href="#less与rem与媒体查询布局" class="headerlink" title="less与rem与媒体查询布局"></a>less与rem与媒体查询布局</h3><h4 id="rem"><a href="#rem" class="headerlink" title="rem"></a>rem</h4><p>rem:基准于html文字的大小</p>
+<p>例子：html的字体大小是10px，那么2rem就是20px，html的字体大小可以在style内设置</p>
+<p>优点：可以实现自适应大小，和媒体查询配合</p>
+<h4 id="媒体查询"><a href="#媒体查询" class="headerlink" title="媒体查询"></a>媒体查询</h4><p>格式:<code>@media 媒体类型 关键字 (媒体特性)&#123;css-code&#125;</code></p>
+<p>媒体类型:</p>
+<ol>
+<li>all用于所有设备</li>
+<li>print用于打印机和打印预览</li>
+<li>screen用于平板，电脑，手机等等</li>
+</ol>
+<p>关键字:</p>
+<ol>
+<li>and可以将多个媒体特性连在一起</li>
+<li>not排除某个媒体类型</li>
+<li>only指定某个特定的媒体类型</li>
+</ol>
+<p>媒体特性(举例三个)：</p>
+<ol>
+<li><code>width:值</code></li>
+<li><code>min-width:值</code></li>
+<li><code>max-width:值</code></li>
+</ol>
+<p>用处：可以指定某个媒体在某个特定的媒体属性情况下展现不同的样式，可以和rem自适应使用</p>
+<p>例子：<code>@media screen and (max-widtg:800px)&#123;body&#123;background-color:red&#125;&#125;</code>–表示在屏幕在800像素内都是粉色背景</p>
+<h4 id="less"><a href="#less" class="headerlink" title="less"></a>less</h4><ol>
+<li>一种插件，可以很方便的写CSS样式</li>
+<li>less提供了运算，两个运算数都有单位以前面为准，只有一个则以那一个为准</li>
+</ol>
+<p>less+rem+媒体查询的使用举例：自适应325，400，720等不同像素宽度的手机屏幕大小</p>
+<ol>
+<li>利用媒体查询将不同像素范围进行分类</li>
+<li>利用less的除法，把一块屏幕分成若干份(例如15份)，并且html文字大小等于一份的大小</li>
+<li>利用rem设置盒子的宽高，这样在不同像素手机就有自适应的结果</li>
+</ol>
+<h3 id="混合布局"><a href="#混合布局" class="headerlink" title="混合布局"></a>混合布局</h3><h3 id="媒体查询-1"><a href="#媒体查询-1" class="headerlink" title="媒体查询."></a>媒体查询.</h3><h3 id="bootstarp"><a href="#bootstarp" class="headerlink" title="bootstarp"></a>bootstarp</h3>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cl9xs5a9m0002w85rhh83dhjy" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cla0z1oky00029g5rewlc8ake" class="article-share-link">Share</a>
       
       
     </footer>
@@ -810,7 +844,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/03/my-thirdblog/" data-id="cl9xs5a9o0004w85ra9cs85ru" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/03/my-thirdblog/" data-id="cla0z1ol100049g5r9ici2hsd" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1452,7 +1486,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="cl9xs5a9n0003w85rfcn5efns" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="cla0z1ol000039g5r9trpassq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -2192,7 +2226,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="cl9xs5a9k0001w85r4oc36fea" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="cla0z1okv00019g5r4tj44543" class="article-share-link">Share</a>
       
       
     </footer>
