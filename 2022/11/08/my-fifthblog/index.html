@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Web前端-JAvaScript | 肥艺的blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv1sy4y1c7ha号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录(牢记：JavaScript是JS引擎逐行进行解释的)JS的输入和输出变量数据类型 js的输入和输出 alert()浏览器弹出警示框  console.log()浏览器控制台打印输出信息  prompt()浏览器弹出输入框，用户">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Web前端-JAvaScript">
+<meta property="og:url" content="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/index.html">
+<meta property="og:site_name" content="肥艺的blog">
+<meta property="og:description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv1sy4y1c7ha号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录(牢记：JavaScript是JS引擎逐行进行解释的)JS的输入和输出变量数据类型 js的输入和输出 alert()浏览器弹出警示框  console.log()浏览器控制台打印输出信息  prompt()浏览器弹出输入框，用户">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/1.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/2.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/3.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/4.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/5.jpg">
+<meta property="article:published_time" content="2022-11-08T05:06:36.000Z">
+<meta property="article:modified_time" content="2022-11-08T06:17:04.796Z">
+<meta property="article:author" content="钟艺">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/1.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="肥艺的blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">肥艺的blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zhongyi9044.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-my-fifthblog" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2022/11/08/my-fifthblog/" class="article-date">
+  <time datetime="2022-11-08T05:06:36.000Z" itemprop="datePublished">2022-11-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Web前端-JAvaScript
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这是我学习Web前端HTML的博客，学习资源是bilibili的bv1sy4y1c7ha号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处</p>
+<h2 id="目录-牢记：JavaScript是JS引擎逐行进行解释的"><a href="#目录-牢记：JavaScript是JS引擎逐行进行解释的" class="headerlink" title="目录(牢记：JavaScript是JS引擎逐行进行解释的)"></a>目录(牢记：JavaScript是JS引擎逐行进行解释的)</h2><p><a href="#js%E7%9A%84%E8%BE%93%E5%85%A5%E5%92%8C%E8%BE%93%E5%87%BA">JS的输入和输出</a><br><a href="#%E5%8F%98%E9%87%8F">变量</a><br><a href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">数据类型</a></p>
+<h3 id="js的输入和输出"><a href="#js的输入和输出" class="headerlink" title="js的输入和输出"></a>js的输入和输出</h3><ol>
+<li>alert()浏览器弹出警示框 <img src="/2022/11/08/my-fifthblog/1.jpg" alt="示例" title="示例"></li>
+<li>console.log()浏览器控制台打印输出信息 <img src="/2022/11/08/my-fifthblog/2.jpg" alt="示例" title="示例"></li>
+<li>prompt()浏览器弹出输入框，用户可以输入 <img src="/2022/11/08/my-fifthblog/3.jpg" alt="示例" title="示例"></li>
+</ol>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>变量相当于一个房子，可以通过变量名获取数据甚至修改。</p>
+<p>格式:</p>
+<ol>
+<li>var num声明变量</li>
+<li>num = 1赋值</li>
+</ol>
+<p>或者：</p>
+<ol>
+<li>var num =1</li>
+<li>num = 1(此方法最好不用)</li>
+</ol>
+<p>示例：<img src="/2022/11/08/my-fifthblog/4.jpg" alt="示例" title="示例"></p>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>JavaScript变量的数据类型是根据赋值的类型确定的</p>
+<ol>
+<li>Number(数字型，包括小数，默认0，Infinitu无穷大，-Infinity无穷小，NaN代表非数值)</li>
+<li>Boolean(布尔类型，等价于1/0，默认false)</li>
+<li>String(字符串类型，默认””)</li>
+<li>Undefined(无确认类型，产生原因：声明变量没有赋值)</li>
+<li>Null(空值，默认null)</li>
+<li>object()</li>
+</ol>
+<p>isNULL方法：判断是否是非数字类型，如果是数字类型返回false；</p>
+<p>数据类型合并输出：</p>
+<p>示例：<img src="/2022/11/08/my-fifthblog/5.jpg" alt="示例" title="示例"></p>
+<p>由图示的例子我们发现：Boolean和Null类型更偏向于数字类型(可以看成数字)，Undefined类型偏向字符串类型(可以和字符串相加，但和数字相加却没有字符串的属性)</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/" data-id="cla7tmiye0002fg5r76v64xd9" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2022/10/15/Webproject1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Webproject1</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/11/08/my-fifthblog/">Web前端-JAvaScript</a>
+          </li>
+        
+          <li>
+            <a href="/2022/10/15/Webproject1/">Webproject1</a>
+          </li>
+        
+          <li>
+            <a href="/2022/09/11/my-fourthblog/">Web前端--CSS</a>
+          </li>
+        
+          <li>
+            <a href="/2022/09/03/my-thirdblog/">Web前端--HTML</a>
+          </li>
+        
+          <li>
+            <a href="/2022/09/02/my-secondblog/">计算机组成原理</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2022 钟艺<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
