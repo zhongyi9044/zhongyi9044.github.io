@@ -87,7 +87,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这是我学习Web前端HTML的博客，学习资源是bilibili的bv1sy4y1c7ha号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处</p>
-<h2 id="目录-牢记：JavaScript是JS引擎逐行进行解释的"><a href="#目录-牢记：JavaScript是JS引擎逐行进行解释的" class="headerlink" title="目录(牢记：JavaScript是JS引擎逐行进行解释的)"></a>目录(牢记：JavaScript是JS引擎逐行进行解释的)</h2><p><a href="#js%E7%9A%84%E8%BE%93%E5%85%A5%E5%92%8C%E8%BE%93%E5%87%BA">JS的输入和输出</a><br><a href="#%E5%8F%98%E9%87%8F">变量</a><br><a href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">数据类型</a></p>
+<h2 id="目录-牢记：JavaScript是JS引擎逐行进行解释的"><a href="#目录-牢记：JavaScript是JS引擎逐行进行解释的" class="headerlink" title="目录(牢记：JavaScript是JS引擎逐行进行解释的)"></a>目录(牢记：JavaScript是JS引擎逐行进行解释的)</h2><p><a href="#js%E7%9A%84%E8%BE%93%E5%85%A5%E5%92%8C%E8%BE%93%E5%87%BA">JS的输入和输出</a><br><a href="#%E5%8F%98%E9%87%8F">变量</a><br><a href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">数据类型</a><br><a href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%BD%AC%E6%8D%A2">数据类型的转换</a><br><a href="#%E8%BF%90%E7%AE%97%E7%AC%A6">运算符</a><br><a href="#%E9%80%89%E6%8B%A9%E8%AF%AD%E5%8F%A5%E5%92%8C%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5">选择语句和循环语句</a></p>
 <h3 id="js的输入和输出"><a href="#js的输入和输出" class="headerlink" title="js的输入和输出"></a>js的输入和输出</h3><ol>
 <li>alert()浏览器弹出警示框 <img src="/2022/11/08/my-fifthblog/1.jpg" alt="示例" title="示例"></li>
 <li>console.log()浏览器控制台打印输出信息 <img src="/2022/11/08/my-fifthblog/2.jpg" alt="示例" title="示例"></li>
@@ -117,12 +117,47 @@
 <p>isNULL方法：判断是否是非数字类型，如果是数字类型返回false；</p>
 <p>数据类型合并输出：</p>
 <p>示例：<img src="/2022/11/08/my-fifthblog/5.jpg" alt="示例" title="示例"></p>
-<p>由图示的例子我们发现：Boolean和Null类型更偏向于数字类型(可以看成数字)，Undefined类型偏向字符串类型(可以和字符串相加，但和数字相加却没有字符串的属性)</p>
+<h3 id="数据类型的转换"><a href="#数据类型的转换" class="headerlink" title="数据类型的转换"></a>数据类型的转换</h3><p>转换为字符串类型:</p>
+<ol>
+<li>toString()方法调用</li>
+<li>String()强制转换</li>
+<li>加号拼接字符串()–常用<br>示例：<img src="/2022/11/08/my-fifthblog/6.jpg" alt="示例" title="示例"></li>
+</ol>
+<p>转换为数字类型(字符串必须都是数字字符组成，或者数字字符开头(会将遇到的第一个非数字以后的全部省略))</p>
+<ol>
+<li>parseInt()整形–常用</li>
+<li>parseFloat()浮点型–常用</li>
+<li>Number()强制转换</li>
+<li>利用运算符(计算可能会出现误差)<br>示例：<img src="/2022/11/08/my-fifthblog/7.jpg" alt="示例" title="示例"></li>
+</ol>
+<p>转换为Boolean类型</p>
+<ol>
+<li>代表空或0的一般都转化为false(比如 “” 0 NaN null undefined)</li>
+<li>其余都是true</li>
+<li>方式：Boolean()强制转换</li>
+</ol>
+<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><p>运算符规则和用法和Java一样，有区别的是逻辑运算符有新的运算</p>
+<p>逻辑中断：</p>
+<ol>
+<li>与中断(表达式1 &amp;&amp; 表达式2，如果表达式1为false，那么返回表达式1，如果表达式1为true，返回表达式2)</li>
+<li>或中断(表达式1 || 表达式2，如果表达式1为false，那么返回表达式2，如果表达式1为true，返回表达式1)</li>
+</ol>
+<h3 id="选择语句和循环语句"><a href="#选择语句和循环语句" class="headerlink" title="选择语句和循环语句"></a>选择语句和循环语句</h3><p>选择语句：</p>
+<ol>
+<li>if语句</li>
+<li>if-else语句</li>
+<li>if-else if-else语句</li>
+<li>switch语句</li>
+<li>for循环</li>
+<li>while循环</li>
+<li>do while循环</li>
+</ol>
+<p>这些语句的使用和语法和Java没有什么区别</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/" data-id="cla7ua6bk0002205r9oy8fmfq" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/" data-id="claan53xl0002zw5r62gobhlp" class="article-share-link">Share</a>
       
       
     </footer>
@@ -164,7 +199,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/10/15/Webproject1/" data-id="cla7ua6ba0000205rg98ncymz" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/10/15/Webproject1/" data-id="claan53xa0000zw5r9w1c7p3z" class="article-share-link">Share</a>
       
       
     </footer>
@@ -762,7 +797,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cla7ua6bl0003205r7x76arl2" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="claan53xm0003zw5r7sg33jkb" class="article-share-link">Share</a>
       
       
     </footer>
@@ -918,7 +953,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/03/my-thirdblog/" data-id="cla7ua6bn0005205r9i4i8msy" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/03/my-thirdblog/" data-id="claan53xp0005zw5r3zf1gbi2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1560,7 +1595,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="cla7ua6bm0004205rhnph4aup" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="claan53xn0004zw5r8nwr7ik7" class="article-share-link">Share</a>
       
       
     </footer>
@@ -2300,7 +2335,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="cla7ua6bi0001205rd7vt5zjx" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="claan53xj0001zw5r0ch5fuld" class="article-share-link">Share</a>
       
       
     </footer>
