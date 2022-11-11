@@ -7,12 +7,12 @@
   
   <title>Web前端-JavaScript | 肥艺的blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv1sy4y1c7ha号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录(牢记：JavaScript是JS引擎逐行进行解释的)JS的输入和输出变量数据类型数据类型的转换运算符选择语句和循环语句 js的输入和输出 alert()浏览器弹出警示框  console.log()浏览器控制台打印输出信息">
+  <meta name="description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv1sy4y1c7ha号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录(牢记：JavaScript是JS引擎逐行进行解释的)JS的输入和输出变量数据类型数据类型的转换运算符选择语句和循环语句数组函数作用域 js的输入和输出 alert()浏览器弹出警示框  console.log()浏览器控制台打">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Web前端-JavaScript">
 <meta property="og:url" content="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/index.html">
 <meta property="og:site_name" content="肥艺的blog">
-<meta property="og:description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv1sy4y1c7ha号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录(牢记：JavaScript是JS引擎逐行进行解释的)JS的输入和输出变量数据类型数据类型的转换运算符选择语句和循环语句 js的输入和输出 alert()浏览器弹出警示框  console.log()浏览器控制台打印输出信息">
+<meta property="og:description" content="前言这是我学习Web前端HTML的博客，学习资源是bilibili的bv1sy4y1c7ha号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处 目录(牢记：JavaScript是JS引擎逐行进行解释的)JS的输入和输出变量数据类型数据类型的转换运算符选择语句和循环语句数组函数作用域 js的输入和输出 alert()浏览器弹出警示框  console.log()浏览器控制台打">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/1.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/2.jpg">
@@ -22,7 +22,7 @@
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/6.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/7.jpg">
 <meta property="article:published_time" content="2022-11-08T05:06:36.000Z">
-<meta property="article:modified_time" content="2022-11-10T05:39:32.003Z">
+<meta property="article:modified_time" content="2022-11-11T05:40:06.054Z">
 <meta property="article:author" content="钟艺">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/1.jpg">
@@ -97,7 +97,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这是我学习Web前端HTML的博客，学习资源是bilibili的bv1sy4y1c7ha号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处</p>
-<h2 id="目录-牢记：JavaScript是JS引擎逐行进行解释的"><a href="#目录-牢记：JavaScript是JS引擎逐行进行解释的" class="headerlink" title="目录(牢记：JavaScript是JS引擎逐行进行解释的)"></a>目录(牢记：JavaScript是JS引擎逐行进行解释的)</h2><p><a href="#js%E7%9A%84%E8%BE%93%E5%85%A5%E5%92%8C%E8%BE%93%E5%87%BA">JS的输入和输出</a><br><a href="#%E5%8F%98%E9%87%8F">变量</a><br><a href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">数据类型</a><br><a href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%BD%AC%E6%8D%A2">数据类型的转换</a><br><a href="#%E8%BF%90%E7%AE%97%E7%AC%A6">运算符</a><br><a href="#%E9%80%89%E6%8B%A9%E8%AF%AD%E5%8F%A5%E5%92%8C%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5">选择语句和循环语句</a></p>
+<h2 id="目录-牢记：JavaScript是JS引擎逐行进行解释的"><a href="#目录-牢记：JavaScript是JS引擎逐行进行解释的" class="headerlink" title="目录(牢记：JavaScript是JS引擎逐行进行解释的)"></a>目录(牢记：JavaScript是JS引擎逐行进行解释的)</h2><p><a href="#js%E7%9A%84%E8%BE%93%E5%85%A5%E5%92%8C%E8%BE%93%E5%87%BA">JS的输入和输出</a><br><a href="#%E5%8F%98%E9%87%8F">变量</a><br><a href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">数据类型</a><br><a href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%BD%AC%E6%8D%A2">数据类型的转换</a><br><a href="#%E8%BF%90%E7%AE%97%E7%AC%A6">运算符</a><br><a href="#%E9%80%89%E6%8B%A9%E8%AF%AD%E5%8F%A5%E5%92%8C%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5">选择语句和循环语句</a><br><a href="#%E6%95%B0%E7%BB%84">数组</a><br><a href="#%E5%87%BD%E6%95%B0">函数</a><br><a href="#%E4%BD%9C%E7%94%A8%E5%9F%9F">作用域</a></p>
 <h3 id="js的输入和输出"><a href="#js的输入和输出" class="headerlink" title="js的输入和输出"></a>js的输入和输出</h3><ol>
 <li>alert()浏览器弹出警示框 <img src="/2022/11/08/my-fifthblog/1.jpg" alt="示例" title="示例"></li>
 <li>console.log()浏览器控制台打印输出信息 <img src="/2022/11/08/my-fifthblog/2.jpg" alt="示例" title="示例"></li>
@@ -163,11 +163,29 @@
 <li>do while循环</li>
 </ol>
 <p>这些语句的使用和语法和Java没有什么区别</p>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><p>创建数组</p>
+<ol>
+<li>var arr=new Array();</li>
+<li>var arr=[内容];</li>
+</ol>
+<p>JavaScript数组的特别：数组的内容是随意的，不像Java有特定的类型，比如var arr=[1，”我”]是一个合法数组</p>
+<p>其余特点和Java的数组特点差不多</p>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>格式：</p>
+<p><code>function 方法名(形参)&#123;</code><br>    <code>JavaScript语句</code><br><code>&#125;</code></p>
+<p>特点：JavaScript函数的形参也不需要要特定类型，只需要桉顺序传参，第一个实参给第一个形参，实参什么类型形参就是什么类型。如果实参数量多于形参，那么忽略多余的实参。</p>
+<p>arguments的使用：</p>
+<ol>
+<li>arguments存储了所有传递的实参</li>
+<li>可以理解成数组，通过数组的调用方法调用arguments存储的实参</li>
+<li>arguments变成了形参，比如arguments[0]就是第一个实参的形参</li>
+</ol>
+<h3 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h3><p>和Java一样，每个变量都有作用域，可以分为全局变量和局部变量。和Java不同的是，JavaScript没有块级变量(es6除外)</p>
+<p>块级作用域：在循环，选择语句中创建的变量，外部是不可以使用的，但JavaScript可以使用</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/" data-id="claan53xl0002zw5r62gobhlp" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/" data-id="clac2lgmk0002dw5r6chx3pvf" class="article-share-link">Share</a>
       
       
     </footer>
