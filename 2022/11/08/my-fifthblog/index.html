@@ -22,7 +22,7 @@
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/6.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/7.jpg">
 <meta property="article:published_time" content="2022-11-08T05:06:36.000Z">
-<meta property="article:modified_time" content="2022-11-12T07:39:00.871Z">
+<meta property="article:modified_time" content="2022-11-13T08:21:25.405Z">
 <meta property="article:author" content="钟艺">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/1.jpg">
@@ -124,7 +124,7 @@
 <li>Null(空值，默认null)</li>
 <li>object()</li>
 </ol>
-<p>isNULL方法：判断是否是非数字类型，如果是数字类型返回false；</p>
+<p>isNaN方法：判断是否是非数字类型，如果是数字类型返回false；</p>
 <p>数据类型合并输出：</p>
 <p>示例：<img src="/2022/11/08/my-fifthblog/5.jpg" alt="示例" title="示例"></p>
 <h3 id="数据类型的转换"><a href="#数据类型的转换" class="headerlink" title="数据类型的转换"></a>数据类型的转换</h3><p>转换为字符串类型:</p>
@@ -227,7 +227,7 @@
 <p>for(var key in zy){<br>    console.log(key);这个key调用的是属性<br>    console.log(zy[key]);这个zy[key]调用的是属性值<br>}</p>
 <h3 id="内置对象"><a href="#内置对象" class="headerlink" title="内置对象"></a>内置对象</h3><p>JS自带的一些对象，供我们开发者使用</p>
 <p>查阅MDN：<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/">https://developer.mozilla.org/zh-CN/</a></p>
-<p><a href="#Math">Math</a></p>
+<p><a href="#Math">Math</a><br><a href="#Date">Date</a><br><a href="#Array">Array</a><br><a href="#String">String</a></p>
 <h4 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h4><ol>
 <li>Math.PI圆周率</li>
 <li>Math.max()求最大值</li>
@@ -244,11 +244,76 @@
 <li>max=Math.floor(右范围)获取最大范围整数</li>
 <li>Math floor(Math.random()*(max-min+1))+min 利用此公式获取不小于min和不大于max的整数</li>
 </ol>
+<h4 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h4><p>Date必须创建实例来使用：比如var date=new Date()</p>
+<p>Date的使用：</p>
+<ol>
+<li>getFullyear()年</li>
+<li>getMonth()月(1月0~12月11)</li>
+<li>getDate()日</li>
+<li>getDay()星期几(周日0~周六6)</li>
+<li>getHours()时</li>
+<li>getMinutes()分</li>
+<li>getSecond()秒</li>
+</ol>
+<p>小技巧：如果想让分时秒变成两位数(01样式)那就在前面加上’0’</p>
+<p>Date获得毫秒数(1970.1.1到如今(默认到如今)的毫秒数)</p>
+<ol>
+<li>valueOf()/getTime()</li>
+<li>创建实例的时候直接var date=+new Date()</li>
+<li>Date.now()</li>
+</ol>
+<p>倒计时：输入的时间的毫秒数-如今的时间的毫秒数再转化为分时秒</p>
+<h4 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h4><p>检测是否为数组：</p>
+<ol>
+<li>instanceof+要检测的对象</li>
+<li>Array.isArray(参数)</li>
+</ol>
+<p>添加删除数组元素：</p>
+<ol>
+<li>push(参数1，参数2.。。)末尾添加n个元素</li>
+<li>pop()删除数组最后一个元素</li>
+<li>unshift(参数1，参数2.。。)数组开头添加n个元素</li>
+<li>shift()删除数组开头元素</li>
+</ol>
+<p>点到数组顺序：reverse()</p>
+<p>数组排序：sort([compareFunction])</p>
+<ol>
+<li>默认排序：compareFunction不写</li>
+<li>从大到小：compareFunction写function(a,b){return a-b(b-a就是小到大)}</li>
+</ol>
+<p>获取数组元素下标：</p>
+<ol>
+<li>indexOf(要查询的元素，开始处(默认0))–只返回第一个匹配的元素下标</li>
+<li>lastIndexOf(要查询的元素)</li>
+</ol>
+<p>数组转换为字符串：</p>
+<ol>
+<li>toString()把数组转换为字符串，逗号分隔每一段</li>
+<li>join(‘分隔符’)把数组所有元素转换为一个字符串</li>
+</ol>
+<h4 id="String"><a href="#String" class="headerlink" title="String"></a>String</h4><p>字符出现的位置</p>
+<ol>
+<li>indexOf</li>
+<li>lastIndexOf</li>
+</ol>
+<p>根据下标返回字符</p>
+<ol>
+<li>charAt(下标)返回字符串该位置的字符</li>
+<li>charCodeAt(下标)返回字符串该位置字符串的ASCII码</li>
+<li>str[下标]H5新增方法</li>
+</ol>
+<p>寻找字符串出现最多的字符：根据JavaScript对象特有的性质，创建空对象，字符串中出现的字符可以作为属性添加到对象中，遇到一次就添加属性并赋值1，遇到两次就是直接赋值2</p>
+<p>连接截取字符串</p>
+<ol>
+<li>concat(str1,str2….)拼接字符串</li>
+<li>substr(start,length)截取length长度，从start开始</li>
+<li>slice/subString(start,end)截取从start开始，end结束不取end</li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/" data-id="cladma2fe0001485r4izc4khc" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/" data-id="claf38rm900013k5r00tc4kuw" class="article-share-link">Share</a>
       
       
     </footer>
