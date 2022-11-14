@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Web APIs | 肥艺的blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="MDN详情APIhttps:&#x2F;&#x2F;developer.mozilla.org&#x2F;zh-CN&#x2F;docs&#x2F;Web&#x2F;API文档：document元素：element节点：node 目录 获取元素事件基础操作元素节点操作 获取元素 document.getElementById(‘id名’)–获取有id的元素对象 document.getElementsByTagName(‘标签名’)–返回带有指定标签名的对">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Web APIs">
+<meta property="og:url" content="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/index.html">
+<meta property="og:site_name" content="肥艺的blog">
+<meta property="og:description" content="MDN详情APIhttps:&#x2F;&#x2F;developer.mozilla.org&#x2F;zh-CN&#x2F;docs&#x2F;Web&#x2F;API文档：document元素：element节点：node 目录 获取元素事件基础操作元素节点操作 获取元素 document.getElementById(‘id名’)–获取有id的元素对象 document.getElementsByTagName(‘标签名’)–返回带有指定标签名的对">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-11-14T04:17:46.000Z">
+<meta property="article:modified_time" content="2022-11-14T05:33:26.625Z">
+<meta property="article:author" content="钟艺">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="肥艺的blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">肥艺的blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zhongyi9044.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-my-sixthblog" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2022/11/14/my-sixthblog/" class="article-date">
+  <time datetime="2022-11-14T04:17:46.000Z" itemprop="datePublished">2022-11-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Web APIs
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>MDN详情API<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API">https://developer.mozilla.org/zh-CN/docs/Web/API</a><br>文档：document<br>元素：element<br>节点：node</p>
+<p>目录</p>
+<p><a href="#%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0">获取元素</a><br><a href="#%E4%BA%8B%E4%BB%B6%E5%9F%BA%E7%A1%80">事件基础</a><br><a href="#%E6%93%8D%E4%BD%9C%E5%85%83%E7%B4%A0">操作元素</a><br><a href="#%E8%8A%82%E7%82%B9%E6%93%8D%E4%BD%9C">节点操作</a></p>
+<h3 id="获取元素"><a href="#获取元素" class="headerlink" title="获取元素"></a>获取元素</h3><ol>
+<li>document.getElementById(‘id名’)–获取有id的元素对象</li>
+<li>document.getElementsByTagName(‘标签名’)–返回带有指定标签名的对象集合</li>
+<li>document.getElementsByClassName(‘类名’)–根据类名返回元素对象集合</li>
+<li>document.querySelector(‘选择器’)–根据指定选择器返回第一个元素对象</li>
+<li>document.body返回body元素对象</li>
+<li>document.documentElement返回html元素对象</li>
+</ol>
+<h3 id="事件基础"><a href="#事件基础" class="headerlink" title="事件基础"></a>事件基础</h3><p>事件三要素：</p>
+<ol>
+<li>事件源</li>
+<li>事件类型</li>
+<li>事件处理程序</li>
+</ol>
+<p>例子：点击按钮弹出对话框(事件源：按钮，事件类型：鼠标经过，事件处理程序：通过函数赋值实现)</p>
+<p><code>var btn=document.getElement(&#39;id&#39;); btn.onclick(事件类型)=function()&#123;JavaScript语句&#125;</code></p>
+<p>执行事件过程：</p>
+<ol>
+<li>获取事件源(获取元素)</li>
+<li>绑定事件，注册事件(例如：btn.onclick(onclick就是一种事件类型，btn则是获取的元素))</li>
+<li>添加处理事件程序</li>
+</ol>
+<h3 id="操作元素"><a href="#操作元素" class="headerlink" title="操作元素"></a>操作元素</h3><p>修改元素内容：</p>
+<ol>
+<li>element.innerText</li>
+<li>element.innerHTML</li>
+</ol>
+<p>二者区别：Text是不识别html标签(把HTML标签当作文本看待)并且不要空格和换行，HTML识别html标签同时保留空格和换行</p>
+<p>常用元素的属性操作：</p>
+<ol>
+<li>src</li>
+<li>href</li>
+<li>id</li>
+<li>alt</li>
+<li>title</li>
+<li>type</li>
+<li>value</li>
+<li>checked</li>
+<li>selected</li>
+<li>disabled(是否可用，true可用)</li>
+</ol>
+<p>步骤：</p>
+<ol>
+<li>获取事件源元素和需要被操作的元素</li>
+<li>注册事件源元素事件</li>
+<li>对被操作元素进行处理程序</li>
+</ol>
+<p>例子：点击按钮切换图片</p>
+<ol>
+<li>获取按钮和图片元素</li>
+<li>注册按钮事件</li>
+<li>进行处理图片img的src程序</li>
+</ol>
+<p>注意：事件函数内部如果需要更改注册事件的元素，那么可以使用this.的方式</p>
+<p>修改样式属性：</p>
+<ol>
+<li>element.style行内样式操作(写在HTML内部的样式)</li>
+<li>element.className类名样式操作</li>
+</ol>
+<p>使用例子：</p>
+<ol>
+<li><code>this.style.backgroundColor=&quot;red&quot;</code>注意：backgroundColor是驼峰命名法</li>
+<li><code>dv.className=&quot;change&quot;</code> change是一个新的样式，即把获取的元素dv的样式换成change类的</li>
+</ol>
+<h3 id="节点操作"><a href="#节点操作" class="headerlink" title="节点操作"></a>节点操作</h3>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/" data-id="clagcobrh0005fk5r2gm95dkw" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2022/11/08/my-fifthblog/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Web前端-JavaScript</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/11/14/my-sixthblog/">Web APIs</a>
+          </li>
+        
+          <li>
+            <a href="/2022/11/08/my-fifthblog/">Web前端-JavaScript</a>
+          </li>
+        
+          <li>
+            <a href="/2022/10/15/Webproject1/">Webproject</a>
+          </li>
+        
+          <li>
+            <a href="/2022/09/11/my-fourthblog/">Web前端--CSS</a>
+          </li>
+        
+          <li>
+            <a href="/2022/09/03/my-thirdblog/">Web前端--HTML</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2022 钟艺<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
