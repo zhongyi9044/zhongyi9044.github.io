@@ -88,7 +88,7 @@
       
         <p>MDN详情API<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API">https://developer.mozilla.org/zh-CN/docs/Web/API</a><br>文档：document<br>元素：element<br>节点：node</p>
 <p>目录</p>
-<p><a href="#%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0">获取元素</a><br><a href="#%E4%BA%8B%E4%BB%B6%E5%9F%BA%E7%A1%80">事件基础</a><br><a href="#%E6%93%8D%E4%BD%9C%E5%85%83%E7%B4%A0">操作元素</a><br><a href="#%E8%8A%82%E7%82%B9%E6%93%8D%E4%BD%9C">节点操作</a></p>
+<p><a href="#%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0">获取元素</a><br><a href="#%E4%BA%8B%E4%BB%B6%E5%9F%BA%E7%A1%80">事件基础</a><br><a href="#%E6%93%8D%E4%BD%9C%E5%85%83%E7%B4%A0">操作元素</a><br><a href="#%E8%8A%82%E7%82%B9%E6%93%8D%E4%BD%9C">节点操作</a><br><a href="#%E7%BB%83%E4%B9%A0">练习</a></p>
 <h3 id="获取元素"><a href="#获取元素" class="headerlink" title="获取元素"></a>获取元素</h3><ol>
 <li>document.getElementById(‘id名’)–获取有id的元素对象</li>
 <li>document.getElementsByTagName(‘标签名’)–返回带有指定标签名的对象集合</li>
@@ -153,11 +153,40 @@
 <li><code>this.style.backgroundColor=&quot;red&quot;</code>注意：backgroundColor是驼峰命名法</li>
 <li><code>dv.className=&quot;change&quot;</code> change是一个新的样式，即把获取的元素dv的样式换成change类的</li>
 </ol>
-<h3 id="节点操作"><a href="#节点操作" class="headerlink" title="节点操作"></a>节点操作</h3>
+<p>自定义属性(可以用于自定义)：</p>
+<ol>
+<li>element.setAttribute(‘属性’，’值’)设置属性(H5中，自定义属性开头都用data-xx)</li>
+<li>element.getAttribute(‘属性’)获取属性值</li>
+<li>element.removeAttribute(‘属性’)删除属性</li>
+<li>element.dataset.xxx(H5获取自定义属性,比如：date-index-number，获取：element.dataset.indexNumber)</li>
+</ol>
+<p>排他思想：<br>在页面中常看到一些例子：</p>
+<ol>
+<li>鼠标移动过去，显示额外内容</li>
+<li>鼠标点击，图片进行切换</li>
+</ol>
+<h3 id="节点操作"><a href="#节点操作" class="headerlink" title="节点操作"></a>节点操作</h3><ol>
+<li>element.parentNode父节点</li>
+<li>element.children所有元素子节点</li>
+<li>element.next/previousElementSibling上一个或者下一个兄弟节点</li>
+<li>element.firstElementChild第一个子元素子节点</li>
+<li>element.lastElementChild最后一个子元素子节点</li>
+</ol>
+<p>创建添加节点：</p>
+<ol>
+<li>document.createElement(‘tagName’)创建节点</li>
+<li>element.appendChild(child)添加节点(element是父级，child是子级，添加在父节点的末尾)</li>
+<li>element.insertBefore(child,指定元素)–(添加到父节点中指定节点的前面)</li>
+</ol>
+<h3 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h3><ol>
+<li>模拟选择导航栏，切换导航内容 示例：<img src="/2022/11/14/my-sixthblog/1.jpg" alt="示例" title="示例"></li>
+<li>模拟全选和取消全选 示例：<img src="/2022/11/14/my-sixthblog/2.jpg" alt="示例" title="示例"></li>
+</ol>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/" data-id="clagcrj7b0005m45rbfm10j5v" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/" data-id="clahzvmzi0005bk5r4i2kbgo5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -406,7 +435,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/" data-id="clagcrj770002m45r7c2q7rnj" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/" data-id="clahzvmze0002bk5r74mya7qo" class="article-share-link">Share</a>
       
       
     </footer>
@@ -448,7 +477,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/10/15/Webproject1/" data-id="clagcrj6x0000m45rby3ycd0w" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/10/15/Webproject1/" data-id="clahzvmz40000bk5ragd09fih" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1046,7 +1075,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="clagcrj790003m45r48yy0jug" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="clahzvmzf0003bk5r72841806" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1202,7 +1231,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/03/my-thirdblog/" data-id="clagcrj7b0006m45rbooja5ap" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/03/my-thirdblog/" data-id="clahzvmzj0006bk5r5tm3d396" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1844,7 +1873,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="clagcrj7a0004m45r4ij96d2c" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="clahzvmzh0004bk5rdagl8zq4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -2584,7 +2613,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="clagcrj740001m45r2pk0hanc" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="clahzvmzc0001bk5r7v8rht65" class="article-share-link">Share</a>
       
       
     </footer>
