@@ -7,20 +7,24 @@
   
   <title>Web APIs | 肥艺的blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="MDN详情APIhttps:&#x2F;&#x2F;developer.mozilla.org&#x2F;zh-CN&#x2F;docs&#x2F;Web&#x2F;API文档：document元素：element节点：node 目录 获取元素事件基础操作元素节点操作练习 获取元素 document.getElementById(‘id名’)–获取有id的元素对象 document.getElementsByTagName(‘标签名’)–返回带有指定标签名">
+  <meta name="description" content="MDN详情APIhttps:&#x2F;&#x2F;developer.mozilla.org&#x2F;zh-CN&#x2F;docs&#x2F;Web&#x2F;API文档：document元素：element节点：node 目录 获取元素事件基础操作元素节点操作事件高级练习 获取元素 document.getElementById(‘id名’)–获取有id的元素对象 document.getElementsByTagName(‘标签名’)–返回带有指">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Web APIs">
 <meta property="og:url" content="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/index.html">
 <meta property="og:site_name" content="肥艺的blog">
-<meta property="og:description" content="MDN详情APIhttps:&#x2F;&#x2F;developer.mozilla.org&#x2F;zh-CN&#x2F;docs&#x2F;Web&#x2F;API文档：document元素：element节点：node 目录 获取元素事件基础操作元素节点操作练习 获取元素 document.getElementById(‘id名’)–获取有id的元素对象 document.getElementsByTagName(‘标签名’)–返回带有指定标签名">
+<meta property="og:description" content="MDN详情APIhttps:&#x2F;&#x2F;developer.mozilla.org&#x2F;zh-CN&#x2F;docs&#x2F;Web&#x2F;API文档：document元素：element节点：node 目录 获取元素事件基础操作元素节点操作事件高级练习 获取元素 document.getElementById(‘id名’)–获取有id的元素对象 document.getElementsByTagName(‘标签名’)–返回带有指">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/5.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/3.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/4.jpg">
+<meta property="og:image" content="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/6.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/1.jpg">
 <meta property="og:image" content="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/2.jpg">
 <meta property="article:published_time" content="2022-11-14T04:17:46.000Z">
-<meta property="article:modified_time" content="2022-11-15T09:10:41.755Z">
+<meta property="article:modified_time" content="2022-11-16T08:17:23.694Z">
 <meta property="article:author" content="钟艺">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/1.jpg">
+<meta name="twitter:image" content="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/5.jpg">
   
     <link rel="alternate" href="/atom.xml" title="肥艺的blog" type="application/atom+xml">
   
@@ -93,7 +97,7 @@
       
         <p>MDN详情API<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API">https://developer.mozilla.org/zh-CN/docs/Web/API</a><br>文档：document<br>元素：element<br>节点：node</p>
 <p>目录</p>
-<p><a href="#%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0">获取元素</a><br><a href="#%E4%BA%8B%E4%BB%B6%E5%9F%BA%E7%A1%80">事件基础</a><br><a href="#%E6%93%8D%E4%BD%9C%E5%85%83%E7%B4%A0">操作元素</a><br><a href="#%E8%8A%82%E7%82%B9%E6%93%8D%E4%BD%9C">节点操作</a><br><a href="#%E7%BB%83%E4%B9%A0">练习</a></p>
+<p><a href="#%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0">获取元素</a><br><a href="#%E4%BA%8B%E4%BB%B6%E5%9F%BA%E7%A1%80">事件基础</a><br><a href="#%E6%93%8D%E4%BD%9C%E5%85%83%E7%B4%A0">操作元素</a><br><a href="#%E8%8A%82%E7%82%B9%E6%93%8D%E4%BD%9C">节点操作</a><br><a href="#%E4%BA%8B%E4%BB%B6%E9%AB%98%E7%BA%A7">事件高级</a><br><a href="#%E7%BB%83%E4%B9%A0">练习</a></p>
 <h3 id="获取元素"><a href="#获取元素" class="headerlink" title="获取元素"></a>获取元素</h3><ol>
 <li>document.getElementById(‘id名’)–获取有id的元素对象</li>
 <li>document.getElementsByTagName(‘标签名’)–返回带有指定标签名的对象集合</li>
@@ -116,6 +120,7 @@
 <li>绑定事件，注册事件(例如：btn.onclick(onclick就是一种事件类型，btn则是获取的元素))</li>
 <li>添加处理事件程序</li>
 </ol>
+<p>常见事件：</p>
 <h3 id="操作元素"><a href="#操作元素" class="headerlink" title="操作元素"></a>操作元素</h3><p>修改元素内容：</p>
 <ol>
 <li>element.innerText</li>
@@ -165,15 +170,15 @@
 <li>element.removeAttribute(‘属性’)删除属性</li>
 <li>element.dataset.xxx(H5获取自定义属性,比如：date-index-number，获取：element.dataset.indexNumber)</li>
 </ol>
-<p>排他思想：<br>在页面中常看到一些例子：</p>
+<p>排他思想：<br>在页面中常看到一些例子：<img src="/2022/11/14/my-sixthblog/5.jpg" alt="示例" title="示例"></p>
 <ol>
 <li>鼠标移动过去，显示额外内容</li>
 <li>鼠标点击，图片进行切换</li>
 </ol>
 <h3 id="节点操作"><a href="#节点操作" class="headerlink" title="节点操作"></a>节点操作</h3><ol>
 <li>element.parentNode父节点</li>
-<li>element.children所有元素子节点</li>
-<li>element.next/previousElementSibling上一个或者下一个兄弟节点</li>
+<li>element.children所有子节点元素</li>
+<li>element.next/previousElementSibling上一个/下一个兄弟节点</li>
 <li>element.firstElementChild第一个子元素子节点</li>
 <li>element.lastElementChild最后一个子元素子节点</li>
 </ol>
@@ -183,6 +188,44 @@
 <li>element.appendChild(child)添加节点(element是父级，child是子级，添加在父节点的末尾)</li>
 <li>element.insertBefore(child,指定元素)–(添加到父节点中指定节点的前面)</li>
 </ol>
+<p>删除节点：</p>
+<p>element.removeChild(child)–从父元素中删除一个子节点</p>
+<p>克隆节点：</p>
+<p>element.cloneNode(false/true)–false只复制标签，true复制标签和内容</p>
+<h3 id="事件高级"><a href="#事件高级" class="headerlink" title="事件高级"></a>事件高级</h3><h4 id="方法监听注册事件"><a href="#方法监听注册事件" class="headerlink" title="方法监听注册事件"></a>方法监听注册事件</h4><p>同一个元素只能有一种注册事件，但可以有多个监听器</p>
+<p>格式：eventTarget.addEvenListener(type,listener,useCapture)–这种注册事件方法是最好的</p>
+<ol>
+<li>type事件类型的字符串，比如click，mousover，注意这里没有‘on’</li>
+<li>listener事件处理函数，事件发生则会调用该函数</li>
+<li>useCapture可选参数，默认false，和事件流有关</li>
+</ol>
+<h4 id="删除事件"><a href="#删除事件" class="headerlink" title="删除事件"></a>删除事件</h4><p>传统格式：注册事件=null(比如div.onclick=null)</p>
+<p>方法监听格式：evenTarget.removeEventListener(type,listener,useCapture)写在listener函数内部</p>
+<p>注意：因为删除事件是写在listener内部，所以我们需要把listener的函数写在外部，再由注册事件的时候调用此函数，且调用函数不需要加括号</p>
+<p>比如：<img src="/2022/11/14/my-sixthblog/3.jpg" alt="示例" title="示例"></p>
+<h4 id="DOM事件流"><a href="#DOM事件流" class="headerlink" title="DOM事件流"></a>DOM事件流</h4><p>事件发生时，会在元素节点之间按照也定的顺序传播</p>
+<ol>
+<li>捕获阶段</li>
+<li>冒泡阶段</li>
+<li>当前目标阶段</li>
+</ol>
+<p>如何理解DOM的事件流：首先理解捕获阶段是从浅到深，冒泡阶段是深到浅，而JavaScript中代码只能执行捕获或者冒泡，且每个事件可能事件流不同</p>
+<p>事件流的例子：<img src="/2022/11/14/my-sixthblog/4.jpg" alt="示例" title="示例"></p>
+<h4 id="事件对象"><a href="#事件对象" class="headerlink" title="事件对象"></a>事件对象</h4><p>eventTarget.addEvenListener(type,listener(e),useCapture)–e(可以自己随便命名)就是事件对象，不是参数，我们不需要传参。他是我们事件的相关数据的集合</p>
+<p>事件对象常见属性和方法(写在listener内)：</p>
+<ol>
+<li>e.target返回触发事件的对象(和this的区别在于：this是绑定的元素，target是触发事件的元素，假如绑定了div，但内部有个li，点击li触发了div事件(冒泡)，那么target就是li)</li>
+<li>e.type返回事件类型，不带‘on’</li>
+<li>e.preventDefault()阻止默认行为，比如链接跳转</li>
+<li>e.stopPropagation()阻止事件冒泡</li>
+</ol>
+<p>一些e.preventDefault()的用处：</p>
+<ol>
+<li>事件类型为contextmenu时e.preventDefault()可以禁用右键菜单</li>
+<li>事件类型为selectstart时e.preventDefault()可以阻止选中文字</li>
+</ol>
+<h4 id="事件委托"><a href="#事件委托" class="headerlink" title="事件委托"></a>事件委托</h4><p>核心原理：给父节点添加监听器，利用冒泡影响每一个子节点</p>
+<p>例子：<img src="/2022/11/14/my-sixthblog/6.jpg" alt="示例" title="示例"></p>
 <h3 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h3><ol>
 <li>模拟选择导航栏，切换导航内容 示例：<img src="/2022/11/14/my-sixthblog/1.jpg" alt="示例" title="示例"></li>
 <li>模拟全选和取消全选 示例：<img src="/2022/11/14/my-sixthblog/2.jpg" alt="示例" title="示例"></li>
@@ -191,7 +234,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/" data-id="clahzvmzi0005bk5r4i2kbgo5" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/" data-id="clajdfjrb0005cg5r8luugmly" class="article-share-link">Share</a>
       
       
     </footer>
