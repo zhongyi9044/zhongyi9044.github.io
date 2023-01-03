@@ -87,7 +87,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这是我学习操作系统的博客，学习资源是bilibili的bv1ye411d7nh号视频，希望大家可以多多支持原创视频。此处运用的一些截图等信息可能截于此处</p>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p><a href="#%E6%93%8D%E4%BD%9Ci%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%A6%82%E5%BF%B5%E5%8A%9F%E8%83%BD%E7%9B%AE%E6%A0%87">操作i系统的概念功能目标</a><br><a href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%89%B9%E5%BE%81">操作系统的特征</a><br><a href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%91%E5%B1%95%E5%88%86%E7%B1%BB">操作系统的发展分类</a><br><a href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84">操作系统的运行机制与体系结构</a><br><a href="#%E4%B8%AD%E6%96%AD%E5%92%8C%E5%BC%82%E5%B8%B8">中断和异常</a><br><a href="#%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8">系统调用</a><br><a href="#%E8%BF%9B%E7%A8%8B%E7%9A%84%E5%AE%9A%E4%B9%89%E7%BB%84%E6%88%90%E7%BB%84%E7%BB%87%E6%96%B9%E5%BC%8F">进程的定义组成组织方式</a><br><a href="#%E8%BF%9B%E7%A8%8B%E7%9A%84%E7%8A%B6%E6%80%81%E4%B8%8E%E8%BD%AC%E6%8D%A2">进程的状态与转换</a><br><a href="#%E8%BF%9B%E7%A8%8B%E6%8E%A7%E5%88%B6">进程控制</a><br><a href="#%E8%BF%9B%E7%A8%8B%E9%80%9A%E4%BF%A1">进程通信</a><br><a href="#%E7%BA%BF%E7%A8%8B%E6%A6%82%E5%BF%B5%E5%92%8C%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B">线程概念和多线程模型</a></p>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p><a href="#%E6%93%8D%E4%BD%9Ci%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%A6%82%E5%BF%B5%E5%8A%9F%E8%83%BD%E7%9B%AE%E6%A0%87">操作i系统的概念功能目标</a><br><a href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%89%B9%E5%BE%81">操作系统的特征</a><br><a href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%91%E5%B1%95%E5%88%86%E7%B1%BB">操作系统的发展分类</a><br><a href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84">操作系统的运行机制与体系结构</a><br><a href="#%E4%B8%AD%E6%96%AD%E5%92%8C%E5%BC%82%E5%B8%B8">中断和异常</a><br><a href="#%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8">系统调用</a><br><a href="#%E8%BF%9B%E7%A8%8B%E7%9A%84%E5%AE%9A%E4%B9%89%E7%BB%84%E6%88%90%E7%BB%84%E7%BB%87%E6%96%B9%E5%BC%8F">进程的定义组成组织方式</a><br><a href="#%E8%BF%9B%E7%A8%8B%E7%9A%84%E7%8A%B6%E6%80%81%E4%B8%8E%E8%BD%AC%E6%8D%A2">进程的状态与转换</a><br><a href="#%E8%BF%9B%E7%A8%8B%E6%8E%A7%E5%88%B6">进程控制</a><br><a href="#%E8%BF%9B%E7%A8%8B%E9%80%9A%E4%BF%A1">进程通信</a><br><a href="#%E7%BA%BF%E7%A8%8B%E6%A6%82%E5%BF%B5%E5%92%8C%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B">线程概念和多线程模型</a><br><a href="#%E5%A4%84%E7%90%86%E6%9C%BA%E8%B0%83%E5%BA%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E5%92%8C%E5%B1%82%E6%AC%A1">处理机调度的概念和层次</a><br><a href="#%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E7%9A%84%E6%97%B6%E6%9C%BA%EF%BC%8C%E5%88%87%E6%8D%A2%E4%B8%8E%E8%BF%87%E7%A8%8B%EF%BC%8C%E6%96%B9%E5%BC%8F">进程调度的时机，切换与过程，方式</a><br><a href="#%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87">调度算法评价指标</a><br><a href="#%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95">调度算法</a></p>
 <h2 id="操作i系统的概念功能目标"><a href="#操作i系统的概念功能目标" class="headerlink" title="操作i系统的概念功能目标"></a>操作i系统的概念功能目标</h2><p>操作系统概念：是指控制和管理整个计算机系统硬件和软件资源，并且合理的组织调度计算机的工作和资源分配，以提供给用户和其它软件方便的接口和环境。他是计算机系统中最基本的系统软件。(Windows任务管理器是最直观的例子)</p>
 <p>操作系统作为资源管理者的功能：</p>
 <ol>
@@ -235,11 +235,48 @@
 <li>一对一<img src="/2023/01/01/my-seventhblog/14.jpg" alt="示例" title="示例"></li>
 <li>多对多<img src="/2023/01/01/my-seventhblog/15.jpg" alt="示例" title="示例"></li>
 </ol>
+<h2 id="处理机调度的概念和层次"><a href="#处理机调度的概念和层次" class="headerlink" title="处理机调度的概念和层次"></a>处理机调度的概念和层次</h2><p>调度：当有一堆任务要处理，但是资源有限，任务无法同时处理，我们需要某种规则来决定处理任务的顺序，这就是调度研究的问题</p>
+<p>三个层次：</p>
+<ol>
+<li>高级调度<img src="/2023/01/01/my-seventhblog/16.jpg" alt="示例" title="示例"></li>
+<li>中级调度<img src="/2023/01/01/my-seventhblog/17.jpg" alt="示例" title="示例"></li>
+<li>低级调度<img src="/2023/01/01/my-seventhblog/18.jpg" alt="示例" title="示例"></li>
+</ol>
+<h2 id="进程调度的时机，切换与过程，方式"><a href="#进程调度的时机，切换与过程，方式" class="headerlink" title="进程调度的时机，切换与过程，方式"></a>进程调度的时机，切换与过程，方式</h2><p>需要进行进程调度的情况：</p>
+<ol>
+<li>主动放弃处理机</li>
+<li>被动放弃处理机</li>
+</ol>
+<p>不能进行进程调度的情况：</p>
+<ol>
+<li>处理中断过程</li>
+<li>操作系统内核程序临界区</li>
+<li>原语</li>
+</ol>
+<p>进程调度方式：</p>
+<ol>
+<li>非剥夺调度方式(只允许进程主动放弃处理机)</li>
+<li>剥夺调度方式(允许更紧急的任务插队)</li>
+</ol>
+<h2 id="调度算法评价指标"><a href="#调度算法评价指标" class="headerlink" title="调度算法评价指标"></a>调度算法评价指标</h2><p>cpu利用率=忙碌的时间/总时间</p>
+<p>周转时间=作业完成时间-作业提交时间</p>
+<p>平均周转时间=各个作业周转时间之和/作业数</p>
+<p>带权周转时间=作业周转时间/作业实际运行时间</p>
+<p>等待时间=等待处理及状态时间</p>
+<p>响应时间=提交请求到首次产生相应时间</p>
+<h2 id="调度算法"><a href="#调度算法" class="headerlink" title="调度算法"></a>调度算法</h2><p>先来先服务FCFS<img src="/2023/01/01/my-seventhblog/19.jpg" alt="示例" title="示例"></p>
+<p>非抢占式短作业优先SJF(默认说法)<img src="/2023/01/01/my-seventhblog/20.jpg" alt="示例" title="示例"></p>
+<p>抢占式短作业优先SJF<img src="/2023/01/01/my-seventhblog/21.jpg" alt="示例" title="示例"><img src="/2023/01/01/my-seventhblog/22.jpg" alt="示例" title="示例"></p>
+<p>高响应比优先HRRN<img src="/2023/01/01/my-seventhblog/23.jpg" alt="示例" title="示例"></p>
+<p>时间轮转片<img src="/2023/01/01/my-seventhblog/24.jpg" alt="示例" title="示例"><img src="/2023/01/01/my-seventhblog/25.jpg" alt="示例" title="示例"><img src="/2023/01/01/my-seventhblog/26.jpg" alt="示例" title="示例"></p>
+<p>非抢占式优先级调度法<img src="/2023/01/01/my-seventhblog/27.jpg" alt="示例" title="示例"></p>
+<p>抢占式优先级调度法<img src="/2023/01/01/my-seventhblog/28.jpg" alt="示例" title="示例"></p>
+<p>多级反馈队列调度发<img src="/2023/01/01/my-seventhblog/29.jpg" alt="示例" title="示例"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2023/01/01/my-seventhblog/" data-id="clcegyp6r0005zw5r0qehgwla" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2023/01/01/my-seventhblog/" data-id="clcfvhl0d0003tw5r3z1z47rv" class="article-share-link">Share</a>
       
       
     </footer>
@@ -417,7 +454,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/" data-id="clcegyp6r0006zw5rdruh5jn1" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/" data-id="clcfvhl0e0005tw5rd4ny4ha6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -666,7 +703,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/" data-id="clcegyp6p0002zw5re3nk34ap" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/" data-id="clcfvhl0b0001tw5rervcb3y8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -708,7 +745,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/10/15/Webproject1/" data-id="clcegyp6j0000zw5r5a9oh7oo" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/10/15/Webproject1/" data-id="clcfvhl070000tw5retmsd1sh" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1306,7 +1343,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="clcegyp6p0003zw5rebpscnkk" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="clcfvhl0f0006tw5r611j2hvd" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1462,7 +1499,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/03/my-thirdblog/" data-id="clcegyp6s0007zw5rgmm1hrh6" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/03/my-thirdblog/" data-id="clcfvhl0f0007tw5r2uwm776h" class="article-share-link">Share</a>
       
       
     </footer>
@@ -2104,7 +2141,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="clcegyp6q0004zw5rdj1pd8fs" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="clcfvhl0e0004tw5r7ngd0nbg" class="article-share-link">Share</a>
       
       
     </footer>
@@ -2844,7 +2881,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="clcegyp6n0001zw5rgevcam0z" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="clcfvhl0c0002tw5rdp5n6un6" class="article-share-link">Share</a>
       
       
     </footer>
