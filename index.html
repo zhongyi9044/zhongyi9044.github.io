@@ -638,7 +638,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2023/01/01/my-seventhblog/" data-id="cldh23vjm0003pk5rfecoc3mt" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2023/01/01/my-seventhblog/" data-id="cldig66hr0005645rbzfc0zqf" class="article-share-link">Share</a>
       
       
     </footer>
@@ -672,7 +672,7 @@
       
         <p>MDN详情API<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API">https://developer.mozilla.org/zh-CN/docs/Web/API</a><br>文档：document<br>元素：element<br>节点：node</p>
 <p>目录</p>
-<p><a href="#%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0">获取元素</a><br><a href="#%E4%BA%8B%E4%BB%B6%E5%9F%BA%E7%A1%80">事件基础</a><br><a href="#%E6%93%8D%E4%BD%9C%E5%85%83%E7%B4%A0">操作元素</a><br><a href="#%E8%8A%82%E7%82%B9%E6%93%8D%E4%BD%9C">节点操作</a><br><a href="#%E4%BA%8B%E4%BB%B6%E9%AB%98%E7%BA%A7">事件高级</a><br><a href="#%E9%94%AE%E7%9B%98%E4%BA%8B%E4%BB%B6">键盘事件</a><br><a href="#%E7%BB%83%E4%B9%A0">练习</a><br><a href="#BOM">BOM</a><br><a href="#BOM%E7%B1%BB%E5%9E%8B%E4%BA%8B%E4%BB%B6">BOM类型事件</a></p>
+<p><a href="#%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0">获取元素</a><br><a href="#%E4%BA%8B%E4%BB%B6%E5%9F%BA%E7%A1%80">事件基础</a><br><a href="#%E6%93%8D%E4%BD%9C%E5%85%83%E7%B4%A0">操作元素</a><br><a href="#%E8%8A%82%E7%82%B9%E6%93%8D%E4%BD%9C">节点操作</a><br><a href="#%E4%BA%8B%E4%BB%B6%E9%AB%98%E7%BA%A7">事件高级</a><br><a href="#%E9%94%AE%E7%9B%98%E4%BA%8B%E4%BB%B6">键盘事件</a><br><a href="#%E7%BB%83%E4%B9%A0">练习</a><br><a href="#BOM">BOM</a><br><a href="#BOM%E7%B1%BB%E5%9E%8B%E4%BA%8B%E4%BB%B6">BOM类型事件</a><br><a href="#PC%E7%AB%AF%E7%BD%91%E9%A1%B5%E7%89%B9%E6%95%88">PC端网页特效</a></p>
 <h3 id="获取元素"><a href="#获取元素" class="headerlink" title="获取元素"></a>获取元素</h3><ol>
 <li>document.getElementById(‘id名’)–获取有id的元素对象</li>
 <li>document.getElementsByTagName(‘标签名’)–返回带有指定标签名的对象集合</li>
@@ -827,11 +827,34 @@
 <li>倒计时板块：使用setInterval</li>
 <li>自动关闭广告：使用setTimeout</li>
 </ol>
+<h4 id="location对象"><a href="#location对象" class="headerlink" title="location对象"></a>location对象</h4><ol>
+<li>location.href获取页面地址</li>
+<li>location.href=’URL’赋值以后可以跳转到别的地址</li>
+<li>location.search获取页面参数，比如你从上一个页面提交了内容，就可以在下一个页面获取提交内容</li>
+<li>location.assign()可以实现后退功能的跳转</li>
+<li>location.replace()不可以后退</li>
+<li>location.reload()刷新页面</li>
+</ol>
+<h4 id="navigator对象"><a href="#navigator对象" class="headerlink" title="navigator对象"></a>navigator对象</h4><p>navigator对象包含浏览器信息</p>
+<p>比较常用的：navigator.userAgent–返回由客户机发送的服务器的user-agent头部值，可以判断是移动还是PC端</p>
+<h4 id="history对象"><a href="#history对象" class="headerlink" title="history对象"></a>history对象</h4><ol>
+<li>history.back()–根据历史记录页面后退</li>
+<li>history.forward()–页面前进</li>
+<li>history.go(正数前进，负数后退)–页面前进或者后退</li>
+</ol>
+<h3 id="PC端网页特效"><a href="#PC端网页特效" class="headerlink" title="PC端网页特效"></a>PC端网页特效</h3><h4 id="元素偏移量offset"><a href="#元素偏移量offset" class="headerlink" title="元素偏移量offset"></a>元素偏移量offset</h4><ol>
+<li>element.offsetParent返回该元素带有定位的父亲</li>
+<li>element.offsetTop返回该元素相对带定位的父亲上方偏移量</li>
+<li>element.offsetLeft返回该元素相对带定位的父亲左方偏移量</li>
+<li>element.offsetWidth返回padding+border+width的宽度</li>
+<li>element.offsetHeight返回padding+border+width的高度</li>
+</ol>
+<p>offset和style的区别：style是行内样式，style有单位，且不包含padding和border，但是style可以改值</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/" data-id="cldh23vjo0006pk5rbgp1go7o" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/" data-id="cldig66hr0006645rhuetfir5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1080,7 +1103,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/" data-id="cldh23vjl0002pk5r97ho69a3" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/" data-id="cldig66hn0001645r75gb2xy5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1122,7 +1145,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/10/15/Webproject1/" data-id="cldh23vjf0000pk5rg8dthk7n" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/10/15/Webproject1/" data-id="cldig66hi0000645r81sg137v" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1720,7 +1743,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cldh23vjn0004pk5r7qs3horx" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cldig66hp0003645r0ygi8n4m" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1876,7 +1899,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/03/my-thirdblog/" data-id="cldh23vjp0007pk5r5s5376dp" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/03/my-thirdblog/" data-id="cldig66hs0007645r587jgg2x" class="article-share-link">Share</a>
       
       
     </footer>
@@ -2518,7 +2541,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="cldh23vjo0005pk5reckldchc" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="cldig66hq0004645r250p6zio" class="article-share-link">Share</a>
       
       
     </footer>
@@ -3258,7 +3281,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="cldh23vjk0001pk5rb3s343mk" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="cldig66ho0002645rbxxadx43" class="article-share-link">Share</a>
       
       
     </footer>
