@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>jQuery | 肥艺的blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="jQuery下载地址：https:&#x2F;&#x2F;jquery.com&#x2F;download&#x2F; 目录： jQuery基本使用jQuery常见API jQuery基本使用顶级对象jQuery的顶级对象就是jQuery，也可以用’$’代替，相当于原生JavaScript的window jQuery对象的本质：利用$对DOM对象包装后产生的对象，以伪数组形式存储 jQuery入口函数入口函数的两种写法 $(functi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jQuery">
+<meta property="og:url" content="https://zhongyi9044.github.io/2023/02/07/my-eighthblog/index.html">
+<meta property="og:site_name" content="肥艺的blog">
+<meta property="og:description" content="jQuery下载地址：https:&#x2F;&#x2F;jquery.com&#x2F;download&#x2F; 目录： jQuery基本使用jQuery常见API jQuery基本使用顶级对象jQuery的顶级对象就是jQuery，也可以用’$’代替，相当于原生JavaScript的window jQuery对象的本质：利用$对DOM对象包装后产生的对象，以伪数组形式存储 jQuery入口函数入口函数的两种写法 $(functi">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-02-07T05:20:59.000Z">
+<meta property="article:modified_time" content="2023-02-07T06:28:30.695Z">
+<meta property="article:author" content="钟艺">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="肥艺的blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">肥艺的blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zhongyi9044.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-my-eighthblog" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2023/02/07/my-eighthblog/" class="article-date">
+  <time datetime="2023-02-07T05:20:59.000Z" itemprop="datePublished">2023-02-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      jQuery
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>jQuery下载地址：<a target="_blank" rel="noopener" href="https://jquery.com/download/">https://jquery.com/download/</a></p>
+<p>目录：</p>
+<p><a href="#jQuery%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8">jQuery基本使用</a><br><a href="#jQuery%E5%B8%B8%E8%A7%81API">jQuery常见API</a></p>
+<h3 id="jQuery基本使用"><a href="#jQuery基本使用" class="headerlink" title="jQuery基本使用"></a>jQuery基本使用</h3><h4 id="顶级对象"><a href="#顶级对象" class="headerlink" title="顶级对象"></a>顶级对象</h4><p>jQuery的顶级对象就是jQuery，也可以用’$’代替，相当于原生JavaScript的window</p>
+<p>jQuery对象的本质：利用$对DOM对象包装后产生的对象，以伪数组形式存储</p>
+<h4 id="jQuery入口函数"><a href="#jQuery入口函数" class="headerlink" title="jQuery入口函数"></a>jQuery入口函数</h4><p>入口函数的两种写法</p>
+<p><code>$(function()&#123;</code><br>    <code>...此处是页面DOM加载完成的入口</code><br><code>&#125;);</code></p>
+<p><code>$(document).ready(function()&#123;</code><br>    <code>...此处是页面DOM加载完成的入口</code><br><code>&#125;);</code></p>
+<h4 id="jQuery对象和DOM对象"><a href="#jQuery对象和DOM对象" class="headerlink" title="jQuery对象和DOM对象"></a>jQuery对象和DOM对象</h4><p>DOM对象转换为jQuery对象：$(‘选择器’);</p>
+<p>jQuery对象转换为DOM对象：<code>$(&#39;选择器&#39;)[index]</code>或者<code>$(&#39;div&#39;).get(index)</code></p>
+<p>原生的JavaScript一些方法属性jQuery没有给我们进行封装，所以需要转换才能使用</p>
+<h3 id="jQuery常见API"><a href="#jQuery常见API" class="headerlink" title="jQuery常见API"></a>jQuery常见API</h3><h4 id="jquery基础选择器"><a href="#jquery基础选择器" class="headerlink" title="jquery基础选择器"></a>jquery基础选择器</h4><ol>
+<li>$(‘#id’) id选择器</li>
+<li>$(‘*’) 全选选择器</li>
+<li>$(‘.class’) 类选择器</li>
+<li>$(‘div’) 标签选择器</li>
+<li>$(‘div,p,li’) 并集选择器</li>
+<li>$(‘li.current’) 交集选择器</li>
+<li>$(‘ul&gt;li’) 子代选择器，不包含孙子</li>
+<li>$(‘ul li’) 后代选择器，包含孙子</li>
+</ol>
+<p>隐式迭代：给匹配到的所有元素进行循环遍历，执行相应的方法，不用我们自己循环，jQuery特有的</p>
+<h4 id="jQuery筛选选择器"><a href="#jQuery筛选选择器" class="headerlink" title="jQuery筛选选择器"></a>jQuery筛选选择器</h4><ol>
+<li>$(‘ul:first’) 获取索第一个ul元素</li>
+<li>$(‘ul:last’) 获取索最后一个ul元素</li>
+<li>$(‘ul:eq(index)’) 获取ul下该索引号元素</li>
+<li>$(‘ul:odd’) 获取ul下索引号奇数元素</li>
+<li>$(‘ul:even’) 获取ul下索引号偶数元素</li>
+</ol>
+<h4 id="jQuery筛选方法-重点"><a href="#jQuery筛选方法-重点" class="headerlink" title="jQuery筛选方法*重点"></a>jQuery筛选方法*重点</h4><ol>
+<li>$(‘li’).parent 查找父亲</li>
+<li>$(‘ul’).children(‘li’) 查找最近一级ul亲儿子li</li>
+<li>$(‘ul’).find(‘li’) 查找ul的后代li</li>
+<li>$(‘.me’).siblings() 查找当前元素兄弟节点，不包含自己</li>
+<li>$(‘.me’).nextAll() 查找当前元素之后全部同辈元素</li>
+<li>$(‘.me’).prevAll() 查找当前元素之前全部同辈元素</li>
+<li>$(‘div’).hasClass(‘protected’) 检查此元素有没有特定的类，如果有就返回true</li>
+<li>$(‘li’).eq(2) 获取li下该索引号元素</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zhongyi9044.github.io/2023/02/07/my-eighthblog/" data-id="cldtv2h8900020o5r508u2zhl" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2023/01/01/my-seventhblog/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">操作系统</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/02/07/my-eighthblog/">jQuery</a>
+          </li>
+        
+          <li>
+            <a href="/2023/01/01/my-seventhblog/">操作系统</a>
+          </li>
+        
+          <li>
+            <a href="/2022/11/14/my-sixthblog/">Web APIs</a>
+          </li>
+        
+          <li>
+            <a href="/2022/11/08/my-fifthblog/">Web前端-JavaScript</a>
+          </li>
+        
+          <li>
+            <a href="/2022/10/15/Webproject1/">Webproject</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2023 钟艺<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
