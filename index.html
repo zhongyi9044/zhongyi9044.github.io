@@ -88,7 +88,7 @@
       
         <p>jQuery下载地址：<a target="_blank" rel="noopener" href="https://jquery.com/download/">https://jquery.com/download/</a></p>
 <p>目录：</p>
-<p><a href="#jQuery%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8">jQuery基本使用</a><br><a href="#jQuery%E5%B8%B8%E8%A7%81API">jQuery常见API</a></p>
+<p><a href="#jQuery%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8">jQuery基本使用</a><br><a href="#jQuery%E5%B8%B8%E8%A7%81API">jQuery常见API</a><br><a href="#%E4%BF%AE%E6%94%B9%E6%A0%B7%E5%BC%8F%E7%9A%84%E6%96%B9%E6%B3%95">修改样式的方法</a><br><a href="#jQuery%E6%95%88%E6%9E%9C">jQuery效果</a></p>
 <h3 id="jQuery基本使用"><a href="#jQuery基本使用" class="headerlink" title="jQuery基本使用"></a>jQuery基本使用</h3><h4 id="顶级对象"><a href="#顶级对象" class="headerlink" title="顶级对象"></a>顶级对象</h4><p>jQuery的顶级对象就是jQuery，也可以用’$’代替，相当于原生JavaScript的window</p>
 <p>jQuery对象的本质：利用$对DOM对象包装后产生的对象，以伪数组形式存储</p>
 <h4 id="jQuery入口函数"><a href="#jQuery入口函数" class="headerlink" title="jQuery入口函数"></a>jQuery入口函数</h4><p>入口函数的两种写法</p>
@@ -125,11 +125,58 @@
 <li>$(‘div’).hasClass(‘protected’) 检查此元素有没有特定的类，如果有就返回true</li>
 <li>$(‘li’).eq(2) 获取li下该索引号元素</li>
 </ol>
+<h3 id="修改样式的方法"><a href="#修改样式的方法" class="headerlink" title="修改样式的方法"></a>修改样式的方法</h3><p>jQuery链式编程：节省代码量，更加简洁 例子：$(this).css(“color”,”red”).parent().css(“background-color”,blue)我的文字颜色变红，父亲悲剧变蓝</p>
+<p>操作css样式方法：</p>
+<ol>
+<li>$(this).css(“color”) 返回属性值</li>
+<li>$(this).css(“color”,”red”) 设置样式，如果是数字可以不用单位和引号 </li>
+<li><code>$(&quot;div&quot;).css(&#123;</code><pre><code>        `width:100,`
+        `height:100,`
+        `backgroundColor:&quot;red&quot;,`
+     `&#125;)`
+</code></pre>
+第三种方法采取对象形式，方便设置样式，该方法的复合单词必须用驼峰命名法，属性之间逗号隔开</li>
+</ol>
+<p>操作类样式方法</p>
+<ol>
+<li>$(“div”).addClass(“current”) 添加类</li>
+<li>$(“div”).removeClass(“current”) 移除类</li>
+<li>$(“div”).toggleClass(“current”) 有就移除，无就添加，即切换类</li>
+</ol>
+<p>类操作和className的区别：className会覆盖其他类，类操作不会</p>
+<h3 id="jQuery效果"><a href="#jQuery效果" class="headerlink" title="jQuery效果"></a>jQuery效果</h3><p>查找jQuery API：<a target="_blank" rel="noopener" href="https://jquery.cuishifeng.cn/">https://jquery.cuishifeng.cn/</a></p>
+<h4 id="显示和隐藏"><a href="#显示和隐藏" class="headerlink" title="显示和隐藏"></a>显示和隐藏</h4><ol>
+<li>$(“div”).show(speed(速度，毫秒),easing(切换效果，快到慢等，默认swing),fn(回调函数)) 显示</li>
+<li>$(“div”).hide(speed(速度，毫秒),easing(切换效果，快到慢等，默认swing),fn(回调函数)) 隐藏</li>
+<li>$(“div”).toggle(speed(速度，毫秒),easing(切换效果，快到慢等，默认swing),fn(回调函数)) 切换</li>
+</ol>
+<h4 id="上拉下拉"><a href="#上拉下拉" class="headerlink" title="上拉下拉"></a>上拉下拉</h4><ol>
+<li>$(“div”).slideDown(speed(速度，毫秒),easing(切换效果，快到慢等，默认swing),fn(回调函数)) 下拉</li>
+<li>$(“div”).slideUp(speed(速度，毫秒),easing(切换效果，快到慢等，默认swing),fn(回调函数)) 上拉</li>
+<li>$(“div”).slideToggle(speed(速度，毫秒),easing(切换效果，快到慢等，默认swing),fn(回调函数)) 切换</li>
+</ol>
+<p>以上显示隐藏，上拉下拉的speed，easing，fn都是可以省略不写的</p>
+<h4 id="事件切换"><a href="#事件切换" class="headerlink" title="事件切换"></a>事件切换</h4><p>hover(over,out):mouseover和mouseout的复合写法</p>
+<ol>
+<li>over:鼠标移如元素要触发的函数fn</li>
+<li>out:鼠标移出元素要触发的函数fn</li>
+<li>如果只写一个函数，那么鼠标移出移入都会触发函数fn</li>
+</ol>
+<h4 id="停止排队"><a href="#停止排队" class="headerlink" title="停止排队"></a>停止排队</h4><p>stop():用于停止动画或者效果，一般用于动画和效果前面，使上一个动画或者效果停止</p>
+<p>使用举例：$(“div”).stop().slideToggle();</p>
+<h4 id="淡入淡出效果"><a href="#淡入淡出效果" class="headerlink" title="淡入淡出效果"></a>淡入淡出效果</h4><ol>
+<li>$(“div”).fadeIn(speed(速度，毫秒),easing(切换效果，快到慢等，默认swing),fn(回调函数)) 淡入，逐渐出现</li>
+<li>$(“div”).fadeOut(speed(速度，毫秒),easing(切换效果，快到慢等，默认swing),fn(回调函数)) 淡出，逐渐消失</li>
+<li>$(“div”).fadeToggle(speed(速度，毫秒),easing(切换效果，快到慢等，默认swing),fn(回调函数)) 淡入淡出切换</li>
+<li>$(“div”).fadeTo(speed(速度，毫秒，此方法中必写),opacity(透明度，0-1之间，必写),easing(切换效果，快到慢等，默认swing),fn(回调函数)) 调整透明度</li>
+</ol>
+<h4 id="自定义动画"><a href="#自定义动画" class="headerlink" title="自定义动画"></a>自定义动画</h4><p>animate(params,speed,easing,fn):params是必须要写的，采用对象的形式书写，复合型用驼峰命名法</p>
+<p>使用举例：<br><code>$(&quot;div&quot;).animate(&#123;</code><br>               <code>left:100,</code><br>               <code>top:100,</code><br>               <code>backgroundColor:&quot;red&quot;,</code><br>            <code>&#125;);</code><br>以动画的效果将样式变成举例左100px，上100ox，背景变红</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2023/02/07/my-eighthblog/" data-id="cldtv2h8900020o5r508u2zhl" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2023/02/07/my-eighthblog/" data-id="cldvbu0ji00049w5rd7mfft1f" class="article-share-link">Share</a>
       
       
     </footer>
@@ -713,7 +760,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2023/01/01/my-seventhblog/" data-id="cldtv2h8a00050o5r9jd666hp" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2023/01/01/my-seventhblog/" data-id="cldvbu0ji00069w5rduxzdpmt" class="article-share-link">Share</a>
       
       
     </footer>
@@ -984,7 +1031,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/" data-id="cldtv2h8b00070o5r44sefhpm" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/" data-id="cldvbu0jj00079w5r7oime6ix" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1233,7 +1280,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/" data-id="cldtv2h8900030o5rajen9awl" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/" data-id="cldvbu0jg00029w5r5itb1295" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1275,7 +1322,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/10/15/Webproject1/" data-id="cldtv2h5w00000o5r6pk69c9n" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/10/15/Webproject1/" data-id="cldvbu0ja00009w5ra7cogclz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1873,7 +1920,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cldtv2h8a00040o5r61zpenxu" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cldvbu0jg00039w5r2rk03zoj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -2029,7 +2076,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/03/my-thirdblog/" data-id="cldtv2h8c00080o5rcxa9bpsn" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/03/my-thirdblog/" data-id="cldvbu0jj00089w5r12ibdn2k" class="article-share-link">Share</a>
       
       
     </footer>
@@ -2671,7 +2718,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="cldtv2h8b00060o5r8o774pro" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="cldvbu0ji00059w5r5qdzae39" class="article-share-link">Share</a>
       
       
     </footer>
@@ -3411,7 +3458,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="cldtv2h7f00010o5r3990873u" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="cldvbu0je00019w5r01943e7b" class="article-share-link">Share</a>
       
       
     </footer>
