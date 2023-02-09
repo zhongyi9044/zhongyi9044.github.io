@@ -88,7 +88,7 @@
       
         <p>jQuery下载地址：<a target="_blank" rel="noopener" href="https://jquery.com/download/">https://jquery.com/download/</a></p>
 <p>目录：</p>
-<p><a href="#jQuery%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8">jQuery基本使用</a><br><a href="#jQuery%E5%B8%B8%E8%A7%81API">jQuery常见API</a><br><a href="#%E4%BF%AE%E6%94%B9%E6%A0%B7%E5%BC%8F%E7%9A%84%E6%96%B9%E6%B3%95">修改样式的方法</a><br><a href="#jQuery%E6%95%88%E6%9E%9C">jQuery效果</a></p>
+<p><a href="#jQuery%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8">jQuery基本使用</a><br><a href="#jQuery%E5%B8%B8%E8%A7%81API">jQuery常见API</a><br><a href="#%E4%BF%AE%E6%94%B9%E6%A0%B7%E5%BC%8F%E7%9A%84%E6%96%B9%E6%B3%95">修改样式的方法</a><br><a href="#jQuery%E6%95%88%E6%9E%9C">jQuery效果</a><br><a href="#jQuery%E5%B1%9E%E6%80%A7%E6%93%8D%E4%BD%9C">jQuery属性操作</a><br><a href="#jQuery%E5%86%85%E5%AE%B9%E6%96%87%E6%9C%AC%E5%80%BC">jQuery内容文本值</a></p>
 <h3 id="jQuery基本使用"><a href="#jQuery基本使用" class="headerlink" title="jQuery基本使用"></a>jQuery基本使用</h3><h4 id="顶级对象"><a href="#顶级对象" class="headerlink" title="顶级对象"></a>顶级对象</h4><p>jQuery的顶级对象就是jQuery，也可以用’$’代替，相当于原生JavaScript的window</p>
 <p>jQuery对象的本质：利用$对DOM对象包装后产生的对象，以伪数组形式存储</p>
 <h4 id="jQuery入口函数"><a href="#jQuery入口函数" class="headerlink" title="jQuery入口函数"></a>jQuery入口函数</h4><p>入口函数的两种写法</p>
@@ -117,6 +117,7 @@
 </ol>
 <h4 id="jQuery筛选方法-重点"><a href="#jQuery筛选方法-重点" class="headerlink" title="jQuery筛选方法*重点"></a>jQuery筛选方法*重点</h4><ol>
 <li>$(‘li’).parent 查找父亲</li>
+<li>$(‘li’).parents(‘选择器’) 查找指定的祖先元素</li>
 <li>$(‘ul’).children(‘li’) 查找最近一级ul亲儿子li</li>
 <li>$(‘ul’).find(‘li’) 查找ul的后代li</li>
 <li>$(‘.me’).siblings() 查找当前元素兄弟节点，不包含自己</li>
@@ -172,11 +173,26 @@
 </ol>
 <h4 id="自定义动画"><a href="#自定义动画" class="headerlink" title="自定义动画"></a>自定义动画</h4><p>animate(params,speed,easing,fn):params是必须要写的，采用对象的形式书写，复合型用驼峰命名法</p>
 <p>使用举例：<br><code>$(&quot;div&quot;).animate(&#123;</code><br>               <code>left:100,</code><br>               <code>top:100,</code><br>               <code>backgroundColor:&quot;red&quot;,</code><br>            <code>&#125;);</code><br>以动画的效果将样式变成举例左100px，上100ox，背景变红</p>
+<h3 id="jQuery属性操作"><a href="#jQuery属性操作" class="headerlink" title="jQuery属性操作"></a>jQuery属性操作</h3><ol>
+<li>prop(“属性”) 获取属性值</li>
+<li>prop(“属性”,”属性值”) 设置属性值</li>
+<li>attr(“属性”) 获取自定义属性值</li>
+<li>arrt(“属性”,”属性值”) 设置自定义属性值</li>
+</ol>
+<h3 id="jQuery内容文本值"><a href="#jQuery内容文本值" class="headerlink" title="jQuery内容文本值"></a>jQuery内容文本值</h3><ol>
+<li>html() 获取元素内容</li>
+<li>html(“内容”) 设置元素内容</li>
+<li>text() 获取元素文本内容</li>
+<li>text(“内容”) 设置元素文本内容</li>
+<li>val() 获取表单值</li>
+<li>val(“内容”) 设置表单值</li>
+<li>toFixed(n) 保留n位小数</li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2023/02/07/my-eighthblog/" data-id="cldvbu0ji00049w5rd7mfft1f" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2023/02/07/my-eighthblog/" data-id="cldwfbpnz00021c5r0ri77pgq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -760,7 +776,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2023/01/01/my-seventhblog/" data-id="cldvbu0ji00069w5rduxzdpmt" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2023/01/01/my-seventhblog/" data-id="cldwfbpo100061c5rckrq90ci" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1031,7 +1047,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/" data-id="cldvbu0jj00079w5r7oime6ix" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/" data-id="cldwfbpo100071c5rhxvp2t0r" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1280,7 +1296,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/" data-id="cldvbu0jg00029w5r5itb1295" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/" data-id="cldwfbpnz00031c5rcqe3amu5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1322,7 +1338,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/10/15/Webproject1/" data-id="cldvbu0ja00009w5ra7cogclz" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/10/15/Webproject1/" data-id="cldwfbpns00001c5r486zctr0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1920,7 +1936,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cldvbu0jg00039w5r2rk03zoj" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cldwfbpo000041c5raii217hp" class="article-share-link">Share</a>
       
       
     </footer>
@@ -2076,7 +2092,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/03/my-thirdblog/" data-id="cldvbu0jj00089w5r12ibdn2k" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/03/my-thirdblog/" data-id="cldwfbpo200081c5rag6i2ku6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -2718,7 +2734,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="cldvbu0ji00059w5r5qdzae39" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="cldwfbpo000051c5rg38tgpb8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -3458,7 +3474,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="cldvbu0je00019w5r01943e7b" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="cldwfbpnx00011c5rhbjfegxg" class="article-share-link">Share</a>
       
       
     </footer>
