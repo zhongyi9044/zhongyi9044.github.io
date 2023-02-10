@@ -7,15 +7,15 @@
   
   <title>jQuery | 肥艺的blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="jQuery下载地址：https:&#x2F;&#x2F;jquery.com&#x2F;download&#x2F; 目录： jQuery基本使用jQuery常见API修改样式的方法jQuery效果jQuery属性操作jQuery内容文本值 jQuery基本使用顶级对象jQuery的顶级对象就是jQuery，也可以用’$’代替，相当于原生JavaScript的window jQuery对象的本质：利用$对DOM对象包装后产生的对象，以">
+  <meta name="description" content="jQuery下载地址：https:&#x2F;&#x2F;jquery.com&#x2F;download&#x2F; 目录： jQuery基本使用jQuery常见API修改样式的方法jQuery效果jQuery属性操作jQuery内容文本值jQuery元素操作jQuery尺寸位置操作 jQuery基本使用顶级对象jQuery的顶级对象就是jQuery，也可以用’$’代替，相当于原生JavaScript的window jQuery对象的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jQuery">
 <meta property="og:url" content="https://zhongyi9044.github.io/2023/02/07/my-eighthblog/index.html">
 <meta property="og:site_name" content="肥艺的blog">
-<meta property="og:description" content="jQuery下载地址：https:&#x2F;&#x2F;jquery.com&#x2F;download&#x2F; 目录： jQuery基本使用jQuery常见API修改样式的方法jQuery效果jQuery属性操作jQuery内容文本值 jQuery基本使用顶级对象jQuery的顶级对象就是jQuery，也可以用’$’代替，相当于原生JavaScript的window jQuery对象的本质：利用$对DOM对象包装后产生的对象，以">
+<meta property="og:description" content="jQuery下载地址：https:&#x2F;&#x2F;jquery.com&#x2F;download&#x2F; 目录： jQuery基本使用jQuery常见API修改样式的方法jQuery效果jQuery属性操作jQuery内容文本值jQuery元素操作jQuery尺寸位置操作 jQuery基本使用顶级对象jQuery的顶级对象就是jQuery，也可以用’$’代替，相当于原生JavaScript的window jQuery对象的">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-02-07T05:20:59.000Z">
-<meta property="article:modified_time" content="2023-02-09T01:31:05.232Z">
+<meta property="article:modified_time" content="2023-02-10T03:34:21.538Z">
 <meta property="article:author" content="钟艺">
 <meta name="twitter:card" content="summary">
   
@@ -90,7 +90,7 @@
       
         <p>jQuery下载地址：<a target="_blank" rel="noopener" href="https://jquery.com/download/">https://jquery.com/download/</a></p>
 <p>目录：</p>
-<p><a href="#jQuery%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8">jQuery基本使用</a><br><a href="#jQuery%E5%B8%B8%E8%A7%81API">jQuery常见API</a><br><a href="#%E4%BF%AE%E6%94%B9%E6%A0%B7%E5%BC%8F%E7%9A%84%E6%96%B9%E6%B3%95">修改样式的方法</a><br><a href="#jQuery%E6%95%88%E6%9E%9C">jQuery效果</a><br><a href="#jQuery%E5%B1%9E%E6%80%A7%E6%93%8D%E4%BD%9C">jQuery属性操作</a><br><a href="#jQuery%E5%86%85%E5%AE%B9%E6%96%87%E6%9C%AC%E5%80%BC">jQuery内容文本值</a></p>
+<p><a href="#jQuery%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8">jQuery基本使用</a><br><a href="#jQuery%E5%B8%B8%E8%A7%81API">jQuery常见API</a><br><a href="#%E4%BF%AE%E6%94%B9%E6%A0%B7%E5%BC%8F%E7%9A%84%E6%96%B9%E6%B3%95">修改样式的方法</a><br><a href="#jQuery%E6%95%88%E6%9E%9C">jQuery效果</a><br><a href="#jQuery%E5%B1%9E%E6%80%A7%E6%93%8D%E4%BD%9C">jQuery属性操作</a><br><a href="#jQuery%E5%86%85%E5%AE%B9%E6%96%87%E6%9C%AC%E5%80%BC">jQuery内容文本值</a><br><a href="#jQuery%E5%85%83%E7%B4%A0%E6%93%8D%E4%BD%9C">jQuery元素操作</a><br><a href="#jQuery%E5%B0%BA%E5%AF%B8%E4%BD%8D%E7%BD%AE%E6%93%8D%E4%BD%9C">jQuery尺寸位置操作</a></p>
 <h3 id="jQuery基本使用"><a href="#jQuery基本使用" class="headerlink" title="jQuery基本使用"></a>jQuery基本使用</h3><h4 id="顶级对象"><a href="#顶级对象" class="headerlink" title="顶级对象"></a>顶级对象</h4><p>jQuery的顶级对象就是jQuery，也可以用’$’代替，相当于原生JavaScript的window</p>
 <p>jQuery对象的本质：利用$对DOM对象包装后产生的对象，以伪数组形式存储</p>
 <h4 id="jQuery入口函数"><a href="#jQuery入口函数" class="headerlink" title="jQuery入口函数"></a>jQuery入口函数</h4><p>入口函数的两种写法</p>
@@ -190,11 +190,42 @@
 <li>val(“内容”) 设置表单值</li>
 <li>toFixed(n) 保留n位小数</li>
 </ol>
+<h3 id="jQuery元素操作"><a href="#jQuery元素操作" class="headerlink" title="jQuery元素操作"></a>jQuery元素操作</h3><p>遍历元素each:一般使用在需要将投以雷元素进行同类不同样操作</p>
+<ol>
+<li>$(“div”).each(function(index,domEle){}–index是下标，自动给你分配了；domEle是Dom对象，在function要使用jQuery方法需要转换为jQuery对象</li>
+<li>$.each(object,function(index,element){})–object可以是任何对象，数组；index是下标，自动给你分配了；element是遍历内容值</li>
+</ol>
+<p>创建 删除 添加元素</p>
+<ol>
+<li><code>var li=$(&lt;li&gt;我是li&lt;/li&gt;)</code> 创建了一个li，且内容是‘我是li’</li>
+<li>$(“ul”).append(li) 在ul内部最后面添加了li，等于最后一个儿子</li>
+<li>$(“ul”).prepend(li) 在ul内部最前面添加了li，等于第一个儿子</li>
+<li>$(“ul”).after(li) 在ul外部后面添加了li，等于兄弟</li>
+<li>$(“ul”).before(li) 在ul外部前面添加了li，等于兄弟</li>
+<li>$(“ul”).remove() 删除了ul</li>
+<li>$(“ul”).empty() 删除了ul的所有子代</li>
+<li>$(“ul”).html(“”) 删除了ul的所有子代，””是不可以省略的</li>
+</ol>
+<h3 id="jQuery尺寸位置操作"><a href="#jQuery尺寸位置操作" class="headerlink" title="jQuery尺寸位置操作"></a>jQuery尺寸位置操作</h3><p>尺寸操作：返回的是数字型</p>
+<ol>
+<li>width()/height() 获取元素宽/高，如果需要设置尺寸，在括号里输入数字不加单位</li>
+<li>innerWidth()/innerheight() 获取元素宽/高，包含padding</li>
+<li>outerWidtn()/outerheight() 获取元素宽/高，包含padding，border</li>
+<li>outerWidtn(true)/outerheight(true) 获取元素宽/高，包含padding，border，margin</li>
+</ol>
+<p>位置操作：</p>
+<ol>
+<li>offset() 获取距离文档顶部和左边距离，此方法有且仅有两个属性，top和left</li>
+<li>offset({top:xx,left:xx}) 设置距离文档顶部和左边距离，不需要单位</li>
+<li>position() 获取相对于带有定位的父亲的偏移坐标，此方法只能读取，不能设置偏移</li>
+<li>scrollTop()/scrollLeft() 获取所取元素被卷去上部和左部距离</li>
+<li>scrollTop(xx)/scrollLeft(xx) 使所取元素到达恰好被卷去上部或左部的距离的位置</li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2023/02/07/my-eighthblog/" data-id="cldwfbpnz00021c5r0ri77pgq" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2023/02/07/my-eighthblog/" data-id="cldxz61n10001ic5ra4z88n2a" class="article-share-link">Share</a>
       
       
     </footer>

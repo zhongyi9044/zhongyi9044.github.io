@@ -88,7 +88,7 @@
       
         <p>jQuery下载地址：<a target="_blank" rel="noopener" href="https://jquery.com/download/">https://jquery.com/download/</a></p>
 <p>目录：</p>
-<p><a href="#jQuery%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8">jQuery基本使用</a><br><a href="#jQuery%E5%B8%B8%E8%A7%81API">jQuery常见API</a><br><a href="#%E4%BF%AE%E6%94%B9%E6%A0%B7%E5%BC%8F%E7%9A%84%E6%96%B9%E6%B3%95">修改样式的方法</a><br><a href="#jQuery%E6%95%88%E6%9E%9C">jQuery效果</a><br><a href="#jQuery%E5%B1%9E%E6%80%A7%E6%93%8D%E4%BD%9C">jQuery属性操作</a><br><a href="#jQuery%E5%86%85%E5%AE%B9%E6%96%87%E6%9C%AC%E5%80%BC">jQuery内容文本值</a></p>
+<p><a href="#jQuery%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8">jQuery基本使用</a><br><a href="#jQuery%E5%B8%B8%E8%A7%81API">jQuery常见API</a><br><a href="#%E4%BF%AE%E6%94%B9%E6%A0%B7%E5%BC%8F%E7%9A%84%E6%96%B9%E6%B3%95">修改样式的方法</a><br><a href="#jQuery%E6%95%88%E6%9E%9C">jQuery效果</a><br><a href="#jQuery%E5%B1%9E%E6%80%A7%E6%93%8D%E4%BD%9C">jQuery属性操作</a><br><a href="#jQuery%E5%86%85%E5%AE%B9%E6%96%87%E6%9C%AC%E5%80%BC">jQuery内容文本值</a><br><a href="#jQuery%E5%85%83%E7%B4%A0%E6%93%8D%E4%BD%9C">jQuery元素操作</a><br><a href="#jQuery%E5%B0%BA%E5%AF%B8%E4%BD%8D%E7%BD%AE%E6%93%8D%E4%BD%9C">jQuery尺寸位置操作</a></p>
 <h3 id="jQuery基本使用"><a href="#jQuery基本使用" class="headerlink" title="jQuery基本使用"></a>jQuery基本使用</h3><h4 id="顶级对象"><a href="#顶级对象" class="headerlink" title="顶级对象"></a>顶级对象</h4><p>jQuery的顶级对象就是jQuery，也可以用’$’代替，相当于原生JavaScript的window</p>
 <p>jQuery对象的本质：利用$对DOM对象包装后产生的对象，以伪数组形式存储</p>
 <h4 id="jQuery入口函数"><a href="#jQuery入口函数" class="headerlink" title="jQuery入口函数"></a>jQuery入口函数</h4><p>入口函数的两种写法</p>
@@ -188,11 +188,42 @@
 <li>val(“内容”) 设置表单值</li>
 <li>toFixed(n) 保留n位小数</li>
 </ol>
+<h3 id="jQuery元素操作"><a href="#jQuery元素操作" class="headerlink" title="jQuery元素操作"></a>jQuery元素操作</h3><p>遍历元素each:一般使用在需要将投以雷元素进行同类不同样操作</p>
+<ol>
+<li>$(“div”).each(function(index,domEle){}–index是下标，自动给你分配了；domEle是Dom对象，在function要使用jQuery方法需要转换为jQuery对象</li>
+<li>$.each(object,function(index,element){})–object可以是任何对象，数组；index是下标，自动给你分配了；element是遍历内容值</li>
+</ol>
+<p>创建 删除 添加元素</p>
+<ol>
+<li><code>var li=$(&lt;li&gt;我是li&lt;/li&gt;)</code> 创建了一个li，且内容是‘我是li’</li>
+<li>$(“ul”).append(li) 在ul内部最后面添加了li，等于最后一个儿子</li>
+<li>$(“ul”).prepend(li) 在ul内部最前面添加了li，等于第一个儿子</li>
+<li>$(“ul”).after(li) 在ul外部后面添加了li，等于兄弟</li>
+<li>$(“ul”).before(li) 在ul外部前面添加了li，等于兄弟</li>
+<li>$(“ul”).remove() 删除了ul</li>
+<li>$(“ul”).empty() 删除了ul的所有子代</li>
+<li>$(“ul”).html(“”) 删除了ul的所有子代，””是不可以省略的</li>
+</ol>
+<h3 id="jQuery尺寸位置操作"><a href="#jQuery尺寸位置操作" class="headerlink" title="jQuery尺寸位置操作"></a>jQuery尺寸位置操作</h3><p>尺寸操作：返回的是数字型</p>
+<ol>
+<li>width()/height() 获取元素宽/高，如果需要设置尺寸，在括号里输入数字不加单位</li>
+<li>innerWidth()/innerheight() 获取元素宽/高，包含padding</li>
+<li>outerWidtn()/outerheight() 获取元素宽/高，包含padding，border</li>
+<li>outerWidtn(true)/outerheight(true) 获取元素宽/高，包含padding，border，margin</li>
+</ol>
+<p>位置操作：</p>
+<ol>
+<li>offset() 获取距离文档顶部和左边距离，此方法有且仅有两个属性，top和left</li>
+<li>offset({top:xx,left:xx}) 设置距离文档顶部和左边距离，不需要单位</li>
+<li>position() 获取相对于带有定位的父亲的偏移坐标，此方法只能读取，不能设置偏移</li>
+<li>scrollTop()/scrollLeft() 获取所取元素被卷去上部和左部距离</li>
+<li>scrollTop(xx)/scrollLeft(xx) 使所取元素到达恰好被卷去上部或左部的距离的位置</li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2023/02/07/my-eighthblog/" data-id="cldwfbpnz00021c5r0ri77pgq" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2023/02/07/my-eighthblog/" data-id="cldxz61n10001ic5ra4z88n2a" class="article-share-link">Share</a>
       
       
     </footer>
@@ -776,7 +807,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2023/01/01/my-seventhblog/" data-id="cldwfbpo100061c5rckrq90ci" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2023/01/01/my-seventhblog/" data-id="cldxz61n40006ic5rajs4hucw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1047,7 +1078,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/" data-id="cldwfbpo100071c5rhxvp2t0r" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/" data-id="cldxz61n50007ic5r22fcdva9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1296,7 +1327,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/" data-id="cldwfbpnz00031c5rcqe3amu5" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/" data-id="cldxz61n30003ic5reefs4ddd" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1338,7 +1369,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/10/15/Webproject1/" data-id="cldwfbpns00001c5r486zctr0" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/10/15/Webproject1/" data-id="cldxz61mw0000ic5rgzk3h91w" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1936,7 +1967,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cldwfbpo000041c5raii217hp" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cldxz61n40004ic5ra2vr8m38" class="article-share-link">Share</a>
       
       
     </footer>
@@ -2092,7 +2123,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/03/my-thirdblog/" data-id="cldwfbpo200081c5rag6i2ku6" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/03/my-thirdblog/" data-id="cldxz61n50008ic5ra60pfgwn" class="article-share-link">Share</a>
       
       
     </footer>
@@ -2734,7 +2765,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="cldwfbpo000051c5rg38tgpb8" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="cldxz61n40005ic5r5emc5h6o" class="article-share-link">Share</a>
       
       
     </footer>
@@ -3474,7 +3505,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="cldwfbpnx00011c5rhbjfegxg" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="cldxz61n20002ic5ramr77dbl" class="article-share-link">Share</a>
       
       
     </footer>
