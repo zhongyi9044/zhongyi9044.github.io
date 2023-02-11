@@ -86,9 +86,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>jQuery下载地址：<a target="_blank" rel="noopener" href="https://jquery.com/download/">https://jquery.com/download/</a></p>
+        <p>jQuery下载地址：<a target="_blank" rel="noopener" href="https://jquery.com/download/">https://jquery.com/download/</a><br>jQuery插件网站：<a target="_blank" rel="noopener" href="https://www.jq22.com/">https://www.jq22.com/</a></p>
 <p>目录：</p>
-<p><a href="#jQuery%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8">jQuery基本使用</a><br><a href="#jQuery%E5%B8%B8%E8%A7%81API">jQuery常见API</a><br><a href="#%E4%BF%AE%E6%94%B9%E6%A0%B7%E5%BC%8F%E7%9A%84%E6%96%B9%E6%B3%95">修改样式的方法</a><br><a href="#jQuery%E6%95%88%E6%9E%9C">jQuery效果</a><br><a href="#jQuery%E5%B1%9E%E6%80%A7%E6%93%8D%E4%BD%9C">jQuery属性操作</a><br><a href="#jQuery%E5%86%85%E5%AE%B9%E6%96%87%E6%9C%AC%E5%80%BC">jQuery内容文本值</a><br><a href="#jQuery%E5%85%83%E7%B4%A0%E6%93%8D%E4%BD%9C">jQuery元素操作</a><br><a href="#jQuery%E5%B0%BA%E5%AF%B8%E4%BD%8D%E7%BD%AE%E6%93%8D%E4%BD%9C">jQuery尺寸位置操作</a></p>
+<p><a href="#jQuery%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8">jQuery基本使用</a><br><a href="#jQuery%E5%B8%B8%E8%A7%81API">jQuery常见API</a><br><a href="#%E4%BF%AE%E6%94%B9%E6%A0%B7%E5%BC%8F%E7%9A%84%E6%96%B9%E6%B3%95">修改样式的方法</a><br><a href="#jQuery%E6%95%88%E6%9E%9C">jQuery效果</a><br><a href="#jQuery%E5%B1%9E%E6%80%A7%E6%93%8D%E4%BD%9C">jQuery属性操作</a><br><a href="#jQuery%E5%86%85%E5%AE%B9%E6%96%87%E6%9C%AC%E5%80%BC">jQuery内容文本值</a><br><a href="#jQuery%E5%85%83%E7%B4%A0%E6%93%8D%E4%BD%9C">jQuery元素操作</a><br><a href="#jQuery%E5%B0%BA%E5%AF%B8%E4%BD%8D%E7%BD%AE%E6%93%8D%E4%BD%9C">jQuery尺寸位置操作</a><br><a href="#jQuery%E4%BA%8B%E4%BB%B6">jQuery事件</a></p>
 <h3 id="jQuery基本使用"><a href="#jQuery基本使用" class="headerlink" title="jQuery基本使用"></a>jQuery基本使用</h3><h4 id="顶级对象"><a href="#顶级对象" class="headerlink" title="顶级对象"></a>顶级对象</h4><p>jQuery的顶级对象就是jQuery，也可以用’$’代替，相当于原生JavaScript的window</p>
 <p>jQuery对象的本质：利用$对DOM对象包装后产生的对象，以伪数组形式存储</p>
 <h4 id="jQuery入口函数"><a href="#jQuery入口函数" class="headerlink" title="jQuery入口函数"></a>jQuery入口函数</h4><p>入口函数的两种写法</p>
@@ -219,11 +219,49 @@
 <li>scrollTop()/scrollLeft() 获取所取元素被卷去上部和左部距离</li>
 <li>scrollTop(xx)/scrollLeft(xx) 使所取元素到达恰好被卷去上部或左部的距离的位置</li>
 </ol>
+<h3 id="jQuery事件"><a href="#jQuery事件" class="headerlink" title="jQuery事件"></a>jQuery事件</h3><p>单个事件注册：$(“div”).click(function(){})</p>
+<p>on()绑定事件：可以一次绑定多个事件</p>
+<ol>
+<li>$(“div”).on({click:function(){},mouseover:function(){}}) div绑定了click，mouseover事件</li>
+<li>$(“div”).on({“click mouseover”,function(){}}) div绑定了click，mouseover事件，且恰好两个事件处理程序一样</li>
+</ol>
+<p>on()绑定事件，实现事件委托：将子元素身上的事件绑定在父元素身上</p>
+<ol>
+<li>$(“ul”).on({“click”,”li”,function(){}})</li>
+</ol>
+<p>优势：可以动态的进行事件绑定，不再需要创造一个li就绑定一个事件，并且比传统的事件委派简介</p>
+<p>off()解绑事件</p>
+<ol>
+<li>$(“div”).off() 解除所有事件</li>
+<li>$(“div”).off(“click”) 解除click事件</li>
+<li>$(“div”).off(“click”,”li”) 解除事件委托</li>
+</ol>
+<p>one()方法：$(“div”).one(“click”,function(){}) 只触发一次的事件</p>
+<p>自动触发事件：</p>
+<ol>
+<li>$(“div”).click() 传统方式</li>
+<li>$(“div”).trigger(“click”) jQuery方式</li>
+<li>$(“div”).triggerHandler(“click”) 和trigger一样，但是此方法不会触发元素的默认行为，比如事件触发以后自动产生光标闪烁不会触发</li>
+</ol>
+<p>jQuery事件对象：function(event)</p>
+<ol>
+<li>event.preventDefault() 阻止默认行为</li>
+<li>event.stopPropagation() 阻止冒泡</li>
+</ol>
+<p>jQuery事件拷贝：$.extend(deep,target,object,objects)</p>
+<ol>
+<li>deep默认使false，浅拷贝，true为深拷贝</li>
+<li>target为被拷贝复制的目标</li>
+<li>object为拷贝粘贴目标</li>
+<li>objects为第二个，第三个，第四个。。。。拷贝粘贴目标</li>
+<li>浅拷贝和深拷贝的区别在于，复杂数据类型在浅拷贝的时候拷贝给的是地址，所以修改object拷贝来的复杂数据类型的值进行修改，原来的target的值也会被修改，深拷贝则不会</li>
+</ol>
+<p>复杂数据类型例子：mgs：{age：18，name：”john”}<br>普通数据类型例子：id：10</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2023/02/07/my-eighthblog/" data-id="cldxz61n10001ic5ra4z88n2a" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2023/02/07/my-eighthblog/" data-id="cldzl9lg10001vs5rdu0j6ddq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -807,7 +845,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2023/01/01/my-seventhblog/" data-id="cldxz61n40006ic5rajs4hucw" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2023/01/01/my-seventhblog/" data-id="cldzl9lg50006vs5ralt74ipx" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1078,7 +1116,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/" data-id="cldxz61n50007ic5r22fcdva9" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/11/14/my-sixthblog/" data-id="cldzl9lg50007vs5rg965g2c6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1327,7 +1365,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/" data-id="cldxz61n30003ic5reefs4ddd" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/11/08/my-fifthblog/" data-id="cldzl9lg30003vs5r81miccev" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1369,7 +1407,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/10/15/Webproject1/" data-id="cldxz61mw0000ic5rgzk3h91w" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/10/15/Webproject1/" data-id="cldzl9lfw0000vs5r6yw278lk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1967,7 +2005,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cldxz61n40004ic5ra2vr8m38" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/11/my-fourthblog/" data-id="cldzl9lg30004vs5rgihe5u1a" class="article-share-link">Share</a>
       
       
     </footer>
@@ -2123,7 +2161,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/03/my-thirdblog/" data-id="cldxz61n50008ic5ra60pfgwn" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/03/my-thirdblog/" data-id="cldzl9lg60008vs5r66j11ix8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -2765,7 +2803,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="cldxz61n40005ic5r5emc5h6o" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/09/02/my-secondblog/" data-id="cldzl9lg40005vs5r79ypc081" class="article-share-link">Share</a>
       
       
     </footer>
@@ -3505,7 +3543,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="cldxz61n20002ic5ramr77dbl" class="article-share-link">Share</a>
+      <a data-url="https://zhongyi9044.github.io/2022/08/30/my-blog/" data-id="cldzl9lg20002vs5r8w3v5ssd" class="article-share-link">Share</a>
       
       
     </footer>
